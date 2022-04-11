@@ -1,39 +1,49 @@
 package tw.timhsu.users;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
 
-@Entity @Table(name = "Users")
+import tw.timhsu.cartitem.*;
+
+@Entity
+@Table(name = "Users")
 @Component
 public class Users {
-	
-	@Id @Column(name = "UID")
+
+	@Id
+	@Column(name = "UID")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int uid;
-	
+
 	@Column(name = "USERNAME")
 	private String username;
-	
+
 	@Column(name = "PASSWORD")
 	private String password;
-	
+
 	@Column(name = "NAME")
 	private String name;
-	
+
 	@Column(name = "EMAIL")
 	private String email;
-	
+
 	@Column(name = "PHONE")
 	private String phone;
-	
+
 	@Column(name = "ROLE")
 	private String role;
+	@OneToMany(mappedBy = "users", cascade = CascadeType.ALL)
+	private List<CartItem> cartItem;
 
 	public int getUid() {
 		return uid;
@@ -89,6 +99,14 @@ public class Users {
 
 	public void setRole(String role) {
 		this.role = role;
+	}
+
+	public List<CartItem> getCartItem() {
+		return cartItem;
+	}
+
+	public void setCartItem(List<CartItem> cartItem) {
+		this.cartItem = cartItem;
 	}
 
 }

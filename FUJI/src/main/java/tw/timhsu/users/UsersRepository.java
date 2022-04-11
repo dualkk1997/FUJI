@@ -17,4 +17,5 @@ public interface UsersRepository extends JpaRepository<Users, Integer> {
 	@Query(value="select u from Users u where u.role Like ?1 or u.role Like ?2 ")
 	public Page<Users> findByUsers(String role1,String role2, Pageable pageable);
 
+	Users findByusername(String username);
 }

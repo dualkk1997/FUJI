@@ -13,35 +13,40 @@ import javax.persistence.Table;
 
 import tw.timhsu.products.Category;
 
-@Entity @Table(name="products")
+@Entity
+@Table(name = "products")
 public class Products {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int pid;
-	
+
 	private String productname;
-	
+
 	private int productprice;
 	@Lob
 	@Column(columnDefinition = "MEDIUMBLOB")
 	private String productimage;
-	
-	@ManyToOne(fetch=FetchType.LAZY)
-	@JoinColumn(name="categoryid")
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "categoryid")
 	private Category category;
-	
+
 	public Products() {
-		
+
 	}
-	public Products(int pid,String productname,int productprice, String productimage,Category category) {
-		this.pid=pid;
-		this.productname=productname;
-		this.productprice=productprice;
-		this.productimage=productimage;
-		this.category=category;
+
+	public Products(int pid, String productname, int productprice, String productimage, Category category) {
+		this.pid = pid;
+		this.productname = productname;
+		this.productprice = productprice;
+		this.productimage = productimage;
+		this.category = category;
 	}
-	
-	
+
+	public Products(Integer pid) {
+		this.pid = pid;
+	}
+
 	public int getPid() {
 		return pid;
 	}
@@ -81,8 +86,5 @@ public class Products {
 	public void setCategory(Category category) {
 		this.category = category;
 	}
-
-
-	
 
 }

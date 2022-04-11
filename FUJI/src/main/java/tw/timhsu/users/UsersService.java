@@ -45,4 +45,7 @@ public class UsersService {
 		
 		return uRep.findByUsers(role1,role2,pageable);
 	}
+	public Users findByusername(String name) {
+		return usersRepository.findByusername(name);
+	}
 }

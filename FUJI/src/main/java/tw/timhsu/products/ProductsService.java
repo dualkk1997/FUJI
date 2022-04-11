@@ -91,6 +91,10 @@ public class ProductsService {
 		}
 		pRep.save(p);
 }
+
+	public List<Products> findByCategory(int categoryId) {
+		return pRepository.findByCategory_categoryId(categoryId);
+	}
 }
 	
     
