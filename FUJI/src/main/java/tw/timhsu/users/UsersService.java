@@ -76,7 +76,7 @@ public class UsersService {
 			user.setEmail(email);
 			user.setName(name);
 			user.setPassword("GOOGLE");
-			user.setUsername("GOOGLE");
+			user.setUsername(email);
 			user.setPhone("0987654321");
 			user.setRole("USER");
 			uRep.save(user);
