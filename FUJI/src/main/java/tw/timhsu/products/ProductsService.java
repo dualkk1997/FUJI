@@ -91,7 +91,7 @@ public class ProductsService {
 		}
 		pRep.save(p);
 }
-
+//沒用到
 	public List<Products> findByCategory(int categoryId) {
 		return pRep.findByCategory_categoryid(categoryId);
 	}
