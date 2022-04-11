@@ -73,7 +73,7 @@ public class OrdersService {
 		
 		public Orders createOrders(Users users ,List<CartItem>cartItems,Integer totalprice) {
 			Orders newOrders = new Orders();
-			newOrders.setOrderdate(("%tY/%<tm/%<td %<tH:%<tM:%<tS", new Date()));
+			newOrders.setOrderdate(String.format("%tY/%<tm/%<td %<tH:%<tM:%<tS", new Date()));
 			newOrders.setUsers(users);
 			newOrders.setTotalprice(totalprice);
 			newOrders.setStatus("已付款");

@@ -21,31 +21,31 @@ import org.springframework.stereotype.Component;
 
 import tw.timhsu.users.Users;
 
-@Entity @Table(name = "orders")
+@Entity
+@Table(name = "orders")
 @Component
 public class Orders {
-	
-	@Id @Column(name = "OID")
+
+	@Id
+	@Column(name = "OID")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int oid;
-	
+
 	@Column(name = "TOTALPRICE")
 	private int totalprice;
-	
+
 	@Column(name = "STATUS")
-	private String  status;
-	
+	private String status;
+
 	@Column(name = "ORDERDATE")
-	@DateTimeFormat (pattern="yyyy-MM-dd hh:mm")
-	private Date orderdate;
-	
-	@ManyToOne(fetch=FetchType.LAZY)
-	@JoinColumn(name="uid")
+	private String orderdate;
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "uid")
 	private Users users;
-	
-	@OneToMany(mappedBy = "orders",cascade = CascadeType.ALL)
-    private Set<OrdersDetails> ordersdetails = new HashSet<>();
-	
+
+	@OneToMany(mappedBy = "orders", cascade = CascadeType.ALL)
+	private Set<OrdersDetails> ordersdetails = new HashSet<>();
 
 	public int getOid() {
 		return oid;
@@ -71,14 +71,6 @@ public class Orders {
 		this.status = status;
 	}
 
-	public Date getOrderdate() {
-		return orderdate;
-	}
-
-	public void setOrderdate(Date orderdate) {
-		this.orderdate = orderdate;
-	}
-
 	public Users getUsers() {
 		return users;
 	}
@@ -86,7 +78,21 @@ public class Orders {
 	public void setUsers(Users users) {
 		this.users = users;
 	}
-	
-	
-	
+
+	public Set<OrdersDetails> getOrdersdetails() {
+		return ordersdetails;
+	}
+
+	public void setOrdersdetails(Set<OrdersDetails> ordersdetails) {
+		this.ordersdetails = ordersdetails;
+	}
+
+	public String getOrderdate() {
+		return orderdate;
+	}
+
+	public void setOrderdate(String orderdate) {
+		this.orderdate = orderdate;
+	}
+
 }

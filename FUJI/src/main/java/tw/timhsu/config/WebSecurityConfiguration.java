@@ -20,6 +20,7 @@ import tw.timhsu.security.oauth.OAuth2LoginSuccessHandler;
 
 
 
+
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
