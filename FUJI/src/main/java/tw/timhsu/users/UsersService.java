@@ -1,6 +1,7 @@
 package tw.timhsu.users;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -14,6 +15,14 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 public class UsersService {
 	
+	 private final UsersRepository userRepository;
+	  // private final ModelMapper modelMapper;
+
+	    @Autowired
+	    public UsersService(UsersRepository userRepository) {
+	        this.userRepository = userRepository;
+	     //   this.modelMapper = modelMapper;
+	    }
 	@Autowired
 	private UsersRepository uRep;
 	
@@ -46,6 +55,39 @@ public class UsersService {
 		return uRep.findByUsers(role1,role2,pageable);
 	}
 	public Users findByusername(String name) {
-		return usersRepository.findByusername(name);
+		return uRep.findByusername(name);
 	}
+	 public Optional<Users> findByUsername(String username){return userRepository.findByUsername(username);}
+	    public Users findUserByUsername(String username){return userRepository.findUserByUsername(username);}
+	    public Users findByEmail(String email){return userRepository.findByEmail(email);}
+	    
+	    public boolean userExists(String username){
+	        return findByUsername(username).isPresent();
+	    }
+
+	    public Users createUser(Users user){
+	        user.setRole("USER");
+	        return userRepository.save(user);
+	    }
+
+
+		public void createNewCustomerAfterOAuthLoginSuccess(String email ,String name) {
+			Users user = new Users();
+			user.setEmail(email);
+			user.setName(name);
+			user.setPassword("GOOGLE");
+			user.setUsername("GOOGLE");
+			user.setPhone("0987654321");
+			user.setRole("USER");
+			userRepository.save(user);
+		}
+
+
+
+
+		public void updateCustomerAfterOAuthLoginSuccess(Users user, String name) {
+			user.setName(name);
+			
+			userRepository.save(user);
+		}
 }

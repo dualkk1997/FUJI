@@ -1,5 +1,7 @@
 package tw.timhsu.users;
 
+import java.util.Optional;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -18,4 +20,7 @@ public interface UsersRepository extends JpaRepository<Users, Integer> {
 	public Page<Users> findByUsers(String role1,String role2, Pageable pageable);
 
 	Users findByusername(String username);
+	 public Optional<Users> findByUsername(String username);
+	    public Users findUserByUsername(String username);
+	    public Users findByEmail(String email);
 }

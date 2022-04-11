@@ -1,10 +1,12 @@
-package com.example.demo.config;
+package tw.timhsu.config;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.example.demo.model.User;
+
+
+import tw.timhsu.users.Users;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -12,9 +14,9 @@ import java.util.Collections;
 public class AuthUserDetails implements UserDetails {
 
 
-    private User user;
+    private Users user;
 
-    public AuthUserDetails(User user) {
+    public AuthUserDetails(Users user) {
         super();
         this.user = user;
     }

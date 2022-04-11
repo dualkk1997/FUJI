@@ -93,7 +93,7 @@ public class ProductsService {
 }
 
 	public List<Products> findByCategory(int categoryId) {
-		return pRepository.findByCategory_categoryId(categoryId);
+		return pRep.findByCategory_categoryid(categoryId);
 	}
 }
 	

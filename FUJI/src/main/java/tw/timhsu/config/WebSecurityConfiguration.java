@@ -15,9 +15,10 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.oauth2.client.OAuth2AuthorizationSuccessHandler;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
-import com.example.demo.security.oauth.CustomOAuth2User;
-import com.example.demo.security.oauth.CustomOAuth2UserService;
-import com.example.demo.security.oauth.OAuth2LoginSuccessHandler;
+import tw.timhsu.security.oauth.CustomOAuth2UserService;
+import tw.timhsu.security.oauth.OAuth2LoginSuccessHandler;
+
+
 
 @Configuration
 @EnableWebSecurity
@@ -52,5 +53,23 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 				.logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
 
 	}
+//	@Override
+//	protected void configure(HttpSecurity http) throws Exception {
+//		http
+//		.authorizeRequests()
+//		.antMatchers("/index.html").permitAll()
+//		.antMatchers("/profile/**").authenticated()
+//		.and()
+//		.formLogin()
+//		.loginPage("/login")
+//		.usernameParameter("username")
+//		.passwordParameter("password")
+//		.and()
+//		.logout()
+//		.logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
+//		.logoutSuccessUrl("/login")
+//		.and()
+//		.csrf().disable();
+//	}
 
 }
