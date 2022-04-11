@@ -15,16 +15,16 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 public class UsersService {
 	
-//	 private final UsersRepository userRepository;
+	 private final UsersRepository uRep;
 //	  // private final ModelMapper modelMapper;
-
-	    @Autowired
-	    public UsersService(UsersRepository userRepository) {
-	        this.uRep = userRepository;
+//
+	@Autowired
+	public UsersService(UsersRepository usersRepository) {
+	        this.uRep = usersRepository;
 	     //   this.modelMapper = modelMapper;
 	    }
-	@Autowired
-	private UsersRepository uRep;
+	
+//	private UsersRepository uRep;
 	
 	public List<Users> findAll(){
 		return uRep.findAll();

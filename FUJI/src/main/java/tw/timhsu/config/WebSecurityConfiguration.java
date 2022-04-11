@@ -18,9 +18,6 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import tw.timhsu.security.oauth.CustomOAuth2UserService;
 import tw.timhsu.security.oauth.OAuth2LoginSuccessHandler;
 
-
-
-
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
