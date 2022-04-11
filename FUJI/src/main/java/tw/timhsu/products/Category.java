@@ -14,25 +14,33 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-@Entity @Table(name="category")
+@Entity
+@Table(name = "category")
 public class Category {
-	
-	@Id @Column(name="CATEGORYID")
-	@GeneratedValue(strategy= GenerationType.IDENTITY)
-	private int categoryid;
-	
-	
-	@Column(name="CATEGORYNAME")
-	private String categoryname;
-	
-	//@OneToMany(fetch=FetchType.LAZY, mappedBy="category" ,cascade=CascadeType.ALL)
-	//private List<Product> products;
-//	private Set<Product> products = new HashSet<Product>(0);
 
-	public Category(){
-		
+	@Id
+	@Column(name = "CATEGORYID")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int categoryid;
+
+	@Column(name = "CATEGORYNAME")
+	private String categoryname;
+
+	// @OneToMany(fetch=FetchType.LAZY, mappedBy="category"
+	// ,cascade=CascadeType.ALL)
+	// private List<Product> products;
+//	private Set<Product> products = new HashSet<Product>(0);
+	@OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
+	private List<Products> productList;
+
+	public List<Products> getProductList() {
+		return productList;
 	}
-	
+
+	public Category() {
+
+	}
+
 	public int getCategoryid() {
 		return categoryid;
 	}
@@ -49,6 +57,10 @@ public class Category {
 		this.categoryname = categoryname;
 	}
 
+	public void setProductList(List<Products> productList) {
+		this.productList = productList;
+	}
+
 //	public Set<Product> getProducts() {
 //		return products;
 //	}
@@ -56,5 +68,5 @@ public class Category {
 //	public void setProducts(Set<Product> products) {
 //		this.products = products;
 //	}
-	
+
 }

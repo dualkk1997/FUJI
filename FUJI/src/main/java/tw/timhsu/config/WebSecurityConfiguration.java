@@ -18,9 +18,6 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import tw.timhsu.security.oauth.CustomOAuth2UserService;
 import tw.timhsu.security.oauth.OAuth2LoginSuccessHandler;
 
-
-
-
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
@@ -44,14 +41,19 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 				.antMatchers("/", "/assest/**", "/register", "/home", "/stylesheets/**", "/js/**", "/images/**",
 						"/register2", "/gotore")
 				.permitAll()
+				.antMatchers("/profile/**").authenticated()
 				// .antMatchers("/home").hasAnyAuthority("USER","ADMIN")
 				.antMatchers("/admin").hasAuthority("ADMIN").anyRequest().authenticated().and().formLogin()
-				.loginPage("/login")
+				.loginPage("/login").defaultSuccessUrl("/home", true)
 //                .defaultSuccessUrl("/authenticated")
+				.usernameParameter("username")
+				.passwordParameter("password")
 				.permitAll().and().oauth2Login().loginPage("/login").userInfoEndpoint().userService(oAuth2UserService)
 				.and().successHandler(oAuth2LoginSuccessHandler);
 		http.logout().deleteCookies("JSESSIONID").logoutSuccessUrl("/login")
-				.logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
+				.logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
+				.and()
+				.csrf().disable();
 
 	}
 //	@Override

@@ -1,5 +1,7 @@
 package tw.timhsu.usercontroller;
 
+import java.security.Principal;
+
 import javax.validation.Valid;
 
 import org.slf4j.Logger;
@@ -35,10 +37,10 @@ public class AccountController {
 //
 //        return "home";
 //    }
-    @GetMapping("/")
-    public String index(@ModelAttribute Users user, Model model){
+    @GetMapping("/home")
+    public String index(@ModelAttribute Users user, Model model,Principal principal){
         model.addAttribute("user",user);
-        return "home";
+        return "/home";
     }
 
 //    @GetMapping("/home")
@@ -52,13 +54,13 @@ public class AccountController {
    @GetMapping("/login")
     public String gotologin(@ModelAttribute Users user, Model model){
         model.addAttribute("user",user);
-        return "home";
+        return "redirect:/home";
    }
  
     @PostMapping("/login")
     public String login(){
     	//model.addAttribute("user",user);
-    		return "home";    
+    		return "redirect:/home";    
     }
 
 
@@ -88,7 +90,7 @@ public class AccountController {
         String encode = new BCryptPasswordEncoder().encode(user.getPassword());
         user.setPassword(encode);
         userService.createUser(user);
-        return "yes";
+        return "redirect:/home";
         }
     
     

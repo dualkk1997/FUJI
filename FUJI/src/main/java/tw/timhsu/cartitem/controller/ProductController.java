@@ -57,14 +57,14 @@ public class ProductController {
 			str += str1 + price + "元x" + quantity + "#";
 		}
 		model.addAttribute("str", str);
-		return "profile/index";
+		return "profile/shopping";
 	}
 
 	@GetMapping("cartProduct")
 	public String cartProduct(Model model, Principal principal) {
 		Users users = usersService.findByusername(principal.getName());
 		List<CartItem> cartItems = cartItemService.listCartItems(users);
-		model.addAttribute("cartItems", cartItems);
+		model.addAttribute("cartItems", cartItems.get(0).getProducts());
 		int total = findSum(users);
 		String str = "";
 

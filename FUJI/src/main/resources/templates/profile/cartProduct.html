@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div th:each="users,status:${users}">
+<div th:text="${status.count}"></div>
+<h1 th:text="'嗨'+${users.username}+'這是你的購物車'"></h1>
+</div>
+	<a href="#" th:href="@{/index}">index</a>
+	<div th:each="item:${cartItems}">
+					<ul th:with="product=${item.products}">
+					<li th:text="'產品名稱:'+${product.productname}"></li>
+					<li th:text="'數量:'+${item.quantity}"></li>
+						<li th:text="'金額小計:'+${item.SubTotal}"></li>
+					<li><a th:href="@{'/profile/remove/'+${product.pid}}">移除產品</a></li>
+				</ul>
+			</div>
+			<span th:text="'總金額:'+${total}"></span>
+			<form method="POST" action="/ecpay/checkout">
+			<input type="hidden" name="TotalAmount" th:value="${total}">
+			<input type="hidden" name="TradeDesc" value="Test1">
+			<input type="hidden" name="ItemName" th:value="${str}">
+			<button type="submit">結帳</button>
+			</form>	
+</body>
+</html>	

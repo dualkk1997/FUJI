@@ -116,7 +116,7 @@ public class CheckOutlController {
 
 			sendOrderEmail(orders, cartItems, sum);
 			model.addAttribute("total", sum);
-			return "redirect:paymentSuccess";
+			return "paymentSuccess";
 		} else {
 			// 付款失敗處理
 			System.out.println(dict.toString());

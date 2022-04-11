@@ -21,10 +21,10 @@ public class CartItem {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int ciid;
 	@ManyToOne
-	@JoinColumn(name = "uid")
+	@JoinColumn(name = "UID")
 	private Users users;
 	@ManyToOne
-	@JoinColumn(name = "pid")
+	@JoinColumn(name = "PID")
 	private Products products;
 	@Column(name = "quantity")
 	private int quantity;
