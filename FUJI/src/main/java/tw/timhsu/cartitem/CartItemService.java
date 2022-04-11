@@ -7,6 +7,9 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import tw.timhsu.products.Products;
+import tw.timhsu.users.Users;
+
 
 @Service
 @Transactional
