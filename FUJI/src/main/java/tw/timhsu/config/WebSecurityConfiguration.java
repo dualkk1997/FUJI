@@ -1,4 +1,4 @@
-package com.example.demo.config;
+package tw.timhsu.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -22,45 +22,35 @@ import com.example.demo.security.oauth.OAuth2LoginSuccessHandler;
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
-    @Autowired
-    private AuthUserDetailsService myUserDetailService;
+	@Autowired
+	private CustomOAuth2UserService oAuth2UserService;
+	@Autowired
+	private OAuth2LoginSuccessHandler oAuth2LoginSuccessHandler;
+	@Autowired
+	private AuthUserDetailsService myUserDetailService;
 
-    @Override
-    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth
-                .userDetailsService(myUserDetailService)
-                .passwordEncoder(new BCryptPasswordEncoder());
-    }
-    @Override
-    protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests()
+	@Override
+	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+		auth.userDetailsService(myUserDetailService).passwordEncoder(new BCryptPasswordEncoder());
+	}
+
+	@Override
+	protected void configure(HttpSecurity http) throws Exception {
+		http.authorizeRequests()
 //                .antMatchers("/","/assest/**","/register","/home")
-        		.antMatchers("/oauth2/**").permitAll()
-                .antMatchers("/","/assest/**","/register","/home","/stylesheets/**", "/js/**", "/images/**","/register2","/gotore")
-                .permitAll()
-              //  .antMatchers("/home").hasAnyAuthority("USER","ADMIN")
-                .antMatchers("/admin").hasAuthority("ADMIN")
-                .anyRequest()
-                .authenticated()
-                .and()
-                .formLogin()
-                .loginPage("/login")
+				.antMatchers("/oauth2/**").permitAll()
+				.antMatchers("/", "/assest/**", "/register", "/home", "/stylesheets/**", "/js/**", "/images/**",
+						"/register2", "/gotore")
+				.permitAll()
+				// .antMatchers("/home").hasAnyAuthority("USER","ADMIN")
+				.antMatchers("/admin").hasAuthority("ADMIN").anyRequest().authenticated().and().formLogin()
+				.loginPage("/login")
 //                .defaultSuccessUrl("/authenticated")
-                .permitAll()
-                .and()
-                .oauth2Login()
-                .loginPage("/login")
-                .userInfoEndpoint().userService(oAuth2UserService)
-                .and()
-                .successHandler(oAuth2LoginSuccessHandler);
-        http.logout()
-        .deleteCookies("JSESSIONID")
-        .logoutSuccessUrl("/login")
-        .logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
-                
-    }
-    @Autowired
-    private CustomOAuth2UserService oAuth2UserService;
-    @Autowired
-    private OAuth2LoginSuccessHandler oAuth2LoginSuccessHandler;
+				.permitAll().and().oauth2Login().loginPage("/login").userInfoEndpoint().userService(oAuth2UserService)
+				.and().successHandler(oAuth2LoginSuccessHandler);
+		http.logout().deleteCookies("JSESSIONID").logoutSuccessUrl("/login")
+				.logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
+
+	}
+
 }
