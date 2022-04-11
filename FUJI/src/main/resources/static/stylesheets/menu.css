@@ -1,0 +1,7202 @@
+@charset "UTF-8";
+body {
+  margin: 0px;
+  background-image: url("../images/homeBackground.jpg");
+}
+
+body .containerAll .header {
+  width: 100%;
+  height: 150px;
+  background-image: url("../images/homeBackground.jpg");
+  top: 0px;
+  z-index: 1;
+}
+
+body .containerAll .header div {
+  display: inline-block;
+}
+
+body .containerAll .header .logo {
+  width: 50%;
+}
+
+body .containerAll .header .logo img {
+  width: 20%;
+  margin-top: 5px;
+  margin-left: 10px;
+  float: left;
+}
+
+body .containerAll .header .logo .logoWord {
+  font-size: 18px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 45px;
+  float: left;
+  text-align: center;
+}
+
+body .containerAll .header .item {
+  float: right;
+  width: 50%;
+  text-align: center;
+}
+
+body .containerAll .header .item .nav {
+  width: 15%;
+}
+
+body .containerAll .header .item .nav .aboutUs, body .containerAll .header .item .nav .Menu, body .containerAll .header .item .nav .Member, body .containerAll .header .item .nav .Contact, body .containerAll .header .item .nav .shoppingCart {
+  font-size: 18px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 550;
+  margin-top: 50px;
+  color: black;
+}
+
+body .containerAll .header .item .nav .shoppingCart {
+  margin-right: -8px;
+}
+
+body .containerAll .header .item .nav .container {
+  width: 36%;
+  padding-left: 0px;
+}
+
+body .containerAll .header .item .nav .container a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+body .containerAll .header .item .nav .container a:hover {
+  text-decoration: none;
+}
+
+body .containerAll .header .item .nav .container .position-relative {
+  position: relative;
+}
+
+body .containerAll .header .item .nav .container .position-absolute {
+  position: absolute;
+}
+
+body .containerAll .header .item .nav .container .cartQuantity {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  right: -9px;
+  top: -8px;
+}
+
+body .containerAll .header .item .login {
+  width: 7%;
+}
+
+body .containerAll .header .item .login .fas {
+  font-size: 25px;
+  top: -1em;
+  margin-top: 50px;
+}
+
+body .containerAll .header .item .logout {
+  width: 7%;
+}
+
+body .containerAll .header .item .logout .fas {
+  font-size: 25px;
+  margin-top: 3px;
+}
+
+body .containerAll .menu-outline .img img {
+  width: 100%;
+}
+
+body .containerAll .menu-outline .title {
+  font-size: 25px;
+  font-family: "DFKai-sb", serif;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+
+body .containerAll .menu-outline .content {
+  padding: 45px 90px;
+  background-color: white;
+  width: 100%;
+  display: inline-block;
+}
+
+body .containerAll .menu-outline .content .first {
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+body .containerAll .menu-outline .content .first .limited {
+  padding-bottom: 4px;
+}
+
+body .containerAll .menu-outline .content .first .limited img {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-outline .content .second {
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+body .containerAll .menu-outline .content .second .takeaway {
+  padding-bottom: 4px;
+}
+
+body .containerAll .menu-outline .content .second .takeaway img {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-outline .content .third {
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+body .containerAll .menu-outline .content .third .sushi {
+  padding-bottom: 4px;
+}
+
+body .containerAll .menu-outline .content .third .sushi img {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-outline .content .fourth {
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+body .containerAll .menu-outline .content .fourth .roll {
+  padding-bottom: 4px;
+}
+
+body .containerAll .menu-outline .content .fourth .roll img {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-outline .content .fifth {
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+body .containerAll .menu-outline .content .fifth .noodle {
+  padding-bottom: 4px;
+}
+
+body .containerAll .menu-outline .content .fifth .noodle img {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-outline .content .sixth {
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+body .containerAll .menu-outline .content .sixth .side {
+  padding-bottom: 4px;
+}
+
+body .containerAll .menu-outline .content .sixth .side img {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-outline .content .seventh {
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+body .containerAll .menu-outline .content .seventh .drink {
+  padding-bottom: 4px;
+}
+
+body .containerAll .menu-outline .content .seventh .drink img {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .limited .title {
+  padding-left: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+body .containerAll .menu-all .limited .title .img {
+  display: inline-block;
+  margin-bottom: -10px;
+}
+
+body .containerAll .menu-all .limited .title .img img {
+  width: 70%;
+  display: inline;
+  float: right;
+}
+
+body .containerAll .menu-all .limited .title .slogan {
+  display: inline-block;
+  font-size: 32px;
+  font-family: "DFKai-sb", serif;
+  padding-right: 20px;
+}
+
+body .containerAll .menu-all .limited .title .reminder {
+  font-size: 18px;
+  display: inline-block;
+}
+
+body .containerAll .menu-all .limited #limited-content {
+  background-color: white;
+  width: 100%;
+}
+
+body .containerAll .menu-all .limited #limited-content .slogan {
+  padding: 45px 70px;
+}
+
+body .containerAll .menu-all .limited #limited-content .slogan .content {
+  font-size: 32px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 12%;
+  line-height: 30px;
+  border-bottom: 5px solid #FECACA;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs {
+  padding: 0 40px 20px 40px;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .first {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .first .one {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .first .one img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .first .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .first .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .second {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .second .two {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .second .two img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .second .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .second .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .third {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .third .three {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .third .three img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .third .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .third .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .fourth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .fourth .four {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .fourth .four img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .fourth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .fourth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .fifth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .fifth .five {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .fifth .five img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .fifth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .fifth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .sixth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .sixth .six {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .sixth .six img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .sixth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .sixth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .seventh {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .seventh .seven {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .seventh .seven img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .seventh .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .seventh .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .eighth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .eighth .eight {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .eighth .eight img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .eighth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .eighth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .ninth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .ninth .nine {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .ninth .nine img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .ninth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .ninth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .tenth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .tenth .ten {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .tenth .ten img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .tenth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .tenth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .eleventh {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .eleventh .eleven {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .eleventh .eleven img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .eleventh .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .eleventh .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .twelfth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .twelfth .twelve {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .twelfth .twelve img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .twelfth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .twelfth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .thirteenth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .thirteenth .thirteen {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .thirteenth .thirteen img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .thirteenth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .thirteenth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .fourteenth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .fourteenth .fourteen {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .fourteenth .fourteen img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .fourteenth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .fourteenth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .fifteenth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .fifteenth .fifteen {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .fifteenth .fifteen img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .fifteenth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .limited #limited-content .imgs .fifteenth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway .title {
+  padding-left: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway .title .img {
+  display: inline-block;
+  margin-bottom: -10px;
+}
+
+body .containerAll .menu-all .takeaway .title .img img {
+  width: 70%;
+  display: inline;
+  float: right;
+}
+
+body .containerAll .menu-all .takeaway .title .slogan {
+  display: inline-block;
+  font-size: 32px;
+  font-family: "DFKai-sb", serif;
+  padding-right: 20px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content {
+  background-color: white;
+  width: 100%;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .slogan {
+  padding: 45px 70px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .slogan .content {
+  font-size: 32px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 12%;
+  line-height: 30px;
+  border-bottom: 5px solid #FECACA;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs {
+  padding: 0 40px 20px 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .first {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .first .one {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .first .one img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .first .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .first .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .second {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .second .two {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .second .two img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .second .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .second .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .third {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .third .three {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .third .three img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .third .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .third .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fourth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fourth .four {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fourth .four img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fourth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fourth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifth .five {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifth .five img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixth .six {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixth .six img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventh {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventh .seven {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventh .seven img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventh .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventh .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .eighth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .eighth .eight {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .eighth .eight img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .eighth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .eighth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .ninth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .ninth .nine {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .ninth .nine img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .ninth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .ninth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .tenth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .tenth .ten {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .tenth .ten img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .tenth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .tenth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .eleventh {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .eleventh .eleven {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .eleventh .eleven img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .eleventh .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .eleventh .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twelfth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twelfth .twelve {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twelfth .twelve img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twelfth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twelfth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirteenth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirteenth .thirteen {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirteenth .thirteen img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirteenth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirteenth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fourteenth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fourteenth .fourteen {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fourteenth .fourteen img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fourteenth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fourteenth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifteenth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifteenth .fifteen {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifteenth .fifteen img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifteenth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifteenth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixteenth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixteenth .sixteen {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixteenth .sixteen img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixteenth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixteenth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventeenth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventeenth .seventeen {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventeenth .seventeen img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventeenth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventeenth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .eighteenth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .eighteenth .eighteen {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .eighteenth .eighteen img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .eighteenth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .eighteenth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .nineteenth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .nineteenth .nineteen {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .nineteenth .nineteen img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .nineteenth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .nineteenth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twentieth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twentieth .twenty {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twentieth .twenty img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twentieth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twentieth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-first {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-first .twenty-one {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-first .twenty-one img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-first .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-first .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-second {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-second .twenty-two {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-second .twenty-two img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-second .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-second .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-third {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-third .twenty-three {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-third .twenty-three img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-third .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-third .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-forth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-forth .twenty-four {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-forth .twenty-four img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-forth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-forth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-fifth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-fifth .twenty-five {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-fifth .twenty-five img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-fifth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-fifth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-sixth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-sixth .twenty-six {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-sixth .twenty-six img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-sixth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-sixth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-seventh {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-seventh .twenty-seven {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-seventh .twenty-seven img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-seventh .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-seventh .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-eighth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-eighth .twenty-eight {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-eighth .twenty-eight img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-eighth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-eighth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-ninth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-ninth .twenty-nine {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-ninth .twenty-nine img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-ninth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .twenty-ninth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirtieth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirtieth .thirty {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirtieth .thirty img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirtieth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirtieth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-first {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-first .thirty-one {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-first .thirty-one img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-first .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-first .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-second {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-second .thirty-two {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-second .thirty-two img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-second .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-second .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-third {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-third .thirty-three {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-third .thirty-three img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-third .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-third .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-fourth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-fourth .thirty-four {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-fourth .thirty-four img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-fourth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-fourth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-fifth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-fifth .thirty-five {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-fifth .thirty-five img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-fifth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-fifth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-sixth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-sixth .thirty-six {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-sixth .thirty-six img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-sixth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-sixth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-seventh {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-seventh .thirty-seven {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-seventh .thirty-seven img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-seventh .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-seventh .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-eighth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-eighth .thirty-eight {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-eighth .thirty-eight img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-eighth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-eighth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-ninth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-ninth .thirty-nine {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-ninth .thirty-nine img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-ninth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .thirty-ninth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fortieth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fortieth .forty {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fortieth .forty img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fortieth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fortieth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-first {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-first .forty-one {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-first .forty-one img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-first .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-first .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-second {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-second .forty-two {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-second .forty-two img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-second .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-second .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-third {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-third .forty-three {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-third .forty-three img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-third .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-third .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-fourth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-fourth .forty-four {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-fourth .forty-four img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-fourth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-fourth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-fifth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-fifth .forty-five {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-fifth .forty-five img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-fifth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-fifth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-sixth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-sixth .forty-six {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-sixth .forty-six img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-sixth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-sixth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-seventh {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-seventh .forty-seven {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-seventh .forty-seven img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-seventh .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-seventh .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-eighth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-eighth .forty-eight {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-eighth .forty-eight img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-eighth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-eighth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-ninth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-ninth .forty-nine {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-ninth .forty-nine img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-ninth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .forty-ninth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fiftieth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fiftieth .fifty {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fiftieth .fifty img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fiftieth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fiftieth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-first {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-first .fifty-one {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-first .fifty-one img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-first .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-first .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-second {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-second .fifty-two {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-second .fifty-two img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-second .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-second .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-third {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-third .fifty-three {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-third .fifty-three img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-third .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-third .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-fourth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-fourth .fifty-four {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-fourth .fifty-four img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-fourth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-fourth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-fifth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-fifth .fifty-five {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-fifth .fifty-five img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-fifth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-fifth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-sixth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-sixth .fifty-six {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-sixth .fifty-six img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-sixth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-sixth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-seventh {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-seventh .fifty-seven {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-seventh .fifty-seven img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-seventh .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-seventh .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-eighth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-eighth .fifty-eight {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-eighth .fifty-eight img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-eighth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-eighth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-ninth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-ninth .fifty-nine {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-ninth .fifty-nine img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-ninth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .fifty-ninth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixtieth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixtieth .sixty {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixtieth .sixty img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixtieth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixtieth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-first {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-first .sixty-one {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-first .sixty-one img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-first .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-first .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-second {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-second .sixty-two {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-second .sixty-two img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-second .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-second .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-third {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-third .sixty-three {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-third .sixty-three img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-third .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-third .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-fourth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-fourth .sixty-four {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-fourth .sixty-four img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-fourth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-fourth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-fifth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-fifth .sixty-five {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-fifth .sixty-five img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-fifth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-fifth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-sixth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-sixth .sixty-six {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-sixth .sixty-six img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-sixth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-sixth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-seventh {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-seventh .sixty-seven {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-seventh .sixty-seven img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-seventh .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-seventh .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-eighth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-eighth .sixty-eight {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-eighth .sixty-eight img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-eighth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-eighth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-ninth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-ninth .sixty-nine {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-ninth .sixty-nine img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-ninth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .sixty-ninth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventieth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventieth .seventy {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventieth .seventy img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventieth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventieth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-first {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-first .seventy-one {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-first .seventy-one img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-first .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-first .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-second {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-second .seventy-two {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-second .seventy-two img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-second .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-second .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-third {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-third .seventy-three {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-third .seventy-three img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-third .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-third .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-fourth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-fourth .seventy-four {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-fourth .seventy-four img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-fourth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-fourth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-fifth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-fifth .seventy-five {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-fifth .seventy-five img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-fifth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-fifth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-sixth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-sixth .seventy-six {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-sixth .seventy-six img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-sixth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-sixth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-seventh {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-seventh .seventy-seven {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-seventh .seventy-seven img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-seventh .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .takeaway #takeaway-content .imgs .seventy-seventh .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi .title {
+  padding-left: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi .title .img {
+  display: inline-block;
+  margin-bottom: -10px;
+}
+
+body .containerAll .menu-all .sushi .title .img img {
+  width: 70%;
+  display: inline;
+  float: right;
+}
+
+body .containerAll .menu-all .sushi .title .slogan {
+  display: inline-block;
+  font-size: 32px;
+  font-family: "DFKai-sb", serif;
+  padding-right: 20px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content {
+  background-color: white;
+  width: 100%;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .slogan {
+  padding: 45px 70px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .slogan .content {
+  font-size: 32px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 15%;
+  line-height: 30px;
+  border-bottom: 5px solid #FECACA;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs {
+  padding: 0 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .first {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .first .one {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .first .one img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .first .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .first .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .second {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .second .two {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .second .two img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .second .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .second .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .third {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .third .three {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .third .three img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .third .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .third .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fourth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fourth .four {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fourth .four img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fourth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fourth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fifth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fifth .five {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fifth .five img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fifth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fifth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .sixth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .sixth .six {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .sixth .six img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .sixth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .sixth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .seventh {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .seventh .seven {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .seventh .seven img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .seventh .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .seventh .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .eighth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .eighth .eight {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .eighth .eight img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .eighth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .eighth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .ninth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .ninth .nine {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .ninth .nine img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .ninth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .ninth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .tenth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .tenth .ten {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .tenth .ten img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .tenth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .tenth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .eleventh {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .eleventh .eleven {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .eleventh .eleven img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .eleventh .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .eleventh .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twelfth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twelfth .twelve {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twelfth .twelve img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twelfth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twelfth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .thirteenth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .thirteenth .thirteen {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .thirteenth .thirteen img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .thirteenth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .thirteenth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fourteenth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fourteenth .fourteen {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fourteenth .fourteen img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fourteenth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fourteenth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fifteenth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fifteenth .fifteen {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fifteenth .fifteen img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fifteenth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fifteenth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .sixteenth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .sixteenth .sixteen {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .sixteenth .sixteen img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .sixteenth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .sixteenth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .seventeenth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .seventeenth .seventeen {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .seventeenth .seventeen img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .seventeenth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .seventeenth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .eighteenth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .eighteenth .eighteen {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .eighteenth .eighteen img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .eighteenth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .eighteenth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .nineteenth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .nineteenth .nineteen {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .nineteenth .nineteen img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .nineteenth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .nineteenth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twentieth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twentieth .twenty {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twentieth .twenty img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twentieth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twentieth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-first {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-first .twenty-one {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-first .twenty-one img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-first .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-first .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-second {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-second .twenty-two {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-second .twenty-two img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-second .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-second .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-third {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-third .twenty-three {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-third .twenty-three img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-third .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-third .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-forth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-forth .twenty-four {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-forth .twenty-four img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-forth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-forth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-fifth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-fifth .twenty-five {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-fifth .twenty-five img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-fifth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-fifth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-sixth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-sixth .twenty-six {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-sixth .twenty-six img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-sixth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-sixth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-seventh {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-seventh .twenty-seven {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-seventh .twenty-seven img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-seventh .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-seventh .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-eighth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-eighth .twenty-eight {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-eighth .twenty-eight img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-eighth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-eighth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-ninth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-ninth .twenty-nine {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-ninth .twenty-nine img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-ninth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twenty-ninth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .thirtieth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .thirtieth .thirty {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .thirtieth .thirty img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .thirtieth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .thirtieth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .thirty-first {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .thirty-first .thirty-one {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .thirty-first .thirty-one img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .thirty-first .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .thirty-first .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .slogan {
+  padding: 45px 70px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .slogan .content {
+  font-size: 32px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 15%;
+  line-height: 30px;
+  border-bottom: 5px solid #FECACA;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs {
+  padding: 0 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .first {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .first .one {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .first .one img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .first .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .first .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .second {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .second .two {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .second .two img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .second .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .second .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .third {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .third .three {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .third .three img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .third .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .third .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fourth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fourth .four {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fourth .four img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fourth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fourth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fifth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fifth .five {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fifth .five img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fifth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .fifth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .sixth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .sixth .six {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .sixth .six img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .sixth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .sixth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .seventh {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .seventh .seven {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .seventh .seven img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .seventh .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .seventh .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .eighth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .eighth .eight {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .eighth .eight img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .eighth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .eighth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .ninth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .ninth .nine {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .ninth .nine img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .ninth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .ninth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .tenth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .tenth .ten {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .tenth .ten img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .tenth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .tenth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .eleventh {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .eleventh .eleven {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .eleventh .eleven img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .eleventh .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .eleventh .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twelfth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twelfth .twelve {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twelfth .twelve img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twelfth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .twelfth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .thirteenth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .thirteenth .thirteen {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .thirteenth .thirteen img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .thirteenth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .thirteenth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .slogan {
+  padding: 45px 70px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .slogan .content {
+  font-size: 32px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 15%;
+  line-height: 30px;
+  border-bottom: 5px solid #FECACA;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs {
+  padding: 0 40px 20px 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .first {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .first .one {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .first .one img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .first .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .first .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .second {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .second .two {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .second .two img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .second .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .sushi #sushi-content .imgs .second .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll .title {
+  padding-left: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+body .containerAll .menu-all .roll .title .img {
+  display: inline-block;
+  margin-bottom: -10px;
+}
+
+body .containerAll .menu-all .roll .title .img img {
+  width: 70%;
+  display: inline;
+  float: right;
+}
+
+body .containerAll .menu-all .roll .title .slogan {
+  display: inline-block;
+  font-size: 32px;
+  font-family: "DFKai-sb", serif;
+  padding-right: 20px;
+}
+
+body .containerAll .menu-all .roll #roll-content {
+  background-color: white;
+  width: 100%;
+}
+
+body .containerAll .menu-all .roll #roll-content .slogan {
+  padding: 45px 70px;
+}
+
+body .containerAll .menu-all .roll #roll-content .slogan .content {
+  font-size: 32px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 6%;
+  line-height: 30px;
+  border-bottom: 5px solid #FECACA;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs {
+  padding: 0 40px;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .first {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .first .one {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .first .one img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .first .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .first .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .second {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .second .two {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .second .two img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .second .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .second .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .third {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .third .three {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .third .three img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .third .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .third .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .fourth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .fourth .four {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .fourth .four img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .fourth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .fourth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .fifth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .fifth .five {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .fifth .five img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .fifth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .fifth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .sixth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .sixth .six {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .sixth .six img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .sixth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .sixth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .seventh {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .seventh .seven {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .seventh .seven img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .seventh .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .seventh .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .eighth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .eighth .eight {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .eighth .eight img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .eighth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .eighth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .ninth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .ninth .nine {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .ninth .nine img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .ninth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .ninth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .slogan {
+  padding: 45px 70px;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .slogan .content {
+  font-size: 32px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 6%;
+  line-height: 30px;
+  border-bottom: 5px solid #FECACA;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .imgs {
+  padding: 0 40px 20px 40px;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .imgs .first {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .imgs .first .one {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .imgs .first .one img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .imgs .first .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .imgs .first .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .imgs .second {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .imgs .second .two {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .imgs .second .two img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .imgs .second .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .imgs .second .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .imgs .third {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .imgs .third .three {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .imgs .third .three img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .imgs .third .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .imgs .third .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .imgs .fourth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .imgs .fourth .four {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .imgs .fourth .four img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .imgs .fourth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .imgs .fourth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .imgs .fifth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .imgs .fifth .five {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .imgs .fifth .five img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .imgs .fifth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .roll #roll-content .imgs .imgs .fifth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .noodle .title {
+  padding-left: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+body .containerAll .menu-all .noodle .title .img {
+  display: inline-block;
+  margin-bottom: -10px;
+}
+
+body .containerAll .menu-all .noodle .title .img img {
+  width: 70%;
+  display: inline;
+  float: right;
+}
+
+body .containerAll .menu-all .noodle .title .slogan {
+  display: inline-block;
+  font-size: 32px;
+  font-family: "DFKai-sb", serif;
+  padding-right: 20px;
+}
+
+body .containerAll .menu-all .noodle #noodle-content {
+  background-color: white;
+  width: 100%;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .slogan {
+  padding: 45px 70px;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .slogan .content {
+  font-size: 32px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 6%;
+  line-height: 30px;
+  border-bottom: 5px solid #FECACA;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs {
+  padding: 0 40px;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .first {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .first .one {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .first .one img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .first .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .first .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .second {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .second .two {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .second .two img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .second .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .second .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .third {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .third .three {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .third .three img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .third .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .third .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .fourth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .fourth .four {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .fourth .four img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .fourth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .fourth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .slogan {
+  padding: 45px 70px;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .slogan .content {
+  font-size: 32px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 6%;
+  line-height: 30px;
+  border-bottom: 5px solid #FECACA;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .imgs {
+  padding: 0 40px 20px 40px;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .imgs .first {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .imgs .first .one {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .imgs .first .one img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .imgs .first .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .imgs .first .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .imgs .second {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .imgs .second .two {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .imgs .second .two img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .imgs .second .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .noodle #noodle-content .imgs .imgs .second .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .side .title {
+  padding-left: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+body .containerAll .menu-all .side .title .img {
+  display: inline-block;
+  margin-bottom: -10px;
+}
+
+body .containerAll .menu-all .side .title .img img {
+  width: 70%;
+  display: inline;
+  float: right;
+}
+
+body .containerAll .menu-all .side .title .slogan {
+  display: inline-block;
+  font-size: 32px;
+  font-family: "DFKai-sb", serif;
+  padding-right: 20px;
+}
+
+body .containerAll .menu-all .side #side-content {
+  background-color: white;
+  width: 100%;
+}
+
+body .containerAll .menu-all .side #side-content .slogan {
+  padding: 45px 70px;
+}
+
+body .containerAll .menu-all .side #side-content .slogan .content {
+  font-size: 32px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 6%;
+  line-height: 30px;
+  border-bottom: 5px solid #FECACA;
+}
+
+body .containerAll .menu-all .side #side-content .imgs {
+  padding: 0 40px;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .first {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .first .one {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .first .one img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .first .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .first .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .second {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .second .two {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .second .two img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .second .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .second .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .third {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .third .three {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .third .three img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .third .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .third .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .fourth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .fourth .four {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .fourth .four img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .fourth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .fourth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .fifth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .fifth .five {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .fifth .five img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .fifth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .fifth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .sixth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .sixth .six {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .sixth .six img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .sixth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .sixth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .slogan {
+  padding: 45px 70px;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .slogan .content {
+  font-size: 32px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 6%;
+  line-height: 30px;
+  border-bottom: 5px solid #FECACA;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .imgs {
+  padding: 0 40px 20px 40px;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .imgs .first {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .imgs .first .one {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .imgs .first .one img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .imgs .first .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .imgs .first .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .imgs .second {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .imgs .second .two {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .imgs .second .two img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .imgs .second .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .imgs .second .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .imgs .third {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .imgs .third .three {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .imgs .third .three img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .imgs .third .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .imgs .third .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .imgs .fourth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .imgs .fourth .four {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .imgs .fourth .four img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .imgs .fourth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .side #side-content .imgs .imgs .fourth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .drink .title {
+  padding-left: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+body .containerAll .menu-all .drink .title .img {
+  display: inline-block;
+  margin-bottom: -10px;
+}
+
+body .containerAll .menu-all .drink .title .img img {
+  width: 70%;
+  display: inline;
+  float: right;
+}
+
+body .containerAll .menu-all .drink .title .slogan {
+  display: inline-block;
+  font-size: 32px;
+  font-family: "DFKai-sb", serif;
+  padding-right: 20px;
+}
+
+body .containerAll .menu-all .drink #drink-content {
+  background-color: white;
+  width: 100%;
+}
+
+body .containerAll .menu-all .drink #drink-content .slogan {
+  padding: 45px 70px;
+}
+
+body .containerAll .menu-all .drink #drink-content .slogan .content {
+  font-size: 32px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 6%;
+  line-height: 30px;
+  border-bottom: 5px solid #FECACA;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs {
+  padding: 0 40px;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .first {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .first .one {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .first .one img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .first .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .first .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .second {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .second .two {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .second .two img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .second .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .second .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .third {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .third .three {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .third .three img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .third .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .third .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .fourth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .fourth .four {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .fourth .four img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .fourth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .fourth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .fifth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .fifth .five {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .fifth .five img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .fifth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .fifth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .sixth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .sixth .six {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .sixth .six img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .sixth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .sixth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .seventh {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .seventh .seven {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .seventh .seven img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .seventh .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .seventh .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .slogan {
+  padding: 45px 70px;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .slogan .content {
+  font-size: 32px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 6%;
+  line-height: 30px;
+  border-bottom: 5px solid #FECACA;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .imgs {
+  padding: 0 40px 20px 40px;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .imgs .first {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .imgs .first .one {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .imgs .first .one img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .imgs .first .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .imgs .first .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .imgs .second {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .imgs .second .two {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .imgs .second .two img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .imgs .second .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .imgs .second .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .imgs .third {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .imgs .third .three {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .imgs .third .three img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .imgs .third .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .imgs .third .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .imgs .fourth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .imgs .fourth .four {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .imgs .fourth .four img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .imgs .fourth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .imgs .fourth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .imgs .fifth {
+  display: inline-block;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .imgs .fifth .five {
+  background-color: #D6E0EA;
+  width: 78%;
+  height: 16vw;
+  border-radius: 80%;
+  display: block;
+  margin: auto;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .imgs .fifth .five img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .imgs .fifth .name {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .menu-all .drink #drink-content .imgs .imgs .fifth .price {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+body .containerAll .scroll-top {
+  cursor: pointer;
+  width: 105px;
+  height: 40px;
+  background: rgba(228, 211, 211, 0.36);
+  color: #FFA1A1;
+  font-size: 25px;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 42px;
+  /* 永遠固定在頁面上 */
+  position: fixed;
+  right: 55px;
+  bottom: 34px;
+}
+
+body .modal .modal-dialog .modal-content {
+  background-color: #DCB8A8;
+}
+
+body .modal .modal-dialog .modal-content .modal-header h3 {
+  font-size: 30px;
+  color: black;
+  position: absolute;
+  /* 置中 */
+  top: 7%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body .modal .modal-dialog .modal-content .modal-body form .account {
+  margin: 30px;
+  width: 90%;
+  border-radius: 20px;
+}
+
+body .modal .modal-dialog .modal-content .modal-body form .password {
+  margin: 30px;
+  width: 90%;
+  border-radius: 20px;
+}
+
+body .modal .modal-dialog .modal-content .modal-body form .remember {
+  margin-bottom: 20px;
+}
+
+body .modal .modal-dialog .modal-content .modal-body form .btn {
+  width: 100%;
+  font-size: 25px;
+  color: white;
+}
+
+.clearfix {
+  clear: both;
+}
+/*# sourceMappingURL=menu.css.map */

@@ -1,0 +1,45 @@
+#loginModal {
+  .modal-dialog {
+    .modal-content {
+      background-color: #DCB8A8;
+
+      .modal-header {
+        h3 {
+          font-size: 30px;
+          color: black;
+          position: absolute;
+          /* 置中 */
+          top: 7%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .modal-body {
+        form {
+          .account {
+            margin: 30px;
+            width: 90%;
+            border-radius: 20px;
+          }
+
+          .password {
+            margin: 30px;
+            width: 90%;
+            border-radius: 20px;
+          }
+
+          .remember {
+            margin-bottom: 20px;
+          }
+
+          .btn {
+            width: 100%;
+            font-size: 25px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
