@@ -34,14 +34,14 @@ import org.thymeleaf.templateresolver.ITemplateResolver;
 
 import ecpay.payment.integration.AllInOne;
 import ecpay.payment.integration.domain.AioCheckOutALL;
-import tw.timhsu.model.CartItem;
-import tw.timhsu.model.Orders;
-import tw.timhsu.model.Users;
-import tw.timhsu.service.CartItemService;
-import tw.timhsu.service.CatgeoryService;
-import tw.timhsu.service.OrdersService;
-import tw.timhsu.service.ProductService;
-import tw.timhsu.service.UsersService;
+import tw.timhsu.cartitem.CartItem;
+import tw.timhsu.cartitem.CartItemService;
+import tw.timhsu.orders.Orders;
+import tw.timhsu.orders.OrdersService;
+import tw.timhsu.products.CategoryService;
+import tw.timhsu.products.ProductsService;
+import tw.timhsu.users.Users;
+import tw.timhsu.users.UsersService;
 
 @Controller
 @RequestMapping("/ecpay")
@@ -58,9 +58,9 @@ public class CheckOutlController {
 	private CartItemService cartItemService;
 
 	@Autowired
-	private ProductService productService;
+	private ProductsService productService;
 	@Autowired
-	private CatgeoryService catgeoryService;
+	private CategoryService catgeoryService;
 	@Autowired
 	private JavaMailSenderImpl mailsender;
 	@Autowired
@@ -94,33 +94,31 @@ public class CheckOutlController {
 			throws MessagingException, IOException {
 		Hashtable<String, String> dict = new Hashtable<String, String>();
 		Enumeration<String> enumeration = request.getParameterNames();
-		
-		
+
 		while (enumeration.hasMoreElements()) {
 			String paramName = enumeration.nextElement();
 			String paramValue = request.getParameter(paramName);
 			dict.put(paramName, paramValue);
-		}	
-		
-		
+		}
+
 		AllInOne all = new AllInOne("");
 		boolean checkStatus = all.compareCheckMacValue(dict);
 
 		if ("1".equals(dict.get("RtnCode")) && checkStatus == true) {
-			//付款成工處理
+			// 付款成工處理
 			Users users = usersService.findByusername(principal.getName());
 			List<CartItem> cartItems = cartItemService.listCartItems(users);
-			
+
 			Integer sum = findSum(users);
-			
+
 			Orders orders = ordersService.createOrders(users, cartItems, sum);
 			cartItemService.deleteByUsers(users);
-			
+
 			sendOrderEmail(orders, cartItems, sum);
-			model.addAttribute("total",sum);
+			model.addAttribute("total", sum);
 			return "redirect:paymentSuccess";
 		} else {
-			//付款失敗處理
+			// 付款失敗處理
 			System.out.println(dict.toString());
 			return "<h1>hiiiii</h1>";
 		}
@@ -136,6 +134,7 @@ public class CheckOutlController {
 		}
 		return sum;
 	}
+
 //send email
 	public void sendOrderEmail(Orders orders, List<CartItem> cartItem, Integer total)
 			throws MessagingException, IOException {
@@ -143,13 +142,13 @@ public class CheckOutlController {
 		MimeMessage message = mailsender.createMimeMessage();
 		MimeMessageHelper helper = new MimeMessageHelper(message, true);
 		Context ctx = new Context();
-		
+
 		ctx.setVariable("name", orders.getUsers().getUsername());
 		ctx.setVariable("status", orders.getStatus());
 		ctx.setVariable("cartItem", cartItem);
 		ctx.setVariable("orderdate", orders.getOrderdate());
 		ctx.setVariable("total", total);
-		
+
 		String html = templateEngine.process("email.html", ctx);
 		helper.setText(html, true);
 		helper.setSubject("你的訂單已成功訂購");
