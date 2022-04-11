@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-tw" xmlns="http://www.w3.org/1999/xhtml"  xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <title>後台首頁</title>
+    <!-- 響應式網站 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- AWESOME連結 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- AOS連結 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Boostrap 導入程式 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery連結 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <link rel="stylesheet" href="stylesheets/homepageIndex.css" type="text/css" media="screen" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="table">
+                <div class="title">後台系統</div>
+                <div class="category">
+                    <div class="employee">員工管理</div>
+                    <div class="product">產品管理</div>
+                    <div class="order">訂單紀錄</div>
+                </div>
+                <div class="logout">
+                    <button type="button" class="btn btn-info">登出</button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="card month">
+                    <div class="card-body">
+                        <h5 class="card-title">總收入(年度)</h5>
+                        <div class="card-text" th:text="${alltotalprice}+'元'">$</div>
+                    </div>
+                </div>
+                <div class="card year">
+                    <div class="card-body">
+                        <h5 class="card-title">收益(當前月份)</h5>
+                        <div class="card-text" th:text="${totalprice}+'元'">$</div>
+                    </div>
+                </div>
+                <div class="card year">
+                    <div class="card-body">
+                        <h5 class="card-title">已付款未處理的訂單</h5>
+                        <div class="card-text" th:text="${yet}+'筆'">yet</div>
+                    </div>
+                </div>
+                <div class="card feedback">
+                    <div class="card-body">
+                        <h5 class="card-title">正在處理中的訂單</h5>
+                        <div class="card-text" th:text="${ing}+'筆'">ing</div>
+                    </div>
+                </div>
+                <canvas id="barchartData" style="width:100%;max-width:700px"></canvas>
+                <canvas id="piechartData" style="width:100%;max-width:700px"></canvas>
+            </div>
+        </div>
+    </div>
+<script th:inline="javascript">
+		var sum = [[${sum}]]
+		var hight = [[${hight}]]
+</script>
+
+<script>
+$(document).ready(function(){
+	console.log(hight)
+	
+    var count_x= sum.map(x => x[0])
+    var count_y= sum.map(x => x[1])
+    var barColors = ["#d7d1ff","#80d7ff","#d7ffff","#d7ffcb","#ffffae","#ffc78a","#ffa9a7"];
+    console.log(count_x);
+    console.log(count_y);
+
+    var barchartData= new Chart("barchartData",{
+    		type: "bar",
+    		data:{
+    			labels: count_x, 
+	       datasets:[
+   	       { backgroundColor: barColors,
+       	     data:count_y
+        		}]
+	       
+       	       },
+       	    options: {
+       	     legend: {display: false},
+       	     title: {
+       	       display: true,
+       	       text: "週銷售報表",
+       	    	fontSize:20
+       	     },
+       	  scales: {
+       	  xAxes:[{
+       		ticks: {
+       		reverse: true,
+       		}
+    			  }]
+       	  		 }
+         	 }
+});
+    var count_x1= hight.map(x => x[1])
+	    var count_y1= hight.map(x => x[2])
+	    var barColors = ["#d7d1ff","#80d7ff","#d7ffff","#d7ffcb","#ffffae","#ffc78a","#ffa9a7"];
+	    console.log(count_x1);
+	    console.log(count_y1);
+
+	    var piechartData= new Chart("piechartData",{
+	    		type: "pie",
+	    		data:{
+	    			labels: count_x1, 
+		       datasets:[
+	   	       { backgroundColor: barColors,
+	       	     data:count_y1
+	        		}]
+		       
+	       	       },
+	       	    options: {
+	       	     title: {
+	       	       display: true,
+	       	       text: "人氣產品排行前5名",
+	       	    	fontSize:20
+	       	     }
+	         	 }
+	    });
+    
+
+});
+
+</script>
+<!-- 	<p th:text="${totalprice}">totalprice</p> -->
+<!-- 	<p th:text="${alltotalprice}">totalprice</p> -->
+<!-- 	<p th:text="${yet}">yet</p> -->
+<!-- 	<p th:text="${ing}">ing</p> -->
+</body>
+
+
+</html>
