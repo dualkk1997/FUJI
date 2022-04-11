@@ -88,7 +88,7 @@ public class AccountController {
         String encode = new BCryptPasswordEncoder().encode(user.getPassword());
         user.setPassword(encode);
         userService.createUser(user);
-        return "yes";
+        return "home";
         }
     
     

@@ -15,12 +15,12 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 public class UsersService {
 	
-	 private final UsersRepository userRepository;
-	  // private final ModelMapper modelMapper;
+//	 private final UsersRepository userRepository;
+//	  // private final ModelMapper modelMapper;
 
 	    @Autowired
 	    public UsersService(UsersRepository userRepository) {
-	        this.userRepository = userRepository;
+	        this.uRep = userRepository;
 	     //   this.modelMapper = modelMapper;
 	    }
 	@Autowired
@@ -57,9 +57,9 @@ public class UsersService {
 	public Users findByusername(String name) {
 		return uRep.findByusername(name);
 	}
-	 public Optional<Users> findByUsername(String username){return userRepository.findByUsername(username);}
-	    public Users findUserByUsername(String username){return userRepository.findUserByUsername(username);}
-	    public Users findByEmail(String email){return userRepository.findByEmail(email);}
+	 public Optional<Users> findByUsername(String username){return uRep.findByUsername(username);}
+	    public Users findUserByUsername(String username){return uRep.findUserByUsername(username);}
+	    public Users findByEmail(String email){return uRep.findByEmail(email);}
 	    
 	    public boolean userExists(String username){
 	        return findByUsername(username).isPresent();
@@ -67,7 +67,7 @@ public class UsersService {
 
 	    public Users createUser(Users user){
 	        user.setRole("USER");
-	        return userRepository.save(user);
+	        return uRep.save(user);
 	    }
 
 
@@ -79,7 +79,7 @@ public class UsersService {
 			user.setUsername("GOOGLE");
 			user.setPhone("0987654321");
 			user.setRole("USER");
-			userRepository.save(user);
+			uRep.save(user);
 		}
 
 
@@ -88,6 +88,6 @@ public class UsersService {
 		public void updateCustomerAfterOAuthLoginSuccess(Users user, String name) {
 			user.setName(name);
 			
-			userRepository.save(user);
+			uRep.save(user);
 		}
 }
