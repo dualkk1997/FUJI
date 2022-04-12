@@ -33,9 +33,9 @@
 <link rel="stylesheet" href="../stylesheets/contactUs.css"
 	type="text/css" media="screen" />
 <style type="text/css">
-a{
-color:black;
-text-decoration: none;
+a {
+	color: black;
+	text-decoration: none;
 }
 </style>
 <!-- 往上置頂TOP -->
@@ -88,16 +88,22 @@ text-decoration: none;
 			</div>
 			<div class="item">
 				<div class="nav">
-					<div class="aboutUs"><a href="/home/aboutus">關於我們</a></div>
+					<div class="aboutUs">
+						<a href="/home/aboutus">關於我們</a>
+					</div>
 				</div>
 				<div class="nav">
-					<div class="Menu"><a href="/profile/shopping">水產日料</a></div>
+					<div class="Menu">
+						<a href="/profile/shopping">水產日料</a>
+					</div>
 				</div>
 				<div class="nav">
 					<div class="Member">會員專區</div>
 				</div>
 				<div class="nav">
-					<div class="Contact"><a href="/home/contactus">聯絡我們</a></div>
+					<div class="Contact">
+						<a href="/home/contactus">聯絡我們</a>
+					</div>
 				</div>
 				<div class="nav">
 					<div class="shoppingCart"></div>
@@ -123,49 +129,51 @@ text-decoration: none;
 		<div class="all">
 			<div class="body">
 				<div class="container">
-					<h2>Contact Us</h2>
-					<div class="row100">
-						<div class="col">
-							<div class="inputBox">
-								<input type="text" name="" required="required"> <span
-									class="text">Full Name</span> <span class="line"></span>
+					<form action="/api/sendmessage" method="post">
+						<h2>Contact Us</h2>
+						<div class="row100">
+							<div class="col">
+								<div class="inputBox">
+									<input type="text" name="fullname" required="required">
+									<span class="text">Full Name</span> <span class="line"></span>
+								</div>
 							</div>
-						</div>
-						<!-- <div class="col">
+							<!-- <div class="col">
                             <div class="inputBox">
                                 <input type="text" name="" required="required">
                                 <span class="text">Last Name</span>
                                 <span class="line"></span>
                             </div>
                         </div> -->
-					</div>
-					<div class="row100">
-						<div class="col">
-							<div class="inputBox">
-								<input type="text" name="" required="required"> <span
-									class="text">E-mail</span> <span class="line"></span>
+						</div>
+						<div class="row100">
+							<div class="col">
+								<div class="inputBox">
+									<input type="text" name="email" required="required"> <span
+										class="text">E-mail</span> <span class="line"></span>
+								</div>
+							</div>
+							<div class="col">
+								<div class="inputBox">
+									<input type="text" name="phone" required="required"> <span
+										class="text">Phone</span> <span class="line"></span>
+								</div>
 							</div>
 						</div>
-						<div class="col">
-							<div class="inputBox">
-								<input type="text" name="" required="required"> <span
-									class="text">Phone</span> <span class="line"></span>
+						<div class="row100">
+							<div class="col">
+								<div class="inputBox textarea">
+									<textarea name="message" required="required"></textarea>
+									<span class="text">Message</span> <span class="line"></span>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="row100">
-						<div class="col">
-							<div class="inputBox textarea">
-								<textarea required="required"></textarea>
-								<span class="text">Message</span> <span class="line"></span>
+						<div class="row100">
+							<div class="col">
+								<input type="submit" value="Send">
 							</div>
 						</div>
-					</div>
-					<div class="row100">
-						<div class="col">
-							<input type="submit" value="Send">
-						</div>
-					</div>
+					</form>
 				</div>
 			</div>
 		</div>
