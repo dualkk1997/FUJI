@@ -30,53 +30,43 @@
 <!-- jQuery連結 -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-<link rel="stylesheet" href="stylesheets/home.css" type="text/css"
-	media="screen" />
+<link rel="stylesheet" href="../stylesheets/contactUs.css"
+	type="text/css" media="screen" />
 
 <!-- 往上置頂TOP -->
 <script>
-	$(document).ready(function() {
-		$(".scroll-top").on('click', function() {
-			$('html,body').scrollTop(0);
-		});
-		$(window).on('scroll', function() {
-			console.log($(this).scrollTop());
-			if ($(this).scrollTop() > 200) {
-				$('.scroll-top').fadeIn("fast");
-			} else {
-				$('.scroll-top').stop().fadeOut("fast");
-			}
-		});
-	});
-</script>
+        $(document).ready(function () {
+            $(".scroll-top").on('click', function () {
+                $('html,body').scrollTop(0);
+            });
+            $(window).on('scroll', function () {
+                console.log($(this).scrollTop());
+                if ($(this).scrollTop() > 200) {
+                    $('.scroll-top').fadeIn("fast");
+                } else {
+                    $('.scroll-top').stop().fadeOut("fast");
+                }
+            });
+        });
+    </script>
 
 <!-- set focus on input field or textarea inside a Bootstrap modal on activation -->
 <!-- 會員登入 -->
 <script>
-	$(document).ready(function() {
-		$("#loginModal").on('shown.bs.modal', function() {
-			$(this).find('input[type="username"]').focus();
-		});
-	});
-</script>
+        $(document).ready(function () {
+            $("#loginModal").on('shown.bs.modal', function () {
+                $(this).find('input[type="text-account"]').focus();
+            });
+        });
+    </script>
 <!-- 註冊會員 -->
 <script>
-	$(document).ready(function() {
-		$("#registerMember").on('shown.bs.modal', function() {
-			$(this).find('input[type="password"]').focus();
-		});
-	});
-	
-/* 	document.getElementById('logoutbutton').addEventListener('click', function() {
-		  if (confirm('登出?')) {
-		    console.log('確定');
-		    
-		  } else {
-		    console.log('取消');
-		  }
-		}) */
-	
-</script>
+        $(document).ready(function () {
+            $("#registerMember").on('shown.bs.modal', function () {
+                $(this).find('input[type="text-name"]').focus();
+            });
+        });
+    </script>
 
 </head>
 
@@ -84,7 +74,7 @@
 	<div class="containerAll">
 		<div class="header">
 			<div class="logo">
-				<img src="images/logo.png">
+				<img src="../images/logo.png">
 				<div class="logoWord">
 					<div class="logoWordChinese">日本料理 | 壽司</div>
 					<br />
@@ -113,72 +103,69 @@
 						</a>
 					</div>
 				</div>
-				<div class="login" onclick="showLoginModal()" sec:authorize="isAnonymous()">
+				<div class="login" onclick="showLoginModal()"
+					sec:authorize="isAnonymous()">
 					<i class="fas fa-sign-in-alt"></i>
 				</div>
-				<div onclick="javascript:window.location.href='http://localhost:8081/logout'" sec:authorize="isAuthenticated()" class="logout">
-					<i class="fas fa-sign-out-alt" ></i>
+				<div
+					onclick="javascript:window.location.href='http://localhost:8081/logout'"
+					sec:authorize="isAuthenticated()" class="logout">
+					<i class="fas fa-sign-out-alt"></i>
+				</div>
+			</div>
+		</div>
+
+		<div class="all">
+			<div class="body">
+				<div class="container">
+					<h2>Contact Us</h2>
+					<div class="row100">
+						<div class="col">
+							<div class="inputBox">
+								<input type="text" name="" required="required"> <span
+									class="text">Full Name</span> <span class="line"></span>
+							</div>
+						</div>
+						<!-- <div class="col">
+                            <div class="inputBox">
+                                <input type="text" name="" required="required">
+                                <span class="text">Last Name</span>
+                                <span class="line"></span>
+                            </div>
+                        </div> -->
 					</div>
-			
-
-
-			</div>
-		</div>
-		<div class="homePic">
-			<div class="homePicNumber">
-				<img src="images/home_pic1.jpg"> <img
-					src="images/home_pic2.jpg"> <img src="images/home_pic3.jpg">
-				<img src="images/home_pic4.jpg"> <img
-					src="images/home_pic5.jpg">
-			</div>
-
-		</div>
-		<div class="homePicNews">
-			<div>最 新 消 息</div>
-			<div class="homePicLine"></div>
-			<div class="homePicSlogan">
-				<div>雪見冬味，見雪知冬寒，尋找從心發出的一股暖流，來藝奇溫暖你的胃，冬旬菜單正式上市</div>
-			</div>
-		</div>
-		<div class="mainFirst">
-			<div class="mainFirstAboutUs">
-				<div class="mainFirstAboutUsChinese" data-aos="zoom-in-right">關
-					於 我 們</div>
-				<div class="mainFirstAboutUsJapanese" data-aos="zoom-in-right">ブランドストーリー</div>
-				<div class="mainFirstAboutUsLine" data-aos="zoom-in-right"></div>
-			</div>
-			<div class="mainFirstContent">
-				<div class="mainFirstContentTitle" data-aos="zoom-in-left">
-					<div>極炙鮮美 岩燒日料</div>
-				</div>
-				<div class="mainFirstContentDetail" data-aos="zoom-in-left">
-					<div>
-						取自日本男鹿半島傳統炎燒料理方式<br>天然岩板直火加熱至300度<br>接觸瞬間完美保存食材原汁原味<br>征服您的味蕾
+					<div class="row100">
+						<div class="col">
+							<div class="inputBox">
+								<input type="text" name="" required="required"> <span
+									class="text">E-mail</span> <span class="line"></span>
+							</div>
+						</div>
+						<div class="col">
+							<div class="inputBox">
+								<input type="text" name="" required="required"> <span
+									class="text">Phone</span> <span class="line"></span>
+							</div>
+						</div>
+					</div>
+					<div class="row100">
+						<div class="col">
+							<div class="inputBox textarea">
+								<textarea required="required"></textarea>
+								<span class="text">Message</span> <span class="line"></span>
+							</div>
+						</div>
+					</div>
+					<div class="row100">
+						<div class="col">
+							<input type="submit" value="Send">
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="mainFirstPic" data-aos="zoom-in-left">
-				<img src="images/main1-1Pic.jpg">
-			</div>
 		</div>
-		<div class="mainSecond">
-			<img src="images/main2Pic.jpg" data-aos="zoom-out">
-		</div>
-		<div class="mainThird">
-			<div class="img">
-				<img src="images/main3Pic.jpg">
-			</div>
-			<div class="content">
-				<div class="titleChinese">線 上 訂 位</div>
-				<div class="titleLine"></div>
-				<div class="titleJapanese">オンライン予約</div>
-				<div class="detail" data-aos="zoom-in-left">
-					汲取，日本專注細節。<br />講究，當旬新鮮食材。<br />添加，職人手藝創意。<br />以靈感、巧思加持
-					激盪東京時尚料理新風貌
-				</div>
-			</div>
-			<div class="clearfix"></div>
-		</div>
+
+
 		<div class="footer">
 			<div class="footerItem">
 				<div class="nav">關於我們</div>
@@ -196,7 +183,7 @@
 				<div class="footerRight">All Rights Reserved.</div>
 			</div>
 			<div class="footerMountain">
-				<img src="images/footerMountain3.png">
+				<img src="../images/footerMountain3.png">
 			</div>
 		</div>
 		<div class="scroll-top">
@@ -206,43 +193,25 @@
 
 	<!-- 圖片自動產生動畫 -->
 	<script>
-		AOS.init({
-			duration : 3000,
-		});
-		function showLoginModal() {
-			var myModal = new bootstrap.Modal(document
-					.getElementById('loginModal'))
-			myModal.show()
-		}
-		//
-		function showRegisterModal() {
-			var myModal2 = new bootstrap.Modal(document
-					.getElementById('registerMember'))
-			myModal2.show()
-		}
-		$(document).ready(function() {
-			if (location.pathname + location.search === '/login?error') {
-				showLoginModal();
-			}
-		})
-		//
-		$(document).ready(function() {
-			if (location.pathname  === '/register') {
-				showRegisterModal();
-			}
-		})
-	</script>
+        // AOS.init({
+        //     duration: 3000,
+        // });
+        function showLoginModal() {
+            var myModal = new bootstrap.Modal(document.getElementById('loginModal'))
+            myModal.show()
+        }
+
+    </script>
+
 
 	<!-- 會員登入 -->
-
-	<div class="modal fade" id="loginModal" >
+	<div class="modal fade" id="loginModal">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<!-- Header -->
 				<div class="modal-header">
 					<h3>會員登入</h3>
-					<button type="button" class="btn-close" data-bs-dismiss="modal"
-						></button>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 				</div>
 
 				<!-- Body -->
@@ -250,7 +219,8 @@
 					<!-- 登入表單 -->
 					<form method="post" th:action="@{/login}">
 						<!-- user name -->
-						<div th:if="${param.error}" class="alert alert-warning" role="alert">無效的帳號或是密碼</div>
+						<div th:if="${param.error}" class="alert alert-warning"
+							role="alert">無效的帳號或是密碼</div>
 
 						<div class="mb-3">
 							<label for="formGroupExampleInput" class="form-label">帳號</label>
@@ -267,16 +237,21 @@
 
 						<!-- checkbox -->
 						<div class="form-group-checkbox">
-							<input type="checkbox" class="remember" name="remember-me" value="true">記住我的密碼
+							<input type="checkbox" class="remember" name="remember-me"
+								value="true">記住我的密碼
 						</div>
-						
-						<div >
-						<!-- 送出按鈕 -->
-						<button type="submit" class="btn btn-secondary">登入</button>
-						<!-- <button type="button" ><img src="images/googlelogo.png"></button> -->
+
+						<div>
+							<!-- 送出按鈕 -->
+							<button type="submit" class="btn btn-secondary">登入</button>
+							<!-- <button type="button" ><img src="images/googlelogo.png"></button> -->
 						</div>
-						<div style="margin:5px 10px 15px 20px"></div>
-						<div><a th:href="@{/oauth2/authorization/google}"><img src="images/googlelogo.png"  width="200" height="50" style="display:block; margin:auto; border-radius:10px;"></a></div>
+						<div style="margin: 5px 10px 15px 20px"></div>
+						<div>
+							<a th:href="@{/oauth2/authorization/google}"><img
+								src="../images/googlelogo.png" width="200" height="50"
+								style="display: block; margin: auto; border-radius: 10px;"></a>
+						</div>
 						<!-- <h5>
 							<a th:href="@{/oauth2/authorization/google}">Google登入</a>
 						</h5> -->
@@ -297,7 +272,7 @@
 	</div>
 
 	<!-- 註冊會員 -->
-<div class="modal fade" id="registerMember" aria-hidden="true"
+	<div class="modal fade" id="registerMember" aria-hidden="true"
 		aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
@@ -310,55 +285,40 @@
 							aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
-					<form method="post" th:action="@{/register}" th:object="${user}">
+					<form>
 						<!-- user name -->
 						<div class="mb-3">
 							<label for="formGroupExampleInput" class="form-label">姓名</label>
 							<input type="text-name" class="form-control"
-								id="formGroupExampleInput" placeholder="請輸入姓名" name="name" th:value="*{name}">
-						<div th:if="${#fields.hasErrors('name')}"
-								th:errors="*{name}" class="alert alert-danger" role="alert" ></div>
+								id="formGroupExampleInput" placeholder="請輸入姓名">
 						</div>
-						
 
 						<!-- account -->
 						<div class="mb-3">
 							<label for="formGroupExampleInput2" class="form-label">帳號</label>
 							<input type="text-account" class="form-control"
-								id="formGroupExampleInput2" placeholder="請輸入帳號" name="username"
-								th:value="*{username}">
-							<div th:if="${#fields.hasErrors('username')}"
-								th:errors="*{username}" class="alert alert-danger" role="alert"></div>
-
+								id="formGroupExampleInput2" placeholder="請輸入帳號">
 						</div>
 
 						<!-- password -->
 						<div class="mb-3">
 							<label for="formGroupExampleInput3" class="form-label">密碼</label>
 							<input type="text-password" class="form-control"
-								id="formGroupExampleInput2" placeholder="請輸入密碼" name="password"
-								th:value="*{username}" autofocus>
-							<div th:if="${#fields.hasErrors('password')}"
-								th:errors="*{password}" class="alert alert-danger" role="alert"></div>
+								id="formGroupExampleInput2" placeholder="請輸入密碼" autofocus>
 						</div>
 
 						<!-- eMail -->
 						<div class="mb-3">
 							<label for="formGroupExampleInput4" class="form-label">電子郵件</label>
 							<input type="text-email" class="form-control"
-								id="formGroupExampleInput2" placeholder="請輸入郵件" name="email"
-								th:value="*{email}">
-							<div th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="alert alert-danger" role="alert"></div>
+								id="formGroupExampleInput2" placeholder="請輸入郵件">
 						</div>
 
 						<!--phone -->
 						<div class="mb-3">
 							<label for="formGroupExampleInput5" class="form-label">手機號碼</label>
 							<input type="text-phone" class="form-control"
-								id="formGroupExampleInput2" placeholder="請輸入手機號碼" name="phone"
-								th:value="*{phone}">
-							<div th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}" class="alert alert-danger" role="alert"></div>
-
+								id="formGroupExampleInput2" placeholder="請輸入手機號碼">
 						</div>
 
 						<!-- checkbox -->
@@ -367,7 +327,7 @@
                         </div> -->
 
 						<!-- 送出按鈕 -->
-						<button type="submit" class="btn btn-secondary">加入會員</button>
+						<button type="button" class="btn btn-secondary">加入會員</button>
 					</form>
 				</div>
 				<!-- <div class="modal-footer">
@@ -378,6 +338,5 @@
 		</div>
 	</div>
 </body>
-
 
 </html>
