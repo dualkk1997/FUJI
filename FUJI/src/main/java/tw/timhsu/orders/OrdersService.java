@@ -94,10 +94,14 @@ public class OrdersService {
 			return oRep.save(newOrders);
 		}
 		public Orders findOrders(Users users) {
-			return oRep.findByUsers(users);
+			return oRep.findByUsers2(users);
 		}
 		public Orders saveOrders(Orders orders) {
 			return oRep.save(orders);
+		}
+		
+		public List<Orders> listOrders(Users users){
+			return oRep.findByUsers(users);
 		}
 		
 }

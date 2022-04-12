@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Poppins:wght@600&display=swap');
 body {
   margin: 0;
   background-image: url("../images/homeBackground.jpg");
@@ -5,6 +6,12 @@ body {
 
 .menu-outline .img img {
   width: 100%;
+}
+
+.menu-outline .title{
+  font-size: 60px;
+  padding-left: 60px;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 .container > div {
@@ -28,6 +35,12 @@ body {
 .infomation-input {
   height: 80px;
   margin: 5px 0;
+  
+}
+.container{
+  .infomation{
+    background-color: #EBC2C0;
+  }
 }
 
 .calendar {
@@ -40,6 +53,22 @@ body {
       display: inline-block;
       width: calc(14% - 20px);
       margin: 0 10px ;
+    }
+  }
+}
+
+.calendar{
+  background-color: #EBC2C0	;
+  .day-block{
+    background-color: #EBE2E5;
+    .monthAndDay{
+      color: #60656C;
+    }
+    .haveSeat{
+      color: #478058;
+    }
+    .fullSeat{
+      color: red;
     }
   }
 }

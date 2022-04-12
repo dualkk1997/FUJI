@@ -9,6 +9,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 
+import tw.timhsu.cartitem.CartItem;
 import tw.timhsu.users.Users;
 
 
@@ -43,9 +44,9 @@ public interface OrdersRepository extends JpaRepository<Orders, Integer> {
 
 	@Modifying
 	@Query("FROM Orders c WHERE c.users.uid=?1 and Status='結帳中'")
-	public Orders findByUsers(Users users);
+	public Orders findByUsers2(Users users);
 	
-
+	public List<Orders> findByUsers(Users users);
 	
 	
 	

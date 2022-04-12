@@ -1,0 +1,463 @@
+$myFontContent: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+$myFontTitle: 'DFKai-sb', serif;
+$myFontTitleChange: 'Noto Sans TC', sans-serif;
+
+body {
+    margin: 0px;
+    background-image: url("../images/homeBackground.jpg");
+    .containerAll {
+        .header {
+            //max-width: 100%;
+            width: 100%;
+            height: 150px; 
+            //max-height: 140px; 
+            background-image: url("../images/homeBackground.jpg");
+            //position: sticky;
+            top:0px;
+            z-index: 1;
+            div {
+                display: inline-block;
+            }
+            .logo {
+                width: 50%; 
+                img {
+                    width: 20%;
+                    margin-top: 5px;
+                    margin-left: 10px;
+                    float: left;
+                }
+                .logoWord{
+                    font-size: 18px;
+                    font-family: $myFontContent;
+                    margin-top: 45px;
+                    float: left;
+                    text-align: center;
+                }
+            }
+            .item {
+                float: right;
+                width: 50%;
+                text-align: center;
+                .nav {
+                    width: 15%;
+                    .aboutUs , .Menu , .Member , .Contact , .shoppingCart {
+                        font-size: 18px;
+                        font-family: $myFontTitleChange;
+                        font-weight: 550;
+                        margin-top: 50px;
+                        //margin-left: 30px;
+                        color: black;
+                    }
+                    .shoppingCart{
+                        margin-right: -8px;
+                    }
+
+                    .container{
+                        width: 36%;
+                        padding-left: 0px;
+                        a {
+                            display: inline-block;
+                            text-decoration: none;
+
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
+                        .position {
+                            &-relative {
+                                position: relative;
+                            }
+                            &-absolute {
+                                position: absolute;
+                            }
+                             
+                        }
+                        .cartQuantity {
+                            position: absolute;
+                            width: 19px;
+                            height: 19px;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            right: -9px;
+                            top: -8px;
+                        } 
+                    }
+                }
+                .login{
+                    width: 7%;
+                    .fas{
+                        //margin-left: 25px;
+                        font-size: 25px;
+                        top: -1em;
+                        margin-top: 50px;
+                    }
+                }
+                .logout{
+                    width: 7%;
+                    .fas{
+                        //margin-left: 25px;
+                        font-size: 25px;
+                        margin-top: 3px;
+                    }                  
+                }
+            }
+        }
+        .menu-outline{
+            .img{
+                img{
+                    width: 100%;
+                }
+            }
+            .title{
+                font-size: 25px;
+                font-family: $myFontTitle;
+                padding-top: 2%;
+                padding-left: 5%;
+                padding-bottom: 2%;
+            }
+            .content{
+                padding: 45px 90px;
+                //float: left;
+                background-color: white;
+                width: 100%;
+                display: inline-block;
+                .menu-category{
+                    display: inline-block;
+                    margin-left: 30px;
+                    margin-right: 30px;
+                    .icon{
+                        padding-bottom: 4px;
+                        img{
+                            width: 60%;
+                            display:block; 
+                            margin:auto;
+                        }
+                    }
+                }
+                .first{
+                    display: inline-block;
+                    margin-left: 30px;
+                    margin-right: 30px;
+                    .limited{
+                        padding-bottom: 4px;
+                        img{
+                            width: 60%;
+                            display:block; 
+                            margin:auto;
+                        }
+                    }
+                }
+                .second{
+                    display: inline-block;
+                    margin-left: 30px;
+                    margin-right: 30px;
+                    .takeaway{
+                        padding-bottom: 4px;
+                        img{
+                            width: 60%;
+                            display:block; 
+                            margin:auto;
+                        }
+                    }
+                }
+                .third{
+                    display: inline-block;
+                    margin-left: 30px;
+                    margin-right: 30px;
+                    .sushi{
+                        padding-bottom: 4px;
+                        img{
+                            width: 60%;
+                            display:block; 
+                            margin:auto;
+                        }
+                    }
+                }
+                .fourth{
+                    display: inline-block;
+                    margin-left: 30px;
+                    margin-right: 30px;
+                    .roll{
+                        padding-bottom: 4px;
+                        img{
+                            width: 60%;
+                            display:block; 
+                            margin:auto;
+                        }
+                    }
+                }
+                .fifth{
+                    display: inline-block;
+                    margin-left: 30px;
+                    margin-right: 30px;
+                    .noodle{
+                        padding-bottom: 4px;
+                        img{
+                            width: 60%;
+                            display:block; 
+                            margin:auto;
+                        }
+                    }
+                }
+                .sixth{
+                    display: inline-block;
+                    margin-left: 30px;
+                    margin-right: 30px;
+                    .side{
+                        padding-bottom: 4px;
+                        img{
+                            width: 60%;
+                            display:block; 
+                            margin:auto;
+                        }
+                    }
+                }
+                .seventh{
+                    display: inline-block;
+                    margin-left: 30px;
+                    margin-right: 30px;
+                    .drink{
+                        padding-bottom: 4px;
+                        img{
+                            width: 60%;
+                            display:block; 
+                            margin:auto;
+                        }
+                    }
+                }
+
+            }
+        }
+        .menu-all{
+            // 期間限定
+            .category-food{
+                .title{
+                    padding-left: 80px;
+                    padding-top: 40px;
+                    padding-bottom: 40px;            
+                    .img{
+                        display: inline-block;
+                        margin-bottom: -10px;
+                        img{
+                            width: 70%;
+                            display: inline;
+                            float: right;
+                        }
+                    }
+                    .slogan{
+                        display: inline-block;
+                        font-size: 32px;
+                        font-family: $myFontTitle;
+                        padding-right: 20px;
+                    }
+                    .reminder{
+                        font-size: 18px;
+                        display: inline-block;
+                    }
+                }
+                .category-content{
+                    background-color: white;
+                    width: 100%;
+                    .slogan{
+                        padding: 45px 70px;
+                        .content{
+                            font-size: 32px;
+                            font-family: $myFontContent;
+                            width: 12%;
+                            line-height: 30px;
+                            border-bottom: 5px solid #FECACA;
+                        }
+                    }
+                    .foods{
+                        padding: 0 40px 20px 40px;
+                        .food{
+                            display: inline-block;
+                            width: calc(25% - 40px);
+                            margin-left: 10px;
+                            margin-right: 10px;
+                            margin-bottom: 40px;
+                            .img{
+                                background-color: #D6E0EA;
+                                //height: 16vw;
+                                transition: transform .2s;
+                                width: 90%;
+                                border-radius: 80%;
+                                display:block; 
+                                margin: 0 auto;
+                                margin-bottom: 20px;
+                                &:hover{
+                                    transform: scale(1.2);
+                                    //margin-bottom: 0px;
+                                }
+                                img{
+                                    display:block; 
+                                    margin:0 auto;
+                                    width: 100%;
+                                }
+                            }
+                            .name{
+                                font-size: 24px;
+                                font-family: $myFontContent;
+                                text-align: center;
+                            }
+                            .price{
+                                font-size: 24px;
+                                font-family: $myFontContent;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .scroll-top {
+            cursor: pointer;
+            width: 105px;
+            height: 40px;
+            background: rgba(228, 211, 211, 0.36);
+            //color: #FAFCFD;
+            color: #FFA1A1;
+            font-size: 25px;
+            border-radius: 50px;
+            text-align: center;
+            line-height: 42px;
+            /* 永遠固定在頁面上 */
+            position: fixed;
+            right: 55px;
+            bottom: 34px;
+        }
+    }
+
+    // 購物車
+
+    .cart-foods{
+        .cart-food{
+            line-height: 50px;
+            >div{
+                text-align: center;
+                width: 25%;
+                display: inline-block !important;
+            }
+            .change{
+                div{
+                    display: inline-block;
+                    width: 30%;
+                    
+                }
+            }
+        }
+        .total{
+            text-align: right;
+            line-height: 40px;
+        }
+    }
+
+
+    // 會員登入
+    .modal {
+        .modal-dialog{
+            .modal-content {
+                background-color: #8592A2;
+                .modal-header{
+                    h3 {
+                        font-size: 33px;
+                        color: black; 
+                        position: absolute; /* 置中 */
+                        top: 6%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }    
+                .modal-body{
+                    form{
+                        .mb-3{
+                            .form-label{
+                                font-size: 25px;
+                                font-family: $myFontTitleChange;
+                            }
+                        }
+                        .form-group-checkbox{
+                            float: right;
+                            padding-right: 30px;
+                            .remember {
+                            margin-bottom: 20px;
+                            }
+                        }
+                        .btn {
+                            width: 100%;
+                            font-size: 25px;
+                            color: white;
+                        }
+                        .btn-secondary{
+                            color: white;
+                            background-color: #EBC2C0;
+                            border-color: #EBC2C0;
+                        }
+                        .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active:hover{
+                            color: #fff;
+                            background-color: #F4BAAF;
+                            border-color: #F4BAAF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 註冊會員
+    .modal {
+        .modal-dialog{
+            .modal-content {
+                background-color: #8592A2;
+                .modal-header{
+                    h4 {
+                        font-size:33px;
+                        color: black; 
+                        position: absolute; /* 置中 */
+                        top: 5%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }    
+                .modal-body{
+                    form{
+                        /* .form-group-checkbox{
+                            float: right;
+                            padding-right: 30px;
+                            .remember {
+                            margin-bottom: 20px;
+                            }
+                        } */
+
+                        .mb-3{
+                            .form-label{
+                                font-size: 25px;
+                                font-family: $myFontTitleChange;
+                            }
+                        }
+                        .btn {
+                            width: 100%;
+                            font-size: 25px;
+                            color: white;
+                        }
+                        .btn-secondary{
+                            color: white;
+                            background-color: #EBC2C0;
+                            border-color: #EBC2C0;
+                        }
+                        .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active:hover{
+                            color: #fff;
+                            background-color: #F4BAAF;
+                            border-color: #F4BAAF;
+                          }
+                    }
+                }
+            }
+        }
+    }
+}
+.clearfix{
+    clear: both;
+}

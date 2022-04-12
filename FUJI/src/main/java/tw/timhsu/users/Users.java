@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 import tw.timhsu.cartitem.*;
 
 @Entity
-@Table(name = "User")
+@Table(name = "Users")
 @Component
 public class Users {
 

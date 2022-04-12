@@ -2,6 +2,7 @@ package tw.timhsu.orders;
 
 import java.util.Date;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -46,7 +47,8 @@ public class Orders {
 
 	@OneToMany(mappedBy = "orders", cascade = CascadeType.ALL)
 	private Set<OrdersDetails> ordersdetails = new HashSet<>();
-
+	@OneToMany(mappedBy = "orders", cascade = CascadeType.ALL)
+	private List<OrdersDetails> ordersdetails2;
 	public int getOid() {
 		return oid;
 	}
@@ -93,6 +95,14 @@ public class Orders {
 
 	public void setOrderdate(String orderdate) {
 		this.orderdate = orderdate;
+	}
+
+	public List<OrdersDetails> getOrdersdetails2() {
+		return ordersdetails2;
+	}
+
+	public void setOrdersdetails2(List<OrdersDetails> ordersdetails2) {
+		this.ordersdetails2 = ordersdetails2;
 	}
 
 }

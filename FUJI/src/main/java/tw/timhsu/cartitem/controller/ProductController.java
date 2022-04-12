@@ -15,12 +15,13 @@ import org.springframework.web.servlet.ModelAndView;
 
 import tw.timhsu.cartitem.CartItem;
 import tw.timhsu.cartitem.CartItemService;
+import tw.timhsu.orders.Orders;
+import tw.timhsu.orders.OrdersService;
 import tw.timhsu.products.CategoryService;
 import tw.timhsu.products.Products;
 import tw.timhsu.products.ProductsService;
 import tw.timhsu.users.Users;
 import tw.timhsu.users.UsersService;
-
 
 @Controller
 @RequestMapping("profile")
@@ -34,9 +35,11 @@ public class ProductController {
 	@Autowired
 	private CartItemService cartItemService;
 
+	@Autowired
+	private OrdersService ordersService;
 
 	@GetMapping("shopping")
-	public String test(Principal principal, Model model) {
+	public String shoppingpage(Principal principal, Model model) {
 		Users users = usersService.findByusername(principal.getName());
 		List<CartItem> cartItems = cartItemService.listCartItems(users);
 		int size = cartItems.size();
@@ -58,6 +61,15 @@ public class ProductController {
 		}
 		model.addAttribute("str", str);
 		return "profile/shopping";
+	}
+
+	@GetMapping("orders")
+	public String orders(Principal principal, Model model) {
+		Users users = usersService.findByusername(principal.getName());
+		List<Orders> orders = ordersService.listOrders(users);
+		model.addAttribute("orders", orders);
+		
+		return "profile/order";
 	}
 
 	@GetMapping("cartProduct")
@@ -95,7 +107,7 @@ public class ProductController {
 	}
 
 	@GetMapping("getProducts/{categoryId}")
-	public ModelAndView getProductFromCategory(@PathVariable("categoryId") String categoryId,Principal principal) {
+	public ModelAndView getProductFromCategory(@PathVariable("categoryId") String categoryId, Principal principal) {
 		ModelAndView mv2 = new ModelAndView();
 		mv2.setViewName("profile/index");
 		Integer categoryLongId = Integer.parseInt(categoryId);
