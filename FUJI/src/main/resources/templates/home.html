@@ -32,7 +32,12 @@
 
 <link rel="stylesheet" href="stylesheets/home.css" type="text/css"
 	media="screen" />
-
+<style type="text/css">
+a {
+	color: black;
+	text-decoration: none;
+}
+</style>
 <!-- 往上置頂TOP -->
 <script>
 	$(document).ready(function() {
@@ -93,19 +98,30 @@
 			</div>
 			<div class="item">
 				<div class="nav">
-					<div class="aboutUs"><a href="/home/aboutus">關於我們</a></div>
+					<div class="Contact">
+						<a href="#">後台專區</a>
+					</div>
 				</div>
 				<div class="nav">
-					<div class="Menu"><a href="/profile/shopping">水產日料</a></div>
+					<div class="aboutUs">
+						<a href="/home/aboutus">關於我們</a>
+					</div>
+				</div>
+				<div class="nav">
+					<div class="Menu">
+						<a href="/profile/shopping">水產日料</a>
+					</div>
 				</div>
 				<div class="nav">
 					<div class="Member">會員專區</div>
 				</div>
 				<div class="nav">
-					<div class="Contact"><a href="/home/contactus">聯絡我們</a></div>
+					<div class="Contact">
+						<a href="/home/contactus">聯絡我們</a>
+					</div>
 				</div>
 				<div class="nav">
-					<div class="shoppingCart">購物車</div>
+					<div class="shoppingCart"></div>
 					<div class="container pt-5">
 						<a class="position-relative" href="#"> <i
 							class="fas fa-shopping-cart fa-lg"></i> <span
@@ -113,13 +129,16 @@
 						</a>
 					</div>
 				</div>
-				<div class="login" onclick="showLoginModal()" sec:authorize="isAnonymous()">
+				<div class="login" onclick="showLoginModal()"
+					sec:authorize="isAnonymous()">
 					<i class="fas fa-sign-in-alt"></i>
 				</div>
-				<div onclick="javascript:window.location.href='http://localhost:8081/logout'" sec:authorize="isAuthenticated()" class="logout">
-					<i class="fas fa-sign-out-alt" ></i>
-					</div>
-			
+				<div
+					onclick="javascript:window.location.href='http://localhost:8081/logout'"
+					sec:authorize="isAuthenticated()" class="logout">
+					<i class="fas fa-sign-out-alt"></i>
+				</div>
+
 
 
 			</div>
@@ -235,14 +254,13 @@
 
 	<!-- 會員登入 -->
 
-	<div class="modal fade" id="loginModal" >
+	<div class="modal fade" id="loginModal">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<!-- Header -->
 				<div class="modal-header">
 					<h3>會員登入</h3>
-					<button type="button" class="btn-close" data-bs-dismiss="modal"
-						></button>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 				</div>
 
 				<!-- Body -->
@@ -250,7 +268,8 @@
 					<!-- 登入表單 -->
 					<form method="post" th:action="@{/login}">
 						<!-- user name -->
-						<div th:if="${param.error}" class="alert alert-warning" role="alert">無效的帳號或是密碼</div>
+						<div th:if="${param.error}" class="alert alert-warning"
+							role="alert">無效的帳號或是密碼</div>
 
 						<div class="mb-3">
 							<label for="formGroupExampleInput" class="form-label">帳號</label>
@@ -267,16 +286,21 @@
 
 						<!-- checkbox -->
 						<div class="form-group-checkbox">
-							<input type="checkbox" class="remember" name="remember-me" value="true">記住我的密碼
+							<input type="checkbox" class="remember" name="remember-me"
+								value="true">記住我的密碼
 						</div>
-						
-						<div >
-						<!-- 送出按鈕 -->
-						<button type="submit" class="btn btn-secondary">登入</button>
-						<!-- <button type="button" ><img src="images/googlelogo.png"></button> -->
+
+						<div>
+							<!-- 送出按鈕 -->
+							<button type="submit" class="btn btn-secondary">登入</button>
+							<!-- <button type="button" ><img src="images/googlelogo.png"></button> -->
 						</div>
-						<div style="margin:5px 10px 15px 20px"></div>
-						<div><a th:href="@{/oauth2/authorization/google}"><img src="images/googlelogo.png"  width="200" height="50" style="display:block; margin:auto; border-radius:10px;"></a></div>
+						<div style="margin: 5px 10px 15px 20px"></div>
+						<div>
+							<a th:href="@{/oauth2/authorization/google}"><img
+								src="images/googlelogo.png" width="200" height="50"
+								style="display: block; margin: auto; border-radius: 10px;"></a>
+						</div>
 						<!-- <h5>
 							<a th:href="@{/oauth2/authorization/google}">Google登入</a>
 						</h5> -->
@@ -297,7 +321,7 @@
 	</div>
 
 	<!-- 註冊會員 -->
-<div class="modal fade" id="registerMember" aria-hidden="true"
+	<div class="modal fade" id="registerMember" aria-hidden="true"
 		aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
@@ -315,11 +339,12 @@
 						<div class="mb-3">
 							<label for="formGroupExampleInput" class="form-label">姓名</label>
 							<input type="text-name" class="form-control"
-								id="formGroupExampleInput" placeholder="請輸入姓名" name="name" th:value="*{name}">
-						<div th:if="${#fields.hasErrors('name')}"
-								th:errors="*{name}" class="alert alert-danger" role="alert" ></div>
+								id="formGroupExampleInput" placeholder="請輸入姓名" name="name"
+								th:value="*{name}">
+							<div th:if="${#fields.hasErrors('name')}" th:errors="*{name}"
+								class="alert alert-danger" role="alert"></div>
 						</div>
-						
+
 
 						<!-- account -->
 						<div class="mb-3">
@@ -348,7 +373,8 @@
 							<input type="text-email" class="form-control"
 								id="formGroupExampleInput2" placeholder="請輸入郵件" name="email"
 								th:value="*{email}">
-							<div th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="alert alert-danger" role="alert"></div>
+							<div th:if="${#fields.hasErrors('email')}" th:errors="*{email}"
+								class="alert alert-danger" role="alert"></div>
 						</div>
 
 						<!--phone -->
@@ -357,7 +383,8 @@
 							<input type="text-phone" class="form-control"
 								id="formGroupExampleInput2" placeholder="請輸入手機號碼" name="phone"
 								th:value="*{phone}">
-							<div th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}" class="alert alert-danger" role="alert"></div>
+							<div th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}"
+								class="alert alert-danger" role="alert"></div>
 
 						</div>
 
