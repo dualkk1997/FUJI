@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 import tw.timhsu.cartitem.*;
 
 @Entity
-@Table(name = "Users")
+@Table(name = "User")
 @Component
 public class Users {
 
@@ -31,7 +31,7 @@ public class Users {
 	@Column(name = "PASSWORD")
 	private String password;
 
-	@Column(name = "name")
+	@Column(name = "NAME")
 	private String name;
 
 	@Column(name = "EMAIL")

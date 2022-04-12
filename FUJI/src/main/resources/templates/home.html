@@ -71,16 +71,15 @@ a {
 			$(this).find('input[type="password"]').focus();
 		});
 	});
+
+	/* 	document.getElementById('logoutbutton').addEventListener('click', function() {
+	 if (confirm('登出?')) {
+	 console.log('確定');
 	
-/* 	document.getElementById('logoutbutton').addEventListener('click', function() {
-		  if (confirm('登出?')) {
-		    console.log('確定');
-		    
-		  } else {
-		    console.log('取消');
-		  }
-		}) */
-	
+	 } else {
+	 console.log('取消');
+	 }
+	 }) */
 </script>
 
 </head>
@@ -97,9 +96,10 @@ a {
 				</div>
 			</div>
 			<div class="item">
-				<div class="nav">
-					<div class="Contact">
-						<a href="#">後台專區</a>
+				<div class="nav" sec:authorize="hasAuthority('ADMIN')">
+					<div class="Contact" >	
+								<a href="/backend/viewSumPage" >後台專區</a>
+		
 					</div>
 				</div>
 				<div class="nav">
@@ -246,7 +246,7 @@ a {
 		})
 		//
 		$(document).ready(function() {
-			if (location.pathname  === '/register') {
+			if (location.pathname === '/register') {
 				showRegisterModal();
 			}
 		})

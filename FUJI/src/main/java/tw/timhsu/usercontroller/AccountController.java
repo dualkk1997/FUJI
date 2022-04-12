@@ -32,10 +32,11 @@ public class AccountController {
     public AccountController(UsersService userService) {
         this.userService = userService;
     }
-//    @RequestMapping("/")
-//    public String index(){
-//
-//        return "home";
+//    //google預設導回來的路徑
+//    @GetMapping("/")
+//    public String gotoindex(@ModelAttribute Users user, Model model,Principal principal){
+//        model.addAttribute("user",user);
+//        return "/home";
 //    }
     @GetMapping("/home")
     public String index(@ModelAttribute Users user, Model model,Principal principal){
@@ -70,7 +71,7 @@ public class AccountController {
       model.addAttribute("user",user);
       return "home";
   }
-    
+
     
     
     @PostMapping("/register")

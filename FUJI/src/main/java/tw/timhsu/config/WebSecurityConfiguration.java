@@ -39,21 +39,34 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 //                .antMatchers("/","/assest/**","/register","/home")
 				.antMatchers("/oauth2/**").permitAll()
 				.antMatchers("/", "/assest/**", "/register", "/home/**", "/stylesheets/**", "/js/**", "/images/**",
-						"/register2", "/gotore","/api/**","/backend/**")
-				.permitAll()
-				.antMatchers("/profile/**").authenticated()
+						"/register2", "/gotore", "/api/**")
+				.permitAll().antMatchers("/profile/**").authenticated()
 				// .antMatchers("/home").hasAnyAuthority("USER","ADMIN")
-				.antMatchers("/admin").hasAuthority("ADMIN").anyRequest().authenticated().and().formLogin()
+				.antMatchers("/admin").hasAuthority("ADMIN")
+				.antMatchers("/backend/**").hasAnyAuthority("ADMIN")
+				.anyRequest()
+				.authenticated()
+				.and()
+				.formLogin()
 				.loginPage("/login").defaultSuccessUrl("/home", true)
 //                .defaultSuccessUrl("/authenticated")
-				.usernameParameter("username")
-				.passwordParameter("password")
-				.permitAll().and().oauth2Login().loginPage("/login").userInfoEndpoint().userService(oAuth2UserService)
-				.and().successHandler(oAuth2LoginSuccessHandler);
-		http.logout().deleteCookies("JSESSIONID").logoutSuccessUrl("/login")
-				.logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
+				.usernameParameter("username").passwordParameter("password").permitAll()
 				.and()
-				.csrf().disable();
+				
+				.oauth2Login()
+				.loginPage("/login")
+				
+//				.redirectionEndpoint()
+//				 .baseUri("/home")
+//				 .and()
+				.userInfoEndpoint().userService(oAuth2UserService)
+				.and()
+				.successHandler(oAuth2LoginSuccessHandler)
+				.defaultSuccessUrl("/home", true)
+				;
+				
+		http.logout().deleteCookies("JSESSIONID").logoutSuccessUrl("/login")
+				.logoutRequestMatcher(new AntPathRequestMatcher("/logout")).and().csrf().disable();
 
 	}
 //	@Override
