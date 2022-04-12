@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
 @Controller
+@RequestMapping("backend")
 @SessionAttributes(names = {"totalPages", "totalElements"})
 public class UsersController {
 	

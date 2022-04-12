@@ -19,6 +19,7 @@ import tw.timhsu.users.Users;
 import tw.timhsu.users.UsersService;
 
 @Controller
+@RequestMapping("backend")
 public class OrdersController {
 	
 	@Autowired

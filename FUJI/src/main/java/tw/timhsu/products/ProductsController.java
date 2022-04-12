@@ -24,6 +24,7 @@ import tw.timhsu.products.Category;
 import tw.timhsu.products.CategoryService;
 
 @Controller
+@RequestMapping("backend")
 public class ProductsController {
 	
 	@Autowired
@@ -32,7 +33,7 @@ public class ProductsController {
 	@Autowired
 	private CategoryService cService;
 	
-	@GetMapping("/listProducts")
+	@GetMapping("listProducts")
 	public String showExampleView(Model model)
 	{
 		List<Products> products =pService.getAllProduct();

@@ -18,6 +18,7 @@ import tw.timhsu.products.Category;
 import tw.timhsu.products.CategoryService;
 
 @Controller
+@RequestMapping("backend")
 public class CategoryController {
 	
 	@Autowired

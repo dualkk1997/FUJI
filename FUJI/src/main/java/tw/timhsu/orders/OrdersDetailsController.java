@@ -13,6 +13,7 @@ import tw.timhsu.products.Products;
 import tw.timhsu.products.ProductsService;
 
 @Controller
+@RequestMapping("backend")
 public class OrdersDetailsController {
 	
 	@Autowired
