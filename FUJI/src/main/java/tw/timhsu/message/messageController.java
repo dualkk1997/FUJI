@@ -15,6 +15,6 @@ public class messageController {
 	@PostMapping("sendmessage")
 	public String sendmessage(messageModel message) {
 		messageService.saveMessage(message);
-		return "redirect:/home";
+		return "contactusSuccess";
 	}
 }
