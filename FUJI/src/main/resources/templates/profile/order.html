@@ -31,7 +31,12 @@
 
 <link rel="stylesheet" href="../../stylesheets/order.css"
 	type="text/css" media="screen" />
-
+<style type="text/css">
+a {
+	color: black;
+	text-decoration: none;
+}
+</style>
 <!-- 往上置頂TOP -->
 <script>
         $(document).ready(function () {
@@ -73,7 +78,7 @@
 	<div class="containerAll">
 		<div class="header">
 			<div class="logo">
-				<img src="../../images/logo.png">
+				<a href="/home"><img src="../images/logo.png"></a>
 				<div class="logoWord">
 					<div class="logoWordChinese">日本料理 | 壽司</div>
 					<br />
@@ -82,16 +87,22 @@
 			</div>
 			<div class="item">
 				<div class="nav">
-					<div class="aboutUs">關於我們</div>
+					<div class="aboutUs">
+						<a href="/home/aboutus">關於我們</a>
+					</div>
 				</div>
 				<div class="nav">
-					<div class="Menu">水產日料</div>
+					<div class="Menu">
+						<a href="/profile/shopping">水產日料</a>
+					</div>
 				</div>
 				<div class="nav">
-					<div class="Member">會員專區</div>
+					<div class="Member"style="color:red;">會員專區</div>
 				</div>
 				<div class="nav">
-					<div class="Contact">聯絡我們</div>
+					<div class="Contact">
+						<a href="/home/contactus">聯絡我們</a>
+					</div>
 				</div>
 				<div class="nav">
 					<div class="shoppingCart">購物車</div>
