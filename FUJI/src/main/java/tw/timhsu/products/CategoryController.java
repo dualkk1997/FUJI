@@ -36,14 +36,14 @@ public class CategoryController {
 	public String addCategory(Category c) {
 		cService.create(c);
 	
-		return "redirect:/categorylist";
+		return "redirect:/backend/categorylist";
 	}
 
 	@PostMapping("/categorylist/update")
 	public String update(Category cate) {
 		
 		cService.update(cate);
-		return "redirect:/categorylist";
+		return "redirect:/backend/categorylist";
 	}
 	
 	@RequestMapping("/categorylist/delete/{id}")
@@ -52,7 +52,7 @@ public class CategoryController {
 			cService.deleteCategory(id);
 			
 		
-		return "redirect:/categorylist";
+		return "redirect:/backend/categorylist";
 	}
 
 

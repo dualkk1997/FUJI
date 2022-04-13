@@ -75,7 +75,7 @@ public class OrdersController {
     @PostMapping("/orderList/update")
     public String Update(Orders o) {
     	oService.updateStatus(o);
-    	return "redirect:/ordersList/page/1";
+    	return "redirect:/backend/ordersList/page/1";
     }
     
 
@@ -84,14 +84,14 @@ public class OrdersController {
     public String updateStatusByid(@PathVariable(name="id")int id , String status) {
     	status ="處理中";
     	oService.UpdateByStatus(status, id);
-    	return "redirect:/ordersList/page/1";
+    	return "redirect:/backend/ordersList/page/1";
     }
     //完成訂單
     @RequestMapping("/ordersList/complete/{id}")
     public String updateStatusOkByid(@PathVariable(name="id")int id , String status) {
     	status ="完成訂單";
     	oService.UpdateByStatus(status, id);
-    	return "redirect:/ordersList/page/1";
+    	return "redirect:/backend/ordersList/page/1";
     }
     //完成訂單顯示頁面
     @RequestMapping("/ordersList/success/page/{pageNum}")

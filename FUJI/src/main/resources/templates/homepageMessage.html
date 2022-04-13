@@ -24,10 +24,10 @@
     <!-- jQuery連結 -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-    <link rel="stylesheet" href="../../stylesheets/homepageMessage.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../../../stylesheets/homepageMessage.css" type="text/css" media="screen" />
     <script type ="text/javascript">
 function clearFilter(){
-	window.location='/messagelist/page/1';
+	window.location='/backend/messagelist/page/1';
 }
 </script>
 </head>
@@ -37,15 +37,15 @@ function clearFilter(){
         <div class="row">
             <div class="table">
             <div class="Pic">
-				<a href="/home" title="回首頁"><img src="../../images/logo.png" style="width:125px"></a>
+				<a href="/home" title="回首頁"><img src="../../../images/logo.png" style="width:125px"></a>
 			</div>
                 <div class="title">後台系統</div>
                 <div class="category">
-                    <div class="employee"><a href="/userslist/page/1">顧客/員工管理</a></div>
-                    <div class="product"><a href="/listProducts/page/1">產品/種類管理</a></div>
-                    <div class="order"><a href="/ordersList/page/1">處理訂單</a></div>
-                    <div class="message"><a href="/messagelist/page/1">聯絡資訊管理</a></div>
-                    <div class="backend"><a href="/viewSumPage">後台首頁</a></div>
+                    <div class="employee"><a href="/backend/userslist/page/1">顧客/員工管理</a></div>
+                    <div class="product"><a href="/backend/listProducts/page/1">產品/種類管理</a></div>
+                    <div class="order"><a href="/backend/ordersList/page/1">處理訂單</a></div>
+                    <div class="message"><a href="/backend/messagelist/page/1">聯絡資訊管理</a></div>
+                    <div class="backend"><a href="/backend/viewSumPage">後台首頁</a></div>
                 </div>
                 <div class="logout">
                     <a href="/logout" class="btn btn-info">登出</a>
@@ -98,7 +98,7 @@ function clearFilter(){
 		
 		
         <li class="page-item">
-          <a class="page-link" th:if="${currentPage > 1}" th:href="@{'/messagelist/page/' + ${currentPage - 1}+ ${keyword != null ? '?keyword=' + keyword :'' }}">前一頁</a>
+          <a class="page-link" th:if="${currentPage > 1}" th:href="@{'/backend/messagelist/page/' + ${currentPage - 1}+ ${keyword != null ? '?keyword=' + keyword :'' }}">前一頁</a>
         </li>
          <li class="page-item disabled">
 			<span class="page-link" th:unless="${currentPage > 1}">前一頁</span>
@@ -106,14 +106,14 @@ function clearFilter(){
 
 
             <span th:each="i:${#numbers.sequence(1,totalPages)}">
-		<a class="page-link" th:if="${i!=currentPage}" th:href="@{'/messagelist/page/'+ ${i} + ${keyword != null ? '?keyword=' + keyword :'' }}">[[${i}]]</a>
+		<a class="page-link" th:if="${i!=currentPage}" th:href="@{'/backend/messagelist/page/'+ ${i} + ${keyword != null ? '?keyword=' + keyword :'' }}">[[${i}]]</a>
 		  <li class="page-item active" aria-current="page">
 		<span class="page-link" th:unless ="${i!=currentPage}">[[${i}]]</span>
 		</li>
 		</span>
 
         <li class="page-item">
-            <a class="page-link" th:if="${currentPage < totalPages}" th:href="@{'/messagelist/page/' + ${currentPage + 1}+ ${keyword != null ? '?keyword=' + keyword :'' }}">下一頁</a>
+            <a class="page-link" th:if="${currentPage < totalPages}" th:href="@{'/backend/messagelist/page/' + ${currentPage + 1}+ ${keyword != null ? '?keyword=' + keyword :'' }}">下一頁</a>
         </li>
         <li class="page-item disabled">
 			<span class="page-link" th:unless="${currentPage < totalPages}">下一頁</span>
@@ -121,7 +121,7 @@ function clearFilter(){
 		
 		
         <li class="page-item">
-            <a class="page-link" th:if="${currentPage < totalPages}" th:href="@{'/messagelist/page/' + ${totalPages}+ ${keyword != null ? '?keyword=' + keyword :'' }}">最後一頁</a>
+            <a class="page-link" th:if="${currentPage < totalPages}" th:href="@{'/backend/messagelist/page/' + ${totalPages}+ ${keyword != null ? '?keyword=' + keyword :'' }}">最後一頁</a>
         </li>
          <li class="page-item disabled">
 		<span class="page-link" th:unless="${currentPage < totalPages}">最後一頁</span>

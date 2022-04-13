@@ -58,7 +58,7 @@ public class ProductsController {
     	
     		
     	pService.saveProductToDB(file, name, price,category);
-    	return "redirect:/listProducts/page/1";
+    	return "redirect:/backend/listProducts/page/1";
     }
     
     @RequestMapping("/listProducts/edit/{id}")
@@ -72,7 +72,7 @@ public class ProductsController {
     @RequestMapping("/listProducts/delete/{id}")
 	public String delete(@PathVariable(name="id")int id) {
 		pService.deleteProductById(id);
-		return"redirect:/listProducts/page/1";
+		return"redirect:/backend/listProducts/page/1";
 	}
    
     
@@ -81,7 +81,7 @@ public class ProductsController {
     	
     	pService.update(products);
     	
-    	return "redirect:/listProducts/page/1";
+    	return "redirect:/backend/listProducts/page/1";
     }
     
     
@@ -117,7 +117,7 @@ public class ProductsController {
     		@RequestParam("productimage") MultipartFile file)
     {
     	pService.changeProductimage(id, file);
-    	return "redirect:/listProducts/page/1";
+    	return "redirect:/backend/listProducts/page/1";
     }
 
     
