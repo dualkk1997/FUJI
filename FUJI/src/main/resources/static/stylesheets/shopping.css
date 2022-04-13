@@ -322,12 +322,11 @@ body .containerAll .menu-all .category-food .category-content .foods .food {
 }
 
 body .containerAll .menu-all .category-food .category-content .foods .food .img {
-  background-color: #D6E0EA;
   -webkit-transition: -webkit-transform .2s;
   transition: -webkit-transform .2s;
   transition: transform .2s;
   transition: transform .2s, -webkit-transform .2s;
-  width: 90%;
+  width: 100px;
   border-radius: 80%;
   display: block;
   margin: 0 auto;

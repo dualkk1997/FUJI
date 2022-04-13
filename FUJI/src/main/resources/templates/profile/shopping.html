@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="zh-tw" xmlns:th="http://www.thymeleaf.org">
+<html lang="zh-tw" xmlns:th="http://www.thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 
 <head>
 <meta charset="utf-8">
@@ -138,6 +139,9 @@ a {
 							<div class="img" @click="orderFood(food)">
 								<img :src="food.img">
 							</div>
+							<div class="img" ><img alt=""
+								th:src="*{'data:image/jpeg;base64,'+{Product.productimage}}"
+								style="width: 100px;"></div>
 							<div class="name" th:text="${Product.Productname}">{{food.name}}</div>
 							<div class="price" th:text="${Product.Productprice}">{{food.price}}元</div>
 							<form align="center" action="/profile/addtocarts" method="post">
