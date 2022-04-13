@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 響應式網站 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- AWESOME連結 -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- AOS連結 -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<!-- Boostrap 導入程式 -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+	crossorigin="anonymous">
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+	crossorigin="anonymous"></script>
+
+<!-- jQuery連結 -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<link rel="stylesheet" href="../../stylesheets/homepageEmployee.css"
+	type="text/css" media="screen" />
+	
+<script type ="text/javascript">
+function clearFilter(){
+	window.location='/reservelist/page/1';
+}
+</script>	
+</head>
+<body>
+<div>
+		<form th:action="@{/reservelist/page/1}">
+		<input type="text" name="keyword" th:value="${keyword}" required/>
+		
+		
+		<input type="submit" class="btn btn-primary btn-sm" value="搜尋">
+		<input type="button" class="btn btn-secondary btn-sm" value="清除" onclick="clearFilter()">
+		</form>
+		</div>
+		
+<table>
+					<thead>
+						<!--建立表頭 -->
+						<tr>
+							<th>訂位編號</th>
+							<th>訂位姓名</th>
+							<th>電話</th>
+							<th>訂位月份</th>
+							<th>訂位日期</th>
+							<th>訂位時段</th>
+							<th>權限</th>
+							<th>完成訂位</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- 建立表格本體 -->
+						<tr th:each="reserve : ${reservelist}">
+							<td th:text="${reserve.reserveid}">reserveid</td>
+							<td th:text="${reserve.reservename}">reservename</td>
+							<td th:text="${reserve.phone}">phone</td>
+							<td th:text="${reserve.birthmonth}">birthmonth</td>
+							<td th:text="${reserve.birthdate}">birthdate</td>
+							<td th:text="${reserve.period}">period</td>
+							<td th:text="${reserve.total}">total</td>
+							<td><button type="button" class="btn btn-success"
+									data-bs-toggle="modal"
+									th:data-bs-target="'#'+${reserve.reservename}">修改</button></td>
+
+							<td><button type="button" class="btn btn-danger"
+									data-bs-toggle="modal"
+									th:data-bs-target="'#delete'+${reserve.reservename}">刪除</button></td>
+						</tr>
+					</tbody>
+				</table>
+				<div th:each="reserve : ${reservelist}">
+					<div class="modal fade" th:id="${reserve.reservename}" tabindex="-1"
+						aria-labelledby="updateCategoryLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="updateCategoryLabel">修改訂位資料</h5>
+
+									<button type="button" class="btn-close" data-bs-dismiss="modal"
+										aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+
+									<form th:action="@{/reservelist/update}" method="post">
+										<table>
+
+											<tr>
+
+												<td>編號:</td>
+												<td><input type="text" th:value="${reserve.reserveid}"
+													name="reserveid" readonly="readonly"></td>
+											</tr>
+											<tr>
+												<td>帳號:</td>
+												<td><input type="text" th:value="${reserve.reservename}"
+													name="reservename"></td>
+											</tr>
+											<tr>
+
+												<td>電話:</td>
+												<td><input type="text" th:value="${reserve.phone}"
+													name="phone"></td>
+											</tr>
+											<tr>
+												<td>月份:</td>
+												<td><input type="text" th:value="${reserve.birthmonth}"
+													name="birthmonth"></td>
+											</tr>
+											<tr>
+
+												<td>日期:</td>
+												<td><input type="text" th:value="${reserve.birthdate}"
+													name="birthdate"></td>
+											</tr>
+											<tr>
+												<td>時段:</td>
+												<td><input type="text" th:value="${reserve.period}"
+													name="period"></td>
+											</tr>
+											<tr>
+												<td>人數:</td>
+												<td><input type="text" th:value="${reserve.total}"
+													name="total"></td>
+											</tr>
+											
+										</table>
+										<div class="modal-footer">
+											<button type="submit" class="btn btn-primary">更新</button>
+											<button type="button" class="btn btn-secondary"
+												data-bs-dismiss="modal">取消</button>
+
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div th:each="reserve : ${reservelist}">
+					<div class="modal fade" th:id="'delete'+${reserve.reservename}"
+						tabindex="-1" aria-labelledby="updateCategoryLabel"
+						aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="updateCategoryLabel">刪除帳號</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal"
+										aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+
+									<form th:action="@{'/reservelist/delete/{reserve.reserveid}}"
+										method="post">
+
+
+										<p>確定要刪除此帳號嗎?</p>
+
+
+										<div class="modal-footer">
+											<button type="submit" class="btn btn-primary">刪除</button>
+											<button type="button" class="btn btn-secondary"
+												data-bs-dismiss="modal">取消</button>
+
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+</body>
+</html>
