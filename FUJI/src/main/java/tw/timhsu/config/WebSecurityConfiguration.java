@@ -39,7 +39,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 //                .antMatchers("/","/assest/**","/register","/home")
 				.antMatchers("/oauth2/**").permitAll()
 				.antMatchers("/", "/assest/**", "/register", "/home/**", "/stylesheets/**", "/js/**", "/images/**",
-						"/register2", "/gotore", "/api/**")
+						"/register2", "/gotore", "/api/**","/reserve/**")
 				.permitAll().antMatchers("/profile/**").authenticated()
 				// .antMatchers("/home").hasAnyAuthority("USER","ADMIN")
 				.antMatchers("/admin").hasAuthority("ADMIN")

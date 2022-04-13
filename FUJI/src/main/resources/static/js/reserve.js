@@ -74,7 +74,7 @@ Vue.createApp({
         total: this.reserveForm.amount
       }
 
-      let res = await postData("http://localhost:8080/SpringReservationProject/saveReserve", data)
+      let res = await postData("http://localhost:8081/reserve/saveReserve", data)
       await this.loadCalendar()
     },
     showIntervalInfo: function (date) {
@@ -88,7 +88,7 @@ Vue.createApp({
     loadCalendar: async function () {
       var today = new Date()
       var start = new Date(today.setDate(today.getDate() - today.getDay()))
-      this.reserves = await (await getData("http://localhost:8080/SpringReservationProject/getReserve")).json()
+      this.reserves = await (await getData("http://localhost:8081/reserve/getReserve")).json()
       for (var i = 0; i < 35; i++) {
         this.calendar.push({
           month: start.getMonth() + 1,
