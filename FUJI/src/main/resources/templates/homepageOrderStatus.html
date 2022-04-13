@@ -29,7 +29,7 @@
 <!-- jQuery連結 -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-<link rel="stylesheet" href="../../../stylesheets/homepageOrder.css"
+<link rel="stylesheet" href="../../../stylesheets/homepageOrderSeccess.css"
 	type="text/css" media="screen" />
 <script type="text/javascript">
 function clearFilter(){
@@ -42,14 +42,19 @@ function clearFilter(){
 	<div class="container-fluid">
 		<div class="row">
 			<div class="table">
+			<div class="Pic">
+				<a href="/home" title="回首頁"><img src="../../images/logo.png" style="width:125px"></a>
+			</div>
 				<div class="title">後台系統</div>
 				<div class="category">
-					<div class="employee">員工管理</div>
-					<div class="product">產品管理</div>
-					<div class="order">訂單紀錄</div>
+					<div class="employee"><a href="/userslist/page/1">顧客/員工管理</a></div>
+                    <div class="product"><a href="/listProducts/page/1">產品/種類管理</a></div>
+                    <div class="order"><a href="/ordersList/page/1">處理訂單</a></div>
+                    <div class="message"><a href="/messagelist/page/1">聯絡資訊管理</a></div>
+                    <div class="backend"><a href="/viewSumPage">後台首頁</a></div>
 				</div>
 				<div class="logout">
-					<button type="button" class="btn btn-info">登出</button>
+					<a href="/logout" class="btn btn-info">登出</a>
 				</div>
 			</div>
 			<div class="content">
@@ -64,6 +69,8 @@ function clearFilter(){
 						</form>
 					</nav>
 				</div>
+				<div class="detail">完成訂單</div>
+				<hr/>
 				<table>
 					<thead>
 						<!--建立表頭 -->
@@ -91,12 +98,11 @@ function clearFilter(){
 						</tr>
 					</tbody>
 				</table>
-				<div align="center">
+				<span class="totalitems">共<span class="totalitemsNumber">[[${totalItems}]]</span>筆</span>
+				<div class="homebutton">
 					<a href="#" class="btn btn-primary btn-sm"
 						th:href="@{/ordersList/page/1}">回訂單頁面</a>
 				</div>
-				<div>Total Items [[${totalItems}]] : Page [[${currentPage}]]
-					of [[${totalPages}]]</div>
 				<div class="page">
 					<nav aria-label="Page navigation example">
 						<ul class="pagination justify-content-end">

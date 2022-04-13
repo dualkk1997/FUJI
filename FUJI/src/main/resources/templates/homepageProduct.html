@@ -31,7 +31,7 @@
 <!-- jQuery連結 -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-<link rel="stylesheet" href="../../../stylesheets/homepageProduct.css"
+<link rel="stylesheet" href="../../stylesheets/homepageProduct.css"
 	type="text/css" media="screen" />
 <script type="text/javascript">
   function clearFilter(){
@@ -44,14 +44,19 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="table">
+			<div class="Pic">
+				<a href="/home" title="回首頁"><img src="../../images/logo.png" style="width:125px"></a>
+			</div>
 				<div class="title">後台系統</div>
 				<div class="category">
-					<div class="employee">員工管理</div>
-					<div class="product">產品管理</div>
-					<div class="order">訂單紀錄</div>
+					<div class="employee"><a href="/userslist/page/1">顧客/員工管理</a></div>
+                    <div class="product"><a href="/listProducts/page/1">產品/種類管理</a></div>
+                    <div class="order"><a href="/ordersList/page/1">處理訂單</a></div>
+                    <div class="message"><a href="/messagelist/page/1">聯絡資訊管理</a></div>
+                    <div class="backend"><a href="/viewSumPage">後台首頁</a></div>
 				</div>
 				<div class="logout">
-					<button type="button" class="btn btn-info">登出</button>
+					<a href="/logout" class="btn btn-info">登出</a>
 				</div>
 			</div>
 			<div class="content">
@@ -65,6 +70,8 @@
 						</form>
 					</nav>
 				</div>
+				<div class="detail">產品管理</div>
+				<hr/>
 				<div class="button">
 					<a href="#" th:href="@{/categorylist}"
 						class="btn btn-outline-success">查看/新增類別</a>
@@ -92,24 +99,24 @@
 							<td th:text="${product.productname}"></td>
 							<td><img alt=""
 								th:src="*{'data:image/jpeg;base64,'+{product.productimage}}"
-								style="width: 100px;"></td>
-							<td th:text="${product.productprice}"></td>
+								></td>
+							<td th:text="${product.productprice}+'元'"></td>
 							<td th:each="category:${product.category}"
 								th:text="${category.categoryname}"></td>
 							<td><button type="button" class="btn btn-success"
 									data-bs-toggle="modal"
-									th:data-bs-target="'#'+${product.productname}">修改</button></td>
+									th:data-bs-target="'#changeall'+${product.pid}">修改</button></td>
 							<td><button type="button" class="btn btn-success"
 									data-bs-toggle="modal"
-									th:data-bs-target="'#change'+${product.productname}">修改圖片</button></td>
+									th:data-bs-target="'#changeimage'+${product.pid}">修改圖片</button></td>
 							<td><button type="button" class="btn btn-danger"
 									data-bs-toggle="modal"
-									th:data-bs-target="'#delete'+${product.productname}">刪除</button></td>
+									th:data-bs-target="'#delete'+${product.pid}">刪除</button></td>
 							
 						</tr>
 					</tbody>
 				</table>
-				<div class="totalitems">共<span class="totalitems1">[[${totalItems}]]</span>筆</div>
+				<span class="totalitems">共<span class="totalitemsNumber">[[${totalItems}]]</span>筆</span>
 					
 				<div class="page">
 					<nav aria-label="Page navigation example">
@@ -158,41 +165,41 @@
 		</div>
 	</div>
 	<div th:each="product : ${productlist}">
-	<div class="modal fade updateProduct" th:id="${product.productname}"
+	<div class="modal fade updateProduct" th:id="'changeall'+${product.pid}"
 		aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
 		tabindex="-1">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="updateProductLabel">修改產品資料</h5>
+					<h4 class="modal-title" id="updateProductLabel">修改產品資料</h4>
 					<button type="button" class="btn-close" data-bs-dismiss="modal"
 						aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
-					<form th:action="@{/backend/listProducts/update}" method="post" >
+					<form th:action="@{/listProducts/update}" method="post" >
 
 						<table>
 
 								<tr>
 
-									<td>編號:</td>
+									<td class="td1">編號：</td>
 									<td><input type="text" th:value="${product.pid}"
 										 name="pid" readonly="readonly"></td>
 								</tr>
 								<tr>
-									<td>產品名稱:</td>
-									<td><input type="text" th:value="${product.productname}"
+									<td class="td1">產品名稱：</td>
+									<td><input type="text"  th:value="${product.productname}"
 										name="productname"></td>
 								</tr>
 								<tr>
 
-									<td>產品價格:</td>
-									<td><input type="number"
+									<td class="td1">產品價格：</td>
+									<td><input type="number" 
 										th:value="${product.productprice}" name="productprice"></td>
 								</tr>
 								<tr>
-									<td>種類:</td>
-									<td><select class="custom-select" name="category">
+									<td class="td1">種類：</td>
+									<td><select class="custom-select" name="category" >
 											<option
 												th:selected="${category.categoryid == product.category.categoryid}"
 												th:each="category : ${categoryList}"
@@ -208,7 +215,7 @@
 								
 							</table>
 						<div class="modal-footer">
-						<button type="submit" class="btn btn-primary">更新</button>
+						<button type="submit" class="btn btn-primary" onclick="return alert('修改成功');">更新</button>
 						<button type="button" class="btn btn-secondary"
 									data-bs-dismiss="modal">取消</button>
 
@@ -220,12 +227,12 @@
 	</div>
 	</div>
 
-	<div class="modal fade" id="exampleModal" tabindex="-1"
+	<div class="modal fade addProduct" id="exampleModal" tabindex="-1"
 		aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">增加產品</h5>
+					<h4 class="modal-title" id="exampleModalLabel">增加產品</h4>
 					<button type="button" class="btn-close" data-bs-dismiss="modal"
 						aria-label="Close"></button>
 				</div>
@@ -234,16 +241,16 @@
 						<div class="modal-body">
 						<table>
 						<tr>
-					<td>產品名稱:</td>
-					<td><input type="text" name="productname"></td>
+					<td class="td1">產品名稱：</td>
+					<td><input type="text" name="productname" placeholder="請輸入產品名稱"></td>
 					
 				</tr>
 				<tr>
-					<td>產品價格:</td>
-					<td><input type="number" name="productprice"></td>
+					<td class="td1">產品價格：</td>
+					<td><input type="number" name="productprice" placeholder="請輸入產品價格"></td>
 				</tr>
 				<tr>
-					<td>選擇種類:</td>
+					<td class="td1">選擇種類：</td>
 					<td><select  name="category">
 									<option selected>請選擇種類</option>
 									<option th:each="category : ${categoryList}" 
@@ -252,7 +259,7 @@
 						</select></td>
 				</tr>
 				<tr>
-					<td>產品照片:</td>
+					<td class="td1">產品照片：</td>
 					<td><input type="file" name="productimage"></td>
 				</tr>
 							
@@ -270,13 +277,13 @@
 		</div>
 	</div>
 	<div th:each="product : ${productlist}">
-					<div class="modal fade" th:id="'delete'+${product.productname}"
+					<div class="modal fade deleteProduct" th:id="'delete'+${product.pid}"
 						tabindex="-1" aria-labelledby="updateCategoryLabel"
 						aria-hidden="true">
 						<div class="modal-dialog">
 							<div class="modal-content">
 								<div class="modal-header">
-									<h5 class="modal-title" id="updateCategoryLabel">刪除產品</h5>
+									<h4 class="modal-title" id="updateCategoryLabel">刪除產品</h4>
 									<button type="button" class="btn-close" data-bs-dismiss="modal"
 										aria-label="Close"></button>
 								</div>
@@ -286,7 +293,7 @@
 										method="post">
 
 
-										<p>確定要刪除嗎?</p>
+										<p>確定要刪除<span class="totalitems1">"[[${product.productname}]]"</span>嗎?</p>
 
 
 										<div class="modal-footer">
@@ -302,18 +309,18 @@
 					</div>
 				</div>
 	<div th:each="product : ${productlist}">
-	<div class="modal fade updateProduct" th:id="'change'+${product.productname}"
+	<div class="modal fade updateProduct" th:id="'changeimage'+${product.pid}"
 		aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
 		tabindex="-1">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="updateProductLabel">修改產品圖片</h5>
+					<h4 class="modal-title" id="updateProductLabel">修改產品圖片</h4>
 					<button type="button" class="btn-close" data-bs-dismiss="modal"
 						aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
-					<form th:action="@{/backend/listProducts/changeImage}" method="post" enctype="multipart/form-data">
+					<form th:action="@{/listProducts/changeImage}" method="post" enctype="multipart/form-data">
 
 						<table>
 
@@ -321,7 +328,7 @@
 										 name="pid" readonly="readonly">
 								
 								<tr>
-									<td>產品圖片檔案:</td>
+									<td>圖片檔案：</td>
 									<td><input type="file" th:value="${product.productimage}"
 										name="productimage"></td>
 								</tr>

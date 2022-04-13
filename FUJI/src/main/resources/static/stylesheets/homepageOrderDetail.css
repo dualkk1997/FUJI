@@ -71,16 +71,18 @@
 }
 
 .container-fluid .row .content .button {
-/*   padding-top: %; */
-  padding-bottom:1%;
-  padding-left: 6%;
+  padding-top: 3%;
+  padding-bottom: 1%;
+  padding-left: 8%;
 }
 
 .container-fluid .row .content table {
   clear: both;
-  width:80%;
+  width:78%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
+  
 }
 
 .container-fluid .row .content table thead th {
@@ -103,6 +105,7 @@
   background: 	#FFFFFF
   
 }
+
 .container-fluid .row .content table tbody tr:hover{
 
 background-color: #bddfdf;
@@ -139,7 +142,7 @@ color: #000000;
   text-align: center;
 }
 .totalitems{
-	padding-left:13%;
+	padding-left:20%;
 	margin-top:4%;
 /* 	margin-left: 5%; */
 	font-size: 20px;
@@ -153,19 +156,23 @@ color: #000000;
 	font-size: 20px;
 	color: 	#FF2D2D;
 }
+body {
+background-color: rgb(255, 249, 247);
+}
 .Pic{
 	margin-top: 10px; 
 	text-align: center;
 }
-body {
-background-color: rgb(255, 249, 247);
-}
 .detail{
 	text-align: center;
 	font-size: 40px;
-	margin-left: 17%;
+	 margin-right: 2%;
+	margin-top: 5%;
+}
+.homebutton{
+	text-align: center;
+	margin-right: 2%;
 	margin-top: 3%;
-	 
 }
 .category a {
     text-decoration:none;
@@ -178,5 +185,4 @@ text-decoration:none;
 background-color:gray;
 color:#fafafa;
 }
-
 /*# sourceMappingURL=homepageOrder.css.map */

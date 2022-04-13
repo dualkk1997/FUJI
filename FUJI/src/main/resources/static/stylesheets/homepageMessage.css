@@ -1,5 +1,5 @@
 .container-fluid .row .table {
-  height: 750px;
+  height: 800px;
   width: 18%;
   background-color: bisque;
   margin-bottom: 0px;
@@ -68,104 +68,151 @@
 
 .container-fluid .row .content .search {
   float: right;
-}
-
-.container-fluid .row .content .button {
-/*   padding-top: %; */
-  padding-bottom:1%;
-  padding-left: 6%;
+  color: white;
 }
 
 .container-fluid .row .content table {
   clear: both;
-  width:80%;
+   width:75%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2%;
 }
 
 .container-fluid .row .content table thead th {
   padding: 10px;
-  background-color: #96D4D4;
+  background-color:	rgb(230, 230, 255);
   text-align: center;
 }
 
 .container-fluid .row .content table tbody td {
   padding: 10px;
   text-align: center;
-  border-bottom:1px solid #96D4D4;
+  border-bottom:1px solid rgb(230, 230, 255);
 }
 
-.container-fluid .row .content table tbody  tr:nth-child(odd){
-  background: 	#F0FFFF
+.container-fluid .row .content table tbody tr:nth-child(odd){
+  background: 	rgb(238, 238, 247);
   
 }
-.container-fluid .row .content table tbody  tr:nth-child(even){
-  background: 	#FFFFFF
+.container-fluid .row .content table tbody tr:nth-child(even){
+  background: 	#ffffff;
   
 }
 .container-fluid .row .content table tbody tr:hover{
 
-background-color: #bddfdf;
+background-color: #d2d2ff;
 
 color: #000000;
   
 }
 
-.container-fluid .row .content table tbody td:nth-child(3) {
-  width: 12%;
+.modal .modal-dialog .modal-content {
+  background-color:#EFF4FF;
+}
+.updateUser .modal-dialog .modal-content {
+  background-color:#EFF4FF;
 }
 
-.container-fluid .row .content table tbody img {
-  width: 37%;
+.modal .modal-dialog .modal-content .modal-header h4 {
+  font-size: 25px;
+  color: black;
+}
+.showmess .modal-dialog .modal-content .modal-header h4 {
+  font-size: 25px;
+  color: black;
+}
+.message{
+	color: #0074ac;
+	word-break: break-all;
+}
+.showmess .modal-dialog .modal-content .modal-body td {
+  font-size: 20px;
+/*   color: rgb(128, 0, 0); */
+/* 	margin-top:30px; */
+/* 	margin-bottom:30px; */
+line-height:35px;
 }
 
-.checkCompleteOrder {
-  width: 37%;
+
+.modal .modal-dialog .modal-content .modal-body form {
+  /* .form-group-checkbox{
+                        float: right;
+                        padding-right: 30px;
+                        .remember {
+                        margin-bottom: 20px;
+                        }
+                    } */
 }
 
-.detail .modal-dialog .modal-content {
-  background-color: #8E9BAE;
+.modal .modal-dialog .modal-content .modal-body form .mb-3 .form-label {
+  font-size: 23px;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
-.detail .modal-dialog .modal-content .modal-body table {
-  width: 95%;
+.modal .modal-dialog .modal-content .modal-body form .btn {
+  width: 17%;
+  font-size: 20px;
+  color: white;
 }
 
-.detail .modal-dialog .modal-content .modal-body table th {
-  text-align: center;
+.modal .modal-dialog .modal-content .modal-body form .btn-secondary {
+  color: white;
+  background-color: #EBC2C0;
+  border-color: #EBC2C0;
 }
 
-.detail .modal-dialog .modal-content .modal-body table td {
-  text-align: center;
+.modal .modal-dialog .modal-content .modal-body form .btn-secondary:hover, .modal .modal-dialog .modal-content .modal-body form .btn-secondary:focus, .modal .modal-dialog .modal-content .modal-body form .btn-secondary:active:hover {
+  color: #fff;
+  background-color: #F4BAAF;
+  border-color: #F4BAAF;
+}
+.container-fluid .row .content.button.btn btn-secondary {
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 1%;
+  padding-left: 8%;
+}
+.container-fluid .row .content .button  {
+  
+  margin-top: 25px;
+  padding-bottom: 0.7%;
+  padding-left: 6%;
 }
 .totalitems{
-	padding-left:13%;
+	padding-left:18%;
 	margin-top:4%;
-/* 	margin-left: 5%; */
 	font-size: 20px;
 	color:#003D79;
 }
+
 .totalitems1{
 	font-size: 20px;
 	color: red;
 }
 .totalitemsNumber{
 	font-size: 20px;
-	color: 	#FF2D2D;
+	color: red;
+}
+.page{
+
+	margin-right:70px;
 }
 .Pic{
 	margin-top: 10px; 
 	text-align: center;
 }
 body {
+/* 	background-image:url('../images/s1.jpg'); */
+/* 	background-repeat:no-repeat; */
+/* 	background-position:center; */
 background-color: rgb(255, 249, 247);
 }
 .detail{
 	text-align: center;
 	font-size: 40px;
-	margin-left: 17%;
-	margin-top: 3%;
-	 
+	margin-left: 18%;
+	margin-top: 1%;
 }
 .category a {
     text-decoration:none;
@@ -178,5 +225,4 @@ text-decoration:none;
 background-color:gray;
 color:#fafafa;
 }
-
-/*# sourceMappingURL=homepageOrder.css.map */
+/*# sourceMappingURL=homepageEmployee.css.map */

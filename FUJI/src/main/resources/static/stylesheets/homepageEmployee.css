@@ -1,5 +1,5 @@
 .container-fluid .row .table {
-  height: 689px;
+  height: 750px;
   width: 18%;
   background-color: bisque;
   margin-bottom: 0px;
@@ -11,11 +11,11 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
   font-weight: bolder;
-  padding-top: 40px;
+  padding-top: 5px;
 }
 
 .container-fluid .row .table .category {
-  padding-top: 90px;
+  padding-top: 30px;
 }
 
 .container-fluid .row .table .category .employee {
@@ -37,13 +37,25 @@
   text-align: center;
   padding-top: 30px;
 }
-
-.container-fluid .row .table .logout {
-  padding-top: 126%;
-  padding-left: 33%;
+.container-fluid .row .table .category .message {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  padding-top: 30px;
+}
+.container-fluid .row .table .category .backend {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  padding-top: 160px;
 }
 
-.container-fluid .row .table .logout button {
+.container-fluid .row .table .logout {
+  padding-top: 25%;
+  padding-left: 35%;	 
+}
+
+.container-fluid .row .table .logout .btn {
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
@@ -60,27 +72,66 @@
 
 .container-fluid .row .content table {
   clear: both;
+   width:88%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .container-fluid .row .content table thead th {
   padding: 10px;
-  background-color: #96D4D4;
+  background-color:	#ACD6FF;
   text-align: center;
 }
 
 .container-fluid .row .content table tbody td {
   padding: 10px;
   text-align: center;
+  border-bottom:1px solid #ACD6FF;
+}
+
+.container-fluid .row .content table tbody tr:nth-child(odd){
+  background: 	#ECF5FF
+  
+}
+.container-fluid .row .content table tbody tr:nth-child(even){
+  background: 	#FFFFFF
+  
+}
+
+.container-fluid .row .content table tbody tr:hover{
+
+background-color: #bddeff;
+
+color: #000000;
+  
 }
 
 .modal .modal-dialog .modal-content {
-  background-color: #8E9BAE;
+  background-color:#EFF4FF;
+}
+.updateUser .modal-dialog .modal-content {
+  background-color:#EFF4FF;
 }
 
 .modal .modal-dialog .modal-content .modal-header h4 {
   font-size: 25px;
+  color: black;
+}
+.updateUser .modal-dialog .modal-content .modal-header h4 {
+  font-size: 30px;
+  color: black;
+}
+.updateUser .modal-dialog .modal-content .modal-body td {
+  font-size: 18px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: black;
+}
+.updateUser .modal-dialog .modal-content .modal-body td.td1 {
+  font-size: 18px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 20px;
   color: black;
 }
 
@@ -115,5 +166,60 @@
   color: #fff;
   background-color: #F4BAAF;
   border-color: #F4BAAF;
+}
+.container-fluid .row .content.button.btn btn-secondary {
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 1%;
+  padding-left: 8%;
+}
+.container-fluid .row .content .button  {
+  
+  margin-top: 25px;
+  padding-bottom: 0.7%;
+  padding-left: 6%;
+}
+.totalitems{
+	padding-left:8%;
+	margin-top:4%;
+	font-size: 20px;
+	color:#003D79;
+}
+
+.totalitems1{
+	font-size: 20px;
+	color: red;
+}
+.totalitemsNumber{
+	font-size: 20px;
+	color: red;
+}
+.Pic{
+	margin-top: 10px; 
+	text-align: center;
+}
+body {
+background-color: rgb(255, 249, 247);
+}
+.detail{
+	text-align: center;
+	font-size: 40px;
+	 margin-left: 17%;
+	margin-top: 2%;
+}
+.homebutton{
+	text-align: center;
+	margin-right: 3%;
+}
+.category a {
+    text-decoration:none;
+     color:#004080;
+     font-weight:bold
+}
+
+.category a:hover {
+text-decoration:none;
+background-color:gray;
+color:#fafafa;
 }
 /*# sourceMappingURL=homepageEmployee.css.map */

@@ -98,7 +98,7 @@
   
 }
 .container-fluid .row .content table tbody  tr:nth-child(even){
-  background: 	white;
+  background: 	#FFFFFF
   
 }
 .container-fluid .row .content table tbody tr:hover{
@@ -124,9 +124,6 @@ color: #000000;
 .updateProduct .modal-dialog .modal-content {
   background-color:	#F1FDFD;
 }
-.addProduct .modal-dialog .modal-content {
-  background-color:	#F1FDFD;
-}
 
 .deleteProduct .modal-dialog .modal-content {
   background-color:#FBFCFF;
@@ -138,34 +135,6 @@ color: #000000;
 }
 .updateProduct .modal-dialog .modal-content .modal-body td {
   font-size: 18px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  color: black;
-}
-.updateProduct .modal-dialog .modal-content .modal-body td.td1 {
-  font-size: 18px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 20px;
-  color: black;
-}
-.addProduct .modal-dialog .modal-content .modal-header h4 {
-  font-size: 23px;
-  color: black;
-}
-.addProduct .modal-dialog .modal-content .modal-body td {
-  font-size: 17px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-   
- 
-  color: black;
-}
-.addProduct .modal-dialog .modal-content .modal-body td.td1 {
-  font-size: 17px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 10px;
   color: black;
 }
 
@@ -351,7 +320,7 @@ color: #000000;
 }
 .container-fluid .row .content .button2  {
   
-  margin-top: 45px;
+  margin-top: 1%;
   padding-bottom: 1%;
   padding-left: 22%;
 }
@@ -371,8 +340,7 @@ background-color: rgb(255, 249, 247);
 .detail{
 	text-align: center;
 	font-size: 40px;
-	 margin-left: 18%;
-	margin-top: 0.5%;
+	margin-top: 1%; 
 }
 .category a {
     text-decoration:none;
