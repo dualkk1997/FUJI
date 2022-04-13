@@ -75,6 +75,7 @@
    width:88%;
   margin-left: auto;
   margin-right: auto;
+  table-layout: fixed;
 }
 
 .container-fluid .row .content table thead th {
@@ -221,5 +222,11 @@ background-color: rgb(255, 249, 247);
 text-decoration:none;
 background-color:gray;
 color:#fafafa;
+}
+
+.password {
+overflow:hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
 }
 /*# sourceMappingURL=homepageEmployee.css.map */

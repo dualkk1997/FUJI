@@ -34,13 +34,13 @@ public class UsersController {
 		users.setPassword(encode);
 		
 		uService.update(users);
-		return "redirect:/userslist/page/1";
+		return "redirect:/backend/userslist/page/1";
 	}
 	
 	@RequestMapping("/userslist/delete/{id}")
 	public String delete(@PathVariable(name="id")int id) {
 		uService.deleteUsers(id);
-		return"redirect:/userslist/page/1";
+		return"redirect:/backend/userslist/page/1";
 	}
 	//查看客人
 	@RequestMapping("/userslist/page/{pageNum}")
@@ -109,12 +109,12 @@ public class UsersController {
 		users.setPassword(encode);
 		
 		uService.update(users);
-		return "redirect:/employeelist/page/1";
+		return "redirect:/backend/employeelist/page/1";
 	}
 	
 	@RequestMapping("/employeelist/delete/{id}")
 	public String deleteEmployee(@PathVariable(name="id")int id) {
 		uService.deleteUsers(id);
-		return"redirect:/employeelist/page/1";
+		return"redirect:/backend/employeelist/page/1";
 	}
 }
