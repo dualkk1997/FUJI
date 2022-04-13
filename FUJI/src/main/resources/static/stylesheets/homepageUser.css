@@ -72,7 +72,7 @@
 
 .container-fluid .row .content table {
   clear: both;
-   width:100%;
+   width:90%;
   margin-left: auto;
   margin-right: auto;
   table-layout: fixed;
@@ -118,7 +118,7 @@ color: #000000;
   color: black;
 }
 .updateUser .modal-dialog .modal-content .modal-header h4 {
-  font-size: 2３px;
+  font-size: 23px;
   color: black;
 }
 .updateUser .modal-dialog .modal-content .modal-body td {
@@ -222,5 +222,19 @@ color:#fafafa;
 overflow:hidden;
 white-space: nowrap;
 text-overflow: ellipsis;
+}
+.message{
+	font-size:18px;
+	margin-top: 15px; 
+	margin-bottom: 15px; 
+
+	word-break: break-all;
+}
+.m1{
+	font-size:18px;
+	margin-top: 15px; 
+	margin-bottom: 15px; 
+	padding-left: 30px; 
+	
 }
 /*# sourceMappingURL=homepageEmployee.css.map */

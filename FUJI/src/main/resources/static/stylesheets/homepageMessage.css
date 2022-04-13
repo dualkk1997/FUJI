@@ -123,7 +123,7 @@ color: #000000;
   color: black;
 }
 .message{
-	color: #0074ac;
+	color: rgb(0, 0, 0);
 	word-break: break-all;
 }
 .showmess .modal-dialog .modal-content .modal-body td {
