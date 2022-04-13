@@ -37,21 +37,27 @@
   text-align: center;
   padding-top: 30px;
 }
-.container-fluid .row .table .category .message {
+.container-fluid .row .table .category .reserve {
   font-size: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
   padding-top: 30px;
 }
+.container-fluid .row .table .category .message {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  padding-top: 15px;
+}
 .container-fluid .row .table .category .backend {
   font-size: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
-  padding-top: 160px;
+  padding-top: 86px;
 }
 
 .container-fluid .row .table .logout {
-  padding-top: 25%;
+  padding-top: 20%;
   padding-left: 35%;	 
 }
 
