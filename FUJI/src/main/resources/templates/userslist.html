@@ -85,9 +85,9 @@ function clearFilter(){
 							<th>帳號</th>
 							<th>密碼</th>
 							<th>姓名</th>
-							<th>信箱</th>
+<!-- 							<th>信箱</th> -->
 							<th>電話</th>
-							<th>權限</th>
+							<th>查看全部</th>
 							<th>修改</th>
 							<th>刪除</th>
 						</tr>
@@ -98,10 +98,12 @@ function clearFilter(){
 							<td th:text="${users.uid}">ID</td>
 							<td th:text="${users.username}">Username</td>
 							<td class="password" th:text="${users.password}">Password</td>
-							<td th:text="${users.name}">Name</td>
-							<td th:text="${users.email}">Email</td>
-							<td th:text="${users.phone}">Phone</td>
-							<td th:text="${users.role}">Role</td>
+							<td class="password" th:text="${users.name}">Name</td>
+<!-- 							<td class="password" th:text="${users.email}">Email</td> -->
+							<td class="password" th:text="${users.phone}">Phone</td>
+							<td><button type="button" class="btn btn-secondary"
+									data-bs-toggle="modal"
+									th:data-bs-target="'#find'+${users.username}">查看</button></td>
 							<td><button type="button" class="btn btn-success"
 									data-bs-toggle="modal"
 									th:data-bs-target="'#'+${users.username}">修改</button></td>
@@ -263,6 +265,66 @@ function clearFilter(){
 												data-bs-dismiss="modal">取消</button>
 
 										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div th:each="users : ${users}">
+				<div class="modal fade showmess" th:id="'find'+${users.username}" tabindex="-1"
+						aria-labelledby="updateCategoryLabel" aria-hidden="true" >
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4 class="modal-title" id="updateCategoryLabel">查看內容</h4>
+										
+									<button type="button" class="btn-close" data-bs-dismiss="modal"
+										aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+
+									<form>
+										<table>
+
+											<tr>
+
+												<td class="m1">編號：</td>
+												<td	class="message" th:text="${users.uid}" name="uid" readonly="readonly"></td>
+											</tr>
+											<tr>
+												<td class="m1">帳號：</td>
+												<td class="message" th:text="${users.username}" name="username"></td>
+											</tr>
+											
+											<tr>
+
+												<td class="m1">密碼：</td>
+												<td class="message" th:text="${users.password}" name="password"></td>
+											</tr>
+											<tr>
+												<td class="m1">名字：</td>
+												<td	class="message"th:text="${users.name}" name="name"></td>
+											</tr>
+											<tr>
+												<td class="m1">信箱：</td>
+												<td	class="message" th:text="${users.email}" name="email"></td>
+											</tr>
+											<tr>
+												<td class="m1">電話：</td>
+												<td	class="message" th:text="${users.phone}" name="phone"></td>
+											</tr>
+											<tr>
+												<td class="m1">權限：</td>
+												<td	class="message" th:text="${users.role}" name="role"></td>
+											</tr>
+																
+										</table>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary"
+									data-bs-dismiss="modal">關閉</button>
+								
+							</div>
 									</form>
 								</div>
 							</div>
