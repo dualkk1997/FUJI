@@ -15,6 +15,7 @@ import tw.timhsu.products.Products;
 
 
 @Controller
+@RequestMapping("backend")
 public class ReserveController {
 	
 	@Autowired
