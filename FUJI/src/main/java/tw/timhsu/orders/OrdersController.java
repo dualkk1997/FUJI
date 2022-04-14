@@ -1,5 +1,6 @@
 package tw.timhsu.orders;
 
+import java.security.Principal;
 import java.util.Date;
 import java.util.List;
 
@@ -125,7 +126,7 @@ public class OrdersController {
    	}
     
     @GetMapping("/viewSumPage")
-    public String viewSumPage(Model m) {
+    public String viewSumPage(Model m, Principal principal) {
     	String status1 ="已付款";
     	String status2 ="處理中";
     	m.addAttribute("totalprice", oService.getTotalPrice());
@@ -134,6 +135,8 @@ public class OrdersController {
     	m.addAttribute(	"ing", oService.getCountStatus(status2));
     	m.addAttribute("sum",oService.getSum());
     	m.addAttribute("hight",odService.getHight());
+    	Users users = uService.findByusername(principal.getName());
+    	m.addAttribute("users", users.getName());
     	return "homepageIndex";
     }
 
