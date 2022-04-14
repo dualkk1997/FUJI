@@ -15,6 +15,7 @@ import tw.timhsu.products.Products;
 
 
 @Controller
+@RequestMapping("backend")
 public class ReserveController {
 	
 	@Autowired
@@ -50,7 +51,7 @@ public class ReserveController {
     @RequestMapping("/reservelist/delete/{id}")
 	public String deleteEmployee(@PathVariable(name="id")int id) {
 		rService.deleteReserveById(id);
-		return"redirect:/reservelist/page/1";
+		return"redirect:/backend/reservelist/page/1";
 	}
     
     @PostMapping("/reservelist/update")
@@ -58,6 +59,6 @@ public class ReserveController {
    		
    		rService.update(reserve);
    		
-   		return "redirect:/reservelist/page/1";
+   		return "redirect:/backend/reservelist/page/1";
    	}
 }
