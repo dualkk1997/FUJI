@@ -17,7 +17,7 @@ public interface ProductsRepository extends JpaRepository<Products, Integer> {
 	public List<Products> findByCategory_categoryid(int categoryid);
 	
 	@Query(value="select p from Products p where "
-			+"p.productname Like %?1% OR p.pid Like %?1% ")			
+			+"p.productname Like %?1% OR p.pid Like %?1% OR p.productprice Like %?1%")			
 	public Page<Products> findByKeyword(String Keyword,Pageable pageable);
 	
 	
