@@ -65,18 +65,18 @@ public class AccountController {
     
 //    @RequestMapping("/login")
 //    public String login() {
-   @GetMapping("/login")
+ 
     @RequestMapping("/login")
-
     public String login(@ModelAttribute Users user, Model model){
         model.addAttribute("user",user);
+        return "home";
    }
  
     @PostMapping("/login")
     public String login(){
-    public String login( ){
     	return "home";
     }
+   
 
 
     
