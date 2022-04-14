@@ -10,8 +10,6 @@ import org.springframework.data.jpa.repository.Query;
 
 
 
-
-
 public interface ProductsRepository extends JpaRepository<Products, Integer> {
 	
 	public List<Products> findByCategory_categoryid(int categoryid);
