@@ -272,14 +272,14 @@ body .containerAll .footer .footerMountain img {
 
 body .containerAll .scroll-top {
   cursor: pointer;
-  width: 105px;
-  height: 40px;
-  background: rgba(228, 211, 211, 0.36);
-  color: #FFA1A1;
+  width: 45px;
+  height: 45px;
+  background: rgba(105, 105, 105, 0.5);
+  color: white;
   font-size: 25px;
-  border-radius: 50px;
+  border-radius: 10px;
   text-align: center;
-  line-height: 42px;
+  line-height: 45px;
   /* 永遠固定在頁面上 */
   position: fixed;
   right: 55px;
