@@ -45,7 +45,7 @@
                     <div class="backend"><a href="/backend/viewSumPage">後台首頁</a></div>
                 </div>
                 <div class="logout">
-                    <a href="/logout" class="btn btn-info">登出</a>
+                    <a href="/logout" class="btn btn-info" onclick="return confirm('確定要登出嗎?');">登出</a>
                 </div>
             </div>
             <div class="content">
@@ -142,18 +142,19 @@
 											<tr>
 
 												<td>編號：</td>
-												<td><input type="text"
-												th:value="${category.categoryid}" name="categoryid"	readonly="readonly"></td>
+												<td class="message" th:text="${category.categoryid}" name="categoryid"></td>
 											</tr>
 											<tr>
 												<td>種類名稱：</td>
 												<td><input type="text"
 												th:value="${category.categoryname}" name="categoryname"	></td>
 											</tr>
+											<input type="hidden"
+												th:value="${category.categoryid}" name="categoryid"	readonly="readonly">
 
 										</table>
 							<div class="modal-footer">
-										<button type="submit" class="btn btn-primary">確定</button>
+										<button type="submit" class="btn btn-primary" onclick="return alert('修改成功');">確定</button>
 								<button type="button" class="btn btn-secondary"
 									data-bs-dismiss="modal">取消</button>
 								
