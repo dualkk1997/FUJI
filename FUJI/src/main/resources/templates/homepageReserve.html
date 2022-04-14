@@ -35,7 +35,7 @@
 	type="text/css" media="screen" />
 <script type ="text/javascript">
 function clearFilter(){
-	window.location='/reservelist/page/1';
+	window.location='/backend/reservelist/page/1';
 }
 </script>	
 </head>
@@ -71,7 +71,7 @@ function clearFilter(){
 						</form>
 					</nav>
 				</div>
-				<table>
+				<table style="width: 80%">
 					<thead>
 						<!--建立表頭 -->
 						<tr>
@@ -160,9 +160,9 @@ function clearFilter(){
 					<div class="modal fade" th:id="${reserve.reservename}" tabindex="-1"
 						aria-labelledby="updateCategoryLabel" aria-hidden="true">
 						<div class="modal-dialog">
-							<div class="modal-content">
+							<div class="modal-content" style="background-color: #F8E8D1;">
 								<div class="modal-header">
-									<h5 class="modal-title" id="updateCategoryLabel">修改訂位資料</h5>
+									<h5 class="modal-title" id="updateCategoryLabel" style="font-size: 30px;">修改訂位資料</h5>
 
 									<button type="button" class="btn-close" data-bs-dismiss="modal"
 										aria-label="Close"></button>
@@ -170,43 +170,42 @@ function clearFilter(){
 								<div class="modal-body">
 
 									<form th:action="@{/backend/reservelist/update}" method="post">
-										<table>
+										<table style="width: 80%;margin-left:auto;">
 
+<!-- 											<tr> -->
+<!-- 												<td style="font-size: 20px;line-height:40px;">編號:</td> -->
+<!-- 												<td><input type="text" th:value="${reserve.reserveid}" -->
+<!-- 													name="reserveid" readonly="readonly"></td> -->
+<!-- 											</tr> -->
 											<tr>
-
-												<td>編號:</td>
-												<td><input type="text" th:value="${reserve.reserveid}"
-													name="reserveid" readonly="readonly"></td>
-											</tr>
-											<tr>
-												<td>帳號:</td>
+												<td style="font-size: 20px;line-height:40px;">帳號:</td>
 												<td><input type="text" th:value="${reserve.reservename}"
 													name="reservename"></td>
 											</tr>
 											<tr>
 
-												<td>電話:</td>
+												<td style="font-size: 20px;line-height:40px;">電話:</td>
 												<td><input type="text" th:value="${reserve.phone}"
 													name="phone"></td>
 											</tr>
 											<tr>
-												<td>月份:</td>
+												<td style="font-size: 20px;line-height:40px;">月份:</td>
 												<td><input type="text" th:value="${reserve.birthmonth}"
 													name="birthmonth"></td>
 											</tr>
 											<tr>
 
-												<td>日期:</td>
+												<td style="font-size: 20px;line-height:40px;">日期:</td>
 												<td><input type="text" th:value="${reserve.birthdate}"
 													name="birthdate"></td>
 											</tr>
 											<tr>
-												<td>時段:</td>
+												<td style="font-size: 20px;line-height:40px;">時段:</td>
 												<td><input type="text" th:value="${reserve.period}"
 													name="period"></td>
 											</tr>
 											<tr>
-												<td>人數:</td>
+												<td style="font-size: 20px;line-height:40px;">人數:</td>
 												<td><input type="text" th:value="${reserve.total}"
 													name="total"></td>
 											</tr>
@@ -229,9 +228,9 @@ function clearFilter(){
 						tabindex="-1" aria-labelledby="updateCategoryLabel"
 						aria-hidden="true">
 						<div class="modal-dialog">
-							<div class="modal-content">
+							<div class="modal-content" style="background-color: #F8E8D1;">
 								<div class="modal-header">
-									<h5 class="modal-title" id="updateCategoryLabel">確認訂位</h5>
+									<h5 class="modal-title" id="updateCategoryLabel" style="font-size: 30px;">確認訂位</h5>
 									<button type="button" class="btn-close" data-bs-dismiss="modal"
 										aria-label="Close"></button>
 								</div>
@@ -241,7 +240,7 @@ function clearFilter(){
 										method="post">
 
 
-										<p>請問已完成訂位嗎?</p>
+										<p style="font-size: 20px;">請問已完成訂位嗎?</p>
 
 
 										<div class="modal-footer">
