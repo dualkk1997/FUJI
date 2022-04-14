@@ -143,7 +143,7 @@ public class CheckOutlController {
 		MimeMessageHelper helper = new MimeMessageHelper(message, true);
 		Context ctx = new Context();
 
-		ctx.setVariable("name", orders.getUsers().getUsername());
+		ctx.setVariable("name", orders.getUsers().getName());
 		ctx.setVariable("status", orders.getStatus());
 		ctx.setVariable("cartItem", cartItem);
 		ctx.setVariable("orderdate", orders.getOrderdate());
