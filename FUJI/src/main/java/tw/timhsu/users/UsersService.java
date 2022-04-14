@@ -1,5 +1,6 @@
 package tw.timhsu.users;
 
+import java.security.Principal;
 import java.util.List;
 import java.util.Optional;
 
@@ -87,7 +88,6 @@ public class UsersService {
 
 		public void updateCustomerAfterOAuthLoginSuccess(Users user, String name) {
 			user.setName(name);
-			
 			uRep.save(user);
 		}
 		

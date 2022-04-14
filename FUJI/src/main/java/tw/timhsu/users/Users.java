@@ -10,7 +10,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Pattern;
 
+import org.hibernate.validator.constraints.Length;
 import org.springframework.stereotype.Component;
 
 import tw.timhsu.cartitem.*;
@@ -25,11 +29,14 @@ public class Users {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int uid;
 
+
 	@Column(name = "USERNAME")
 	private String username;
 
+
 	@Column(name = "PASSWORD")
 	private String password;
+	
 
 	@Column(name = "NAME")
 	private String name;
@@ -107,6 +114,11 @@ public class Users {
 
 	public void setCartItem(List<CartItem> cartItem) {
 		this.cartItem = cartItem;
+	}
+	@Override
+	public String toString() {
+		return "User [uid=" + uid + ", username=" + username + ", password=" + password + ", email=" + email
+				+ ", phone=" + phone + ", name=" + name + ", role=" + role + "]";
 	}
 
 }
