@@ -159,5 +159,9 @@ public class ProductController {
 		cartItemService.removeProduct(users, productId);
 		return "redirect:/profile/shopping";
 	}
+	@GetMapping("memberList")
+	public String memberListpage() {
+		return "/profile/memberList";
+	}
 
 }

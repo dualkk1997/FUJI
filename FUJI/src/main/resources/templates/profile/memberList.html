@@ -4,7 +4,7 @@
 
 <head>
 <meta charset="utf-8">
-<title>About Us</title>
+<title>FUJI</title>
 <!-- 響應式網站 -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -30,12 +30,12 @@
 <!-- jQuery連結 -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-<link rel="stylesheet" href="../stylesheets/aboutUs.css" type="text/css"
-	media="screen" />
+<link rel="stylesheet" href="../stylesheets/contactUs.css"
+	type="text/css" media="screen" />
 <style type="text/css">
-a{
-color:black;
-text-decoration: none;
+a {
+	color: black;
+	text-decoration: none;
 }
 </style>
 <!-- 往上置頂TOP -->
@@ -77,9 +77,9 @@ text-decoration: none;
 
 <body>
 	<div class="containerAll">
-		<div class="header">
+		<div class="header" style="margin-bottom: 20px;">
 			<div class="logo">
-				<a href="/home"><img src="../images/logo.png"></a>
+				<img src="../images/logo.png">
 				<div class="logoWord">
 					<div class="logoWordChinese">日本料理 | 壽司</div>
 					<br />
@@ -88,16 +88,24 @@ text-decoration: none;
 			</div>
 			<div class="item">
 				<div class="nav">
-					<div class="aboutUs"><a href="/home/aboutus" style="color:red;">關於我們</a></div>
+					<div class="aboutUs">
+						<a href="/home/aboutus">關於我們</a>
+					</div>
 				</div>
 				<div class="nav">
-					<div class="Menu"><a href="/profile/shopping">水產日料</a></div>
+					<div class="Menu">
+						<a href="/profile/shopping">水產日料</a>
+					</div>
 				</div>
 				<div class="nav">
-					<div class="Member"><a href="/profile/memberList">會員專區</a></div>
+					<div class="Member">
+						<a href="/profile/memberList" style="color: red;">會員專區</a>
+					</div>
 				</div>
 				<div class="nav">
-					<div class="Contact"><a href="/home/contactus">聯絡我們</a></div>
+					<div class="Contact">
+						<a href="/home/contactus">聯絡我們</a>
+					</div>
 				</div>
 				<div class="nav">
 					<div class="shoppingCart"></div>
@@ -120,32 +128,32 @@ text-decoration: none;
 			</div>
 		</div>
 
-		<div class="all">
-			<div class="body">
-				<div class="wrapper">
-					<div class="row">
-						<div class="image-section">
-							<img src="../images/aboutUs.jpg">
-						</div>
-						<div class="content">
-							<h1>About Us</h1>
-							<h2>Our FUJI</h2>
-							<p>
-								日本壽司創辦人社長小時候家裡是蔬果店，除蔬果外還賣有許多東西，某日社長被要求要細心地擦拭芥草(日本用來祭拜祖先或是神明的一種植物)，與祖母兩人花費了半天的時間擦拭幾萬枚的芥草，對於幼年的社長來說十分痛苦，經過了一個小時後，就開始偷懶了，看到這個樣子的社長，平常很慈祥的祖母便很嚴厲地詢問社長「你是從哪裡出生的呢?
-								因為有你的父親和母親，還有祖先們的存在，才會有現在的你不是嗎?這個芥草是客人們為了感謝祖先們的象徵，賣給客人用沾有泥巴的芥草去供養祖先，難道不會對客人感到抱歉嗎?」</p>
-							<p>社長認為這是日本人的良心，但這個良心在現在的世道已經漸漸消失了，許多的公司也是這樣，只要不觸法就覺得做什麼都可以。</p>
-							<p>社長認為日本本來的文化是對於看不見的東西，也十分重視，因此希望透過日本食物文化代表的壽司，再次的建立那美好的日本，並且向世界傳遞。</p>
-						</div>
-					</div>
+		<div class="all" align="center"
+			style="margin-top: 100px; margin-bottom: 100px;">
+			<table align="center">
+				<h2>會員專區</h2>
+				<div class="container"
+					style="margin-top: 20px; width: 50%; font-size: 40px; border: 1px solid white; border-radius: 10px; background-color: #1E90FF;">
+					<a href="#" style="color: aliceblue;">更改密碼</a>
 				</div>
-			</div>
+				<div class="container"
+					style="margin-top: 20px; width: 50%; font-size: 40px; border: 1px solid white; border-radius: 10px; background-color: #1E90FF;">
+					<a href="/profile/orders" style="color: aliceblue;">訂單查詢</a>
+				</div>
+				<div class="container"
+					style="margin-top: 20px; width: 50%; font-size: 40px; border: 1px solid white; border-radius: 10px; background-color: #1E90FF;">
+					<a href="#" style="color: aliceblue;">訂位系統</a>
+				</div>
+			</table>
 		</div>
-
-
 		<div class="footer">
 			<div class="footerItem">
-				<div class="nav"><a href="/home/aboutus">關於我們</a></div>
-				<div class="nav"><a href="/home/contactus">聯絡我們</a></div>
+				<div class="nav">
+					<a href="/home/aboutus">關於我們</a>
+				</div>
+				<div class="nav">
+					<a href="/home/contactus">聯絡我們</a>
+				</div>
 				<div class="nav">隱私權政策</div>
 			</div>
 			<div class="footerOpen">
@@ -225,7 +233,7 @@ text-decoration: none;
 						<div style="margin: 5px 10px 15px 20px"></div>
 						<div>
 							<a th:href="@{/oauth2/authorization/google}"><img
-								src="images/googlelogo.png" width="200" height="50"
+								src="../images/googlelogo.png" width="200" height="50"
 								style="display: block; margin: auto; border-radius: 10px;"></a>
 						</div>
 						<!-- <h5>
@@ -233,73 +241,86 @@ text-decoration: none;
 						</h5> -->
 					</form>
 				</div>
+				<!-- Footer -->
+				<div class="modal-footer">
 
-				<!-- 註冊會員 -->
-				<div class="modal fade" id="registerMember" aria-hidden="true"
-					aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-					<div class="modal-dialog modal-dialog-centered">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h4>
-									會員註冊
-									</h3>
-									<!-- <h5 class="modal-title" id="exampleModalToggleLabel2">會員註冊</h5> -->
-									<button type="button" class="btn-close" data-bs-dismiss="modal"
-										aria-label="Close"></button>
-							</div>
-							<div class="modal-body">
-								<form>
-									<!-- user name -->
-									<div class="mb-3">
-										<label for="formGroupExampleInput" class="form-label">姓名</label>
-										<input type="text-name" class="form-control"
-											id="formGroupExampleInput" placeholder="請輸入姓名">
-									</div>
+					<!-- 註冊按鈕 -->
+					<button type="button" class="btn btn-secondary"
+						data-bs-target="#registerMember" data-bs-toggle="modal"
+						data-bs-dismiss="modal"
+						style="width: 100%; line-height: 32px; font-size: 24px;">
+						註冊</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
-									<!-- account -->
-									<div class="mb-3">
-										<label for="formGroupExampleInput2" class="form-label">帳號</label>
-										<input type="text-account" class="form-control"
-											id="formGroupExampleInput2" placeholder="請輸入帳號">
-									</div>
+	<!-- 註冊會員 -->
+	<div class="modal fade" id="registerMember" aria-hidden="true"
+		aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4>
+						會員註冊
+						</h3>
+						<!-- <h5 class="modal-title" id="exampleModalToggleLabel2">會員註冊</h5> -->
+						<button type="button" class="btn-close" data-bs-dismiss="modal"
+							aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<!-- user name -->
+						<div class="mb-3">
+							<label for="formGroupExampleInput" class="form-label">姓名</label>
+							<input type="text-name" class="form-control"
+								id="formGroupExampleInput" placeholder="請輸入姓名">
+						</div>
 
-									<!-- password -->
-									<div class="mb-3">
-										<label for="formGroupExampleInput3" class="form-label">密碼</label>
-										<input type="text-password" class="form-control"
-											id="formGroupExampleInput2" placeholder="請輸入密碼" autofocus>
-									</div>
+						<!-- account -->
+						<div class="mb-3">
+							<label for="formGroupExampleInput2" class="form-label">帳號</label>
+							<input type="text-account" class="form-control"
+								id="formGroupExampleInput2" placeholder="請輸入帳號">
+						</div>
 
-									<!-- eMail -->
-									<div class="mb-3">
-										<label for="formGroupExampleInput4" class="form-label">電子郵件</label>
-										<input type="text-email" class="form-control"
-											id="formGroupExampleInput2" placeholder="請輸入郵件">
-									</div>
+						<!-- password -->
+						<div class="mb-3">
+							<label for="formGroupExampleInput3" class="form-label">密碼</label>
+							<input type="text-password" class="form-control"
+								id="formGroupExampleInput2" placeholder="請輸入密碼" autofocus>
+						</div>
 
-									<!--phone -->
-									<div class="mb-3">
-										<label for="formGroupExampleInput5" class="form-label">手機號碼</label>
-										<input type="text-phone" class="form-control"
-											id="formGroupExampleInput2" placeholder="請輸入手機號碼">
-									</div>
+						<!-- eMail -->
+						<div class="mb-3">
+							<label for="formGroupExampleInput4" class="form-label">電子郵件</label>
+							<input type="text-email" class="form-control"
+								id="formGroupExampleInput2" placeholder="請輸入郵件">
+						</div>
 
-									<!-- checkbox -->
-									<!-- <div class="form-group-checkbox">
+						<!--phone -->
+						<div class="mb-3">
+							<label for="formGroupExampleInput5" class="form-label">手機號碼</label>
+							<input type="text-phone" class="form-control"
+								id="formGroupExampleInput2" placeholder="請輸入手機號碼">
+						</div>
+
+						<!-- checkbox -->
+						<!-- <div class="form-group-checkbox">
                             <input type="checkbox" class="remember">記住我的密碼
                         </div> -->
 
-									<!-- 送出按鈕 -->
-									<button type="button" class="btn btn-secondary">加入會員</button>
-								</form>
-							</div>
-							<!-- <div class="modal-footer">
+						<!-- 送出按鈕 -->
+						<button type="button" class="btn btn-secondary">加入會員</button>
+					</form>
+				</div>
+				<!-- <div class="modal-footer">
                     <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
                         data-bs-dismiss="modal">Back to first</button>
                 </div> -->
-						</div>
-					</div>
-				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
