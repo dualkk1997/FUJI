@@ -31,7 +31,4 @@ public class messageService {
 		return messageRepository.findAll(pageable);
 	}
 	
-	public  messageModel findById (int mcid) {
-		return messageRepository.findById(mcid);
-	}
 }

@@ -73,6 +73,10 @@ function clearFilter(){
 				</div>
 				<div class="detail">員工管理</div>
 				<hr/>
+				<div class="button">
+					<a href="#" th:href="@{/backend/updatepassword}"
+						class="btn btn-success">修改密碼</a>
+				</div>
 				<table>
 					<thead>
 						<!--建立表頭 -->
@@ -81,7 +85,6 @@ function clearFilter(){
 							<th>帳號</th>
 							<th>密碼</th>
 							<th>姓名</th>
-<!-- 							<th>信箱</th> -->
 							<th>電話</th>
 							<th>權限</th>
 							<th>查看全部</th>
@@ -179,19 +182,11 @@ function clearFilter(){
 											<tr>
 
 												<td class="td1">編號：</td>
-												<td><input type="text" th:value="${users.uid}"
-													name="uid" readonly="readonly"></td>
+												<td class="message" th:text="${users.uid}"  name="uid"></td>
 											</tr>
 											<tr>
 												<td class="td1">帳號：</td>
-												<td><input type="text" th:value="${users.username}"
-													name="username"></td>
-											</tr>
-											<tr>
-
-												<td class="td1">密碼：</td>
-												<td><input type="text" th:value="${users.password}"
-													name="password"></td>
+												<td class="message" th:text="${users.username}" name="username"></td>
 											</tr>
 											<tr>
 												<td class="td1">名字：</td>
@@ -224,6 +219,12 @@ function clearFilter(){
 															th:text="ADMIN"></option>
 												</select></td>
 											</tr>
+											<input type="hidden" th:value="${users.username}"
+												name="username">
+											<input type="hidden" th:value="${users.uid}"
+													name="uid" readonly="readonly">
+											<input type="hidden" th:value="${users.password}"
+													name="password">
 										</table>
 										<div class="modal-footer">
 											<button type="submit" class="btn btn-primary">更新</button>
