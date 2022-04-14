@@ -92,7 +92,7 @@ function clearFilter(){
 							<td th:text="${orders.totalprice}+'元'"></td>
 							<td th:text="${orders.status}"></td>
 							<td
-								th:text="${#dates.format(orders.orderdate,'yyyy-MM-dd hh:mm')}"></td>
+								th:text="${orders.orderdate}"></td>
 							<td><a href="#" class="btn btn-info"
 								th:href="@{'/backend/ordersdetails/form/'+${orders.oid}}">查看</a>
 							</td>
