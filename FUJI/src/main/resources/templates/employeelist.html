@@ -49,7 +49,7 @@ function clearFilter(){
 			</div>
 				<div class="title">後台系統</div>
 				<div class="category">
-					<div class="employee"><a href="/backend/userslist/page/1">顧客/員工管理</a></div>
+					<div class="employee"><a href="/backend/userslist/page/1" Style="color:#CD5C5C">顧客/員工管理</a></div>
                     <div class="product"><a href="/backend/listProducts/page/1">產品/種類管理</a></div>
                     <div class="order"><a href="/backend/ordersList/page/1">處理訂單</a></div>
                     <div class="reserve"><a href="/backend/reservelist/page/1">訂位管理</a></div>
@@ -57,7 +57,7 @@ function clearFilter(){
                     <div class="backend"><a href="/backend/viewSumPage">後台首頁</a></div>
 				</div>
 				<div class="logout">
-					<a href="/logout" class="btn btn-info">登出</a>
+					<a href="/logout" class="btn btn-info" onclick="return confirm('確定要登出嗎?');">登出</a>
 				</div>
 			</div>
 			<div class="content">
@@ -227,7 +227,7 @@ function clearFilter(){
 													name="password">
 										</table>
 										<div class="modal-footer">
-											<button type="submit" class="btn btn-primary">更新</button>
+											<button type="submit" class="btn btn-primary" onclick="return alert('修改成功');">修改</button>
 											<button type="button" class="btn btn-secondary"
 												data-bs-dismiss="modal">取消</button>
 
@@ -251,7 +251,7 @@ function clearFilter(){
 								</div>
 								<div class="modal-body">
 
-									<form th:action="@{'/backend/userslist/delete/{users.uid}}"
+									<form th:action="@{'/backend/userslist/delete/'+${users.uid}}"
 										method="post">
 
 
