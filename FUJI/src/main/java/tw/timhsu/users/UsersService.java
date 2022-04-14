@@ -1,5 +1,6 @@
 package tw.timhsu.users;
 
+import java.security.Principal;
 import java.util.List;
 import java.util.Optional;
 
@@ -43,7 +44,7 @@ public class UsersService {
 	}
 	
 	public Page<Users> listAll(int pageNum,String keyword,String role1,String role2) {
-		int pageSize = 10;
+		int pageSize = 8;
 		Sort sort = Sort.by("uid").descending();
 		Pageable pageable = PageRequest.of(pageNum - 1, pageSize,sort);
 	
@@ -87,7 +88,6 @@ public class UsersService {
 
 		public void updateCustomerAfterOAuthLoginSuccess(Users user, String name) {
 			user.setName(name);
-			
 			uRep.save(user);
 		}
 		

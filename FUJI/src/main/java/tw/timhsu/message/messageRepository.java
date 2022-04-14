@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface messageRepository extends JpaRepository<messageModel, Integer> {
 	
-	@Query(value="select m from MessageContent m where "
+	@Query(value="select * from MessageContent m where "
 			+"m.fullname Like %?1% OR m.phone Like %?1%",nativeQuery = true)			
 	public Page<messageModel> findByKeyword(String Keyword,Pageable pageable);
 	

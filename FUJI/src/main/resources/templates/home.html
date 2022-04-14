@@ -85,6 +85,7 @@ a {
 </head>
 
 <body>
+
 	<div class="containerAll">
 		<div class="header">
 			<div class="logo">
@@ -95,13 +96,27 @@ a {
 					<div class="logoWordEnglish">FUJI</div>
 				</div>
 			</div>
+			
+			
+			
+			
+			
 			<div class="item">
+			<div th:if="${yes}" class="alert alert-primary" role="alert" th:text="${yes}"></div>
+							<div  class="alert alert-primary" role="alert"  sec:authorize="isAuthenticated()" >
+								<h7>目前狀態登錄中</h7>
+							</div>
+			
+			
 				<div class="nav" sec:authorize="hasAuthority('ADMIN')">
 					<div class="Contact">
 						<a href="/backend/viewSumPage">後台專區</a>
 
 					</div>
 				</div>
+							
+							 
+							 
 				<div class="nav">
 					<div class="aboutUs">
 						<a href="/home/aboutus">關於我們</a>
@@ -340,7 +355,7 @@ a {
 							aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
-					<form method="post" th:action="@{/register}" th:object="${user}">
+					<form method="post" th:action="@{/register}" th:object="${users}">
 						<!-- user name -->
 						<div class="mb-3">
 							<label for="formGroupExampleInput" class="form-label">姓名</label>
