@@ -10,6 +10,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import tw.timhsu.message.messageModel;
 import tw.timhsu.products.Products;
 
 
@@ -31,7 +32,7 @@ public class ReserveService {
 	
 	public Page<Reserve> listAll(int pageNum,String keyword) {
 		int pageSize = 10;
-		Sort sort = Sort.by("birthmonth").descending();
+		Sort sort = Sort.by("reserveid").descending();
 		Pageable pageable = PageRequest.of(pageNum - 1, pageSize,sort);
 				
 		if(keyword!=null) {
@@ -45,6 +46,8 @@ public class ReserveService {
 		
 			return rRep.save(reserve);
 	}
+		
+		
 	
 	
 }

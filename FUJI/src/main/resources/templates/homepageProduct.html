@@ -184,8 +184,7 @@
 								<tr>
 
 									<td class="td1">編號：</td>
-									<td><input type="text" th:value="${product.pid}"
-										 name="pid" readonly="readonly"></td>
+									<td class="message" th:text="${product.pid}" name="pid"></td>
 								</tr>
 								<tr>
 									<td class="td1">產品名稱：</td>
@@ -208,7 +207,7 @@
 												th:text="${category.categoryname}">選取種類</option>
 									</select></td>
 								</tr>
-								
+								<input type="hidden" th:value="${product.pid}" name="pid" readonly="readonly">
 								<input type="hidden" th:value="${product.productimage}"
 										name="productimage">
 									

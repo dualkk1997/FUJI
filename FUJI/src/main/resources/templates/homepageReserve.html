@@ -63,7 +63,7 @@ function clearFilter(){
 			<div class="content">
 				<div class="search">
 					<nav class="navbar navbar-light bg-light">
-						<form class="form-inline" th:action="@{/reservelist/page/1}">
+						<form class="form-inline" th:action="@{/backend/reservelist/page/1}">
 							<input type="text" name="keyword" th:value="${keyword}" required />
 							<input type="submit" class="btn btn-primary btn-sm" value="搜尋">
 							<input type="button" class="btn btn-secondary btn-sm" value="清除"
@@ -81,7 +81,7 @@ function clearFilter(){
 							<th>訂位月份</th>
 							<th>訂位日期</th>
 							<th>訂位時段</th>
-							<th>權限</th>
+							<th>人數</th>
 							<th>修改訂位</th>
 							<th>完成訂位</th>
 							
@@ -113,7 +113,7 @@ function clearFilter(){
 					<nav aria-label="Page navigation example">
 						<ul class="pagination justify-content-end">
 							<li class="page-item"><a class="page-link"
-								th:if="${currentPage > 1}" th:href="@{/listProducts/page/1}">回第一頁</a>
+								th:if="${currentPage > 1}" th:href="@{/backend/reservelist/page/1}">回第一頁</a>
 							</li>
 							<li class="page-item disabled"><span class="page-link"
 								th:unless="${currentPage > 1}">回第一頁</span></li>
@@ -121,7 +121,7 @@ function clearFilter(){
 
 							<li class="page-item"><a class="page-link"
 								th:if="${currentPage > 1}"
-								th:href="@{'/listProducts/page/' + ${currentPage - 1}+ ${keyword != null ? '?keyword=' + keyword :'' }}">前一頁</a>
+								th:href="@{'/backend/reservelist/page/' + ${currentPage - 1}+ ${keyword != null ? '?keyword=' + keyword :'' }}">前一頁</a>
 							</li>
 							<li class="page-item disabled"><span class="page-link"
 								th:unless="${currentPage > 1}">前一頁</span></li>
@@ -129,7 +129,7 @@ function clearFilter(){
 
 							<span th:each="i:${#numbers.sequence(1,totalPages)}"> <a
 								class="page-link" th:if="${i!=currentPage}"
-								th:href="@{'/listProducts/page/'+ ${i} + ${keyword != null ? '?keyword=' + keyword :'' }}">[[${i}]]</a>
+								th:href="@{'/backend/reservelist/page/'+ ${i} + ${keyword != null ? '?keyword=' + keyword :'' }}">[[${i}]]</a>
 								<li class="page-item active" aria-current="page"><span
 									class="page-link" th:unless="${i!=currentPage}">[[${i}]]</span>
 							</li>
@@ -137,7 +137,7 @@ function clearFilter(){
 
 							<li class="page-item"><a class="page-link"
 								th:if="${currentPage < totalPages}"
-								th:href="@{'/listProducts/page/' + ${currentPage + 1}+ ${keyword != null ? '?keyword=' + keyword :'' }}">下一頁</a>
+								th:href="@{'/backend/reservelist/page/' + ${currentPage + 1}+ ${keyword != null ? '?keyword=' + keyword :'' }}">下一頁</a>
 							</li>
 							<li class="page-item disabled"><span class="page-link"
 								th:unless="${currentPage < totalPages}">下一頁</span></li>
@@ -145,7 +145,7 @@ function clearFilter(){
 
 							<li class="page-item"><a class="page-link"
 								th:if="${currentPage < totalPages}"
-								th:href="@{'/listProducts/page/' + ${totalPages}+ ${keyword != null ? '?keyword=' + keyword :'' }}">最後一頁</a>
+								th:href="@{'/backend/reservelist/page/' + ${totalPages}+ ${keyword != null ? '?keyword=' + keyword :'' }}">最後一頁</a>
 							</li>
 							<li class="page-item disabled"><span class="page-link"
 								th:unless="${currentPage < totalPages}">最後一頁</span></li>

@@ -142,7 +142,7 @@ public class UsersController {
 				String bcnewpwd = new BCryptPasswordEncoder().encode(newpwd);
 				
 				uService.updatePassword(username, bcnewpwd);
-				mav.setViewName("/backend/userslist/page/1");
+				mav.setViewName("redirect:/backend/employeelist/page/1");
 				return mav;
 				
 			}else if(!newpwd2.equals(newpwd)) {
