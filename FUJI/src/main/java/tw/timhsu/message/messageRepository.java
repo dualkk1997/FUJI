@@ -4,7 +4,9 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface messageRepository extends JpaRepository<messageModel, Integer> {
 	
 	@Query(value="select m from MessageContent m where "
