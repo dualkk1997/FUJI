@@ -29,7 +29,7 @@ public interface OrdersRepository extends JpaRepository<Orders, Integer> {
 	@Query(value="Update Orders o Set o.status = ?1 Where o.oid =?2")
 	public void UpdateByStatus(String status,int oid);
 	
-	@Query(value="select sum(totalprice) from Orders where orderdate between ('2022-03-01') and ('2022-03-31')")
+	@Query(value="select sum(totalprice) from Orders where orderdate between ('2022-04-01') and ('2022-04-30')")
 	public String getTotalPrice();
 	
 	@Query(value="select sum(totalprice) from Orders where year(OrderDate)=2022")
