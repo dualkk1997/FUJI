@@ -237,7 +237,7 @@ function clearFilter(){
 								</div>
 								<div class="modal-body">
 
-									<form th:action="@{'/backend/reservelist/delete/{reserve.reserveid}}"
+									<form th:action="@{'/backend/reservelist/delete/'+${reserve.reserveid}}"
 										method="post">
 
 
@@ -245,7 +245,7 @@ function clearFilter(){
 
 
 										<div class="modal-footer">
-											<button type="submit" class="btn btn-primary">完成</button>
+											<button type="submit" class="btn btn-primary" >完成</button>
 											<button type="button" class="btn btn-secondary"
 												data-bs-dismiss="modal">取消</button>
 
