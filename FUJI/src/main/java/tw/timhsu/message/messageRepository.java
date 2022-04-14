@@ -13,5 +13,4 @@ public interface messageRepository extends JpaRepository<messageModel, Integer> 
 			+"m.fullname Like %?1% OR m.phone Like %?1%",nativeQuery = true)			
 	public Page<messageModel> findByKeyword(String Keyword,Pageable pageable);
 	
-
 }

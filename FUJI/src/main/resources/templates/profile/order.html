@@ -97,7 +97,9 @@ a {
 					</div>
 				</div>
 				<div class="nav">
-					<div class="Member"style="color:red;">會員專區</div>
+					<div class="Member" style="color: red;">
+						<a href="/profile/memberList">會員專區</a>
+					</div>
 				</div>
 				<div class="nav">
 					<div class="Contact">
@@ -149,9 +151,9 @@ a {
 								<!--建立表格本體 -->
 								<tr>
 									<td th:text=${orders.oid}>5</td>
-									<td th:text=${orders.Totalprice}>200元</td>
-									<td th:text=${orders.status}>完成訂單</td>
-									<td th:text=${orders.Orderdate}>2022-03-29 12:00</td>
+									<td th:text=${orders.Totalprice}></td>
+									<td th:text=${orders.status}></td>
+									<td th:text=${orders.Orderdate}></td>
 								</tr>
 							</tbody>
 						</table>
@@ -173,11 +175,11 @@ a {
 								<tbody>
 									<!-- 建立表格本體 -->
 									<tr th:each="od:${orders.ordersdetails2}">
-										<td th:text="${od.odid}">1</td>
-										<td th:text="${od.orders.oid}">2</td>
-										<td th:text="${od.products.productname}">元元</td>
-										<td th:text="${od.quantity}">1</td>
-										<td th:text="${od.products.productprice}">60元</td>
+										<td th:text="${od.odid}"></td>
+										<td th:text="${od.orders.oid}"></td>
+										<td th:text="${od.products.productname}"></td>
+										<td th:text="${od.quantity}"></td>
+										<td th:text="${od.products.productprice}"></td>
 									</tr>
 								</tbody>
 							</table>
