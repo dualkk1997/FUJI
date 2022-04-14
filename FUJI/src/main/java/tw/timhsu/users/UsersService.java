@@ -44,7 +44,7 @@ public class UsersService {
 	}
 	
 	public Page<Users> listAll(int pageNum,String keyword,String role1,String role2) {
-		int pageSize = 10;
+		int pageSize = 8;
 		Sort sort = Sort.by("uid").descending();
 		Pageable pageable = PageRequest.of(pageNum - 1, pageSize,sort);
 	
