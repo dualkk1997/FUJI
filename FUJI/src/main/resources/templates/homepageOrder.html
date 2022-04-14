@@ -99,7 +99,7 @@ function clearFilter(){
 							<td
 								th:text="${orders.orderdate}"></td>
 							<td><a href="#" class="btn btn-info"
-								th:href="@{'/ordersdetails/form/'+${orders.oid}}">明細</a>
+								th:href="@{'/backend/ordersdetails/form/'+${orders.oid}}">明細</a>
 							</td>
 							<td><a href="#" class="btn btn-warning"
 								th:if="${orders.status} != 處理中 "
