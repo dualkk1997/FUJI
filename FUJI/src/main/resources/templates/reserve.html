@@ -2,239 +2,257 @@
 <html lang="zh-tw">
 
 <head>
-  <meta charset="utf-8">
-  <title>Reserve</title>
-  <!-- 響應式網站 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<title>Reserve</title>
+<!-- 響應式網站 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- AWESOME連結 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- AWESOME連結 -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-  <!-- AOS連結 -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<!-- AOS連結 -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-  <!-- Boostrap 導入程式 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<!-- Boostrap 導入程式 -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+	crossorigin="anonymous">
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+	crossorigin="anonymous"></script>
 
-  <!-- jQuery連結 -->
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!-- jQuery連結 -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-  <script src="../js/script.js"></script>
-  <!-- Vue -->
-  <script src="https://unpkg.com/vue@3"></script>
-  <link rel="stylesheet" href="../stylesheets/header.min.css" type="text/css" />
-  <link rel="stylesheet" href="../stylesheets/reserve.min.css" type="text/css" />
-  <link rel="stylesheet" href="../stylesheets/modal.min.css" type="text/css"  />
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+<script src="../js/script.js"></script>
+<!-- Vue -->
+<script src="https://unpkg.com/vue@3"></script>
+<link rel="stylesheet" href="../stylesheets/header.min.css"
+	type="text/css" />
+<link rel="stylesheet" href="../stylesheets/reserve.min.css"
+	type="text/css" />
+<link rel="stylesheet" href="../stylesheets/modal.min.css"
+	type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<style type="text/css">
+a {
+	color: black;
+	text-decoration: none;
+}
+</style>
 
 
 </head>
 
 <body>
-  <div id="app" class="containerAll">
-    <div class="header">
-      <div class="logo">
-        <img src="../images/logo.png">
-        <div class="logoWord">
-          <div class="logoWordChinese">
-            日本料理 | 壽司
-          </div>
-          <br />
-          <div class="logoWordEnglish">
-            FUJI
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="nav">
-          <div class="aboutUs">關於我們</div>
-        </div>
-        <div class="nav">
-          <div class="Menu">水產日料</div>
-        </div>
-        <div class="nav">
-          <div class="Member">會員專區</div>
-        </div>
-        <div class="nav">
-          <div class="Contact">聯絡我們</div>
-        </div>
-        <div class="nav">
-          <div class="shoppingCart">點餐</div>
-        </div>
-        <div class="login" onclick="showLoginModal()">
-          <i class="fas fa-sign-in-alt"></i>
-        </div>
-        <div class="logout">
-          <i class="fas fa-sign-out-alt"></i>
-        </div>
-      </div>
-    </div>
-    <div class="menu-outline">
-      <div class="img">
-        <img src="../images/menuTitleImg.png">
-      </div>
-      <div class="title">
-        訂位系統
-      </div>
-      <div class="container">
-        <div class="infomation">
-          <div class="infomation-input">
-            <label for="infomation-name" class="form-label">姓名</label>
-            <input type="text" class="form-control" id="infomation-name" placeholder="王小明" v-model="reserveForm.name">
-          </div>
-          <div class="infomation-input">
-            <label for="infomation-phone" class="form-label">電話</label>
-            <input type="text" class="form-control" id="infomation-phone" placeholder="0920123456" v-model="reserveForm.phone">
-          </div>
-          <div class="infomation-input">
-            <label for="infomation-day" class="form-label">日期</label>
-            <select class="form-select" aria-label="infomation-day" v-model="reserveForm.date">
-              <option v-for="d in date" :value="d.strval">{{d.month +'/' + d.day }}</option>
-            </select>
-          </div>
-          <div class="infomation-input">
-            <label for="infomation-time" class="form-label">時段</label>
-            <select class="form-select" aria-label="infomation-time" v-model="reserveForm.interval">
-              <option v-for="i in interval" :value="i">{{i}}</option>
-            </select>
-          </div>
-          <div class="infomation-input">
-            <label for="infomation-amount" class="form-label">人數</label>
-            <input type="number" max="10" min="1" class="form-control" id="infomation-amount" v-model="reserveForm.amount">
-          </div>
-          <button type="button" class="btn btn-secondary w-100" @click="sendReserve">確認訂位</button>
-        </div>
-        <div class="calendar">
-          <h1>可訂位時段/人數對照</h1>
-          <div class="calendar-title">
-            <div>日</div>
-            <div>一</div>
-            <div>二</div>
-            <div>三</div>
-            <div>四</div>
-            <div>五</div>
-            <div>六</div>
-          </div>
-          <div class="content">
-            <div class="day-block" v-for="date in calendar" @click="showIntervalInfo(date)">
-              <div class="monthAndDay">
-                {{date.month}}/{{date.day}}
-              </div>
-              <div class="haveSeat" v-if="date.status">
-                可訂位
-              </div>
-              <div class="fullSeat" v-else>
-                滿位
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+	<div id="app" class="containerAll">
+		<div class="header">
+			<div class="logo">
+				<a href="/home"><img src="../images/logo.png"></a>
+				<div class="logoWord">
+					<div class="logoWordChinese">日本料理 | 壽司</div>
+					<br />
+					<div class="logoWordEnglish">FUJI</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="nav">
+					<div class="aboutUs">
+						<a href="/home/aboutus">關於我們</a>
+					</div>
+				</div>
+				<div class="nav">
+					<div class="Menu">
+						<a href="/profile/shopping">水產日料</a>
+					</div>
+				</div>
+				<div class="nav">
+					<div class="Member">
+						<a href="/profile/memberList">會員專區</a>
+					</div>
+				</div>
+				<div class="nav">
+					<div class="Contact">
+						<a href="/home/contactus">聯絡我們</a>
+					</div>
+				</div>
+				<div class="login" onclick="showLoginModal()">
+					<i class="fas fa-sign-in-alt"></i>
+				</div>
+				<div class="logout">
+					<i class="fas fa-sign-out-alt"></i>
+				</div>
+			</div>
+		</div>
+		<div class="menu-outline">
+			<div class="img">
+				<img src="../images/menuTitleImg.png">
+			</div>
+			<div class="title">訂位系統</div>
+			<div class="container">
+				<div class="infomation">
+					<div class="infomation-input">
+						<label for="infomation-name" class="form-label">姓名</label> <input
+							type="text" class="form-control" id="infomation-name"
+							placeholder="王小明" v-model="reserveForm.name">
+					</div>
+					<div class="infomation-input">
+						<label for="infomation-phone" class="form-label">電話</label> <input
+							type="text" class="form-control" id="infomation-phone"
+							placeholder="0920123456" v-model="reserveForm.phone">
+					</div>
+					<div class="infomation-input">
+						<label for="infomation-day" class="form-label">日期</label> <select
+							class="form-select" aria-label="infomation-day"
+							v-model="reserveForm.date">
+							<option v-for="d in date" :value="d.strval">{{d.month
+								+'/' + d.day }}</option>
+						</select>
+					</div>
+					<div class="infomation-input">
+						<label for="infomation-time" class="form-label">時段</label> <select
+							class="form-select" aria-label="infomation-time"
+							v-model="reserveForm.interval">
+							<option v-for="i in interval" :value="i">{{i}}</option>
+						</select>
+					</div>
+					<div class="infomation-input">
+						<label for="infomation-amount" class="form-label">人數</label> <input
+							type="number" max="10" min="1" class="form-control"
+							id="infomation-amount" v-model="reserveForm.amount">
+					</div>
+					<button type="button" class="btn btn-secondary w-100"
+						@click="sendReserve">確認訂位</button>
+				</div>
+				<div class="calendar">
+					<h1>可訂位時段/人數對照</h1>
+					<div class="calendar-title">
+						<div>日</div>
+						<div>一</div>
+						<div>二</div>
+						<div>三</div>
+						<div>四</div>
+						<div>五</div>
+						<div>六</div>
+					</div>
+					<div class="content">
+						<div class="day-block" v-for="date in calendar"
+							@click="showIntervalInfo(date)">
+							<div class="monthAndDay">{{date.month}}/{{date.day}}</div>
+							<div class="haveSeat" v-if="date.status">可訂位</div>
+							<div class="fullSeat" v-else>滿位</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-    </div>
-
-
-    <!-- 會員登入 -->
-    <div class="modal fade" id="loginModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <!-- Header -->
-          <div class="modal-header">
-            <h3>會員登入</h3>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <!-- Body -->
-          <div class="modal-body">
-            <!-- 登入表單 -->
-            <form>
-              <!-- email -->
-              <div class="form-group">
-                <input type="email" class="account form-control" placeholder="Email">
-              </div>
-              <!-- password -->
-              <div class="form-group">
-                <input type="password" class="password form-control" placeholder="Password">
-              </div>
-              <!-- checkbox -->
-              <div class="form-group">
-                <input type="checkbox" class="remember">記住我的密碼
-              </div>
-              <!-- 送出按鈕 -->
-              <button type="button" class="btn btn-secondary"> 登入 </button>
-            </form>
-
-          </div>
-          <!-- Footer -->
-          <div class="modal-footer">
-            <div class="signup">
-              <span>尚未成為會員</span>
-              <a href="#" type="button" class="member"> 立即加入 </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-        <!-- 會員登入 -->
-    <div class="modal fade" id="loginModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <!-- Header -->
-          <div class="modal-header">
-            <h3>會員登入</h3>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <!-- Body -->
-          <div class="modal-body">
-            <!-- 登入表單 -->
-            <form>
-              <!-- email -->
-              <div class="form-group">
-                <input type="email" class="account form-control" placeholder="Email">
-              </div>
-              <!-- password -->
-              <div class="form-group">
-                <input type="password" class="password form-control" placeholder="Password">
-              </div>
-              <!-- checkbox -->
-              <div class="form-group">
-                <input type="checkbox" class="remember">記住我的密碼
-              </div>
-              <!-- 送出按鈕 -->
-              <button type="button" class="btn btn-secondary"> 登入 </button>
-            </form>
-
-          </div>
-          <!-- Footer -->
-          <div class="modal-footer">
-            <div class="signup">
-              <span>尚未成為會員</span>
-              <a href="#" type="button" class="member"> 立即加入 </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- 會員登入 -->
-    <div class="modal fade" id="intervalModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <!-- Header -->
-          <div class="modal-header">
-            <h3>剩餘訂位</h3>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <!-- Body -->
-          <div class="modal-body">
+		</div>
 
 
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+		<!-- 會員登入 -->
+		<div class="modal fade" id="loginModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<!-- Header -->
+					<div class="modal-header">
+						<h3>會員登入</h3>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<!-- Body -->
+					<div class="modal-body">
+						<!-- 登入表單 -->
+						<form>
+							<!-- email -->
+							<div class="form-group">
+								<input type="email" class="account form-control"
+									placeholder="Email">
+							</div>
+							<!-- password -->
+							<div class="form-group">
+								<input type="password" class="password form-control"
+									placeholder="Password">
+							</div>
+							<!-- checkbox -->
+							<div class="form-group">
+								<input type="checkbox" class="remember">記住我的密碼
+							</div>
+							<!-- 送出按鈕 -->
+							<button type="button" class="btn btn-secondary">登入</button>
+						</form>
+
+					</div>
+					<!-- Footer -->
+					<div class="modal-footer">
+						<div class="signup">
+							<span>尚未成為會員</span> <a href="#" type="button" class="member">
+								立即加入 </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 會員登入 -->
+		<div class="modal fade" id="loginModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<!-- Header -->
+					<div class="modal-header">
+						<h3>會員登入</h3>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<!-- Body -->
+					<div class="modal-body">
+						<!-- 登入表單 -->
+						<form>
+							<!-- email -->
+							<div class="form-group">
+								<input type="email" class="account form-control"
+									placeholder="Email">
+							</div>
+							<!-- password -->
+							<div class="form-group">
+								<input type="password" class="password form-control"
+									placeholder="Password">
+							</div>
+							<!-- checkbox -->
+							<div class="form-group">
+								<input type="checkbox" class="remember">記住我的密碼
+							</div>
+							<!-- 送出按鈕 -->
+							<button type="button" class="btn btn-secondary">登入</button>
+						</form>
+
+					</div>
+					<!-- Footer -->
+					<div class="modal-footer">
+						<div class="signup">
+							<span>尚未成為會員</span> <a href="#" type="button" class="member">
+								立即加入 </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 會員登入 -->
+		<div class="modal fade" id="intervalModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<!-- Header -->
+					<div class="modal-header">
+						<h3>剩餘訂位</h3>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<!-- Body -->
+					<div class="modal-body"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
-  <script src="../js/reserve.js"></script>
+<script src="../js/reserve.js"></script>
 </html>
