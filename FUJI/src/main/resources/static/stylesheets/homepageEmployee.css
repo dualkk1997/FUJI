@@ -1,5 +1,5 @@
 .container-fluid .row .table {
-  height: 750px;
+  height: 800px;
   width: 18%;
   background-color: bisque;
   margin-bottom: 0px;
@@ -182,7 +182,7 @@ color: #000000;
 }
 .container-fluid .row .content .button  {
   
-  margin-top: 25px;
+  margin-top: 5px;
   padding-bottom: 0.7%;
   padding-left: 5%;
 }

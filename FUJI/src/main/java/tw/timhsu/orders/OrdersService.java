@@ -40,7 +40,7 @@ public class OrdersService {
 	
 	
 	public Page<Orders> listAll(int pageNum,Integer id,String status,String status2) {
-		int pageSize = 5;
+		int pageSize = 8;
 		Sort sort = Sort.by("orderdate").descending();
 		Pageable pageable = PageRequest.of(pageNum - 1, pageSize,sort);
 				

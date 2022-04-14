@@ -66,7 +66,7 @@ public class ProductsService {
    
     
     public Page<Products> listAll(int pageNum,String keyword) {
-		int pageSize = 5;
+		int pageSize = 7;
 		
 		Pageable pageable = PageRequest.of(pageNum - 1, pageSize);
 				
