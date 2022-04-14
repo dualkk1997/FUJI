@@ -37,6 +37,12 @@
   text-align: center;
   padding-top: 30px;
 }
+.container-fluid .row .table .category .reserve {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  padding-top: 30px;
+}
 .container-fluid .row .table .category .message {
   font-size: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -47,11 +53,11 @@
   font-size: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
-  padding-top: 160px;
+  padding-top: 100px;
 }
 
 .container-fluid .row .table .logout {
-  padding-top: 25%;
+  padding-top: 20%;
   padding-left: 35%;	 
 }
 
@@ -123,7 +129,7 @@ color: #000000;
   color: black;
 }
 .message{
-	color: #0074ac;
+	color: rgb(0, 0, 0);
 	word-break: break-all;
 }
 .showmess .modal-dialog .modal-content .modal-body td {

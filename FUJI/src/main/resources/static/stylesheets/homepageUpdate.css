@@ -37,12 +37,6 @@
   text-align: center;
   padding-top: 30px;
 }
-.container-fluid .row .table .category .reserve {
-  font-size: 20px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-align: center;
-  padding-top: 30px;
-}
 .container-fluid .row .table .category .message {
   font-size: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -53,11 +47,11 @@
   font-size: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
-  padding-top: 86px;
+  padding-top: 145px;
 }
 
 .container-fluid .row .table .logout {
-  padding-top: 20%;
+  padding-top: 25%;
   padding-left: 35%;	 
 }
 
@@ -78,40 +72,32 @@
 
 .container-fluid .row .content table {
   clear: both;
-   width:90%;
+   width:50%;
+   background-color:#f9f9f9;
+   
   margin-left: auto;
   margin-right: auto;
   table-layout: fixed;
+  height:350px;
 }
 
 .container-fluid .row .content table thead th {
-  padding: 10px;
+/*   padding: 10px; */
   background-color:	#ACD6FF;
   text-align: center;
 }
 
 .container-fluid .row .content table tbody td {
-  padding: 10px;
-  text-align: center;
-  border-bottom:1px solid #ACD6FF;
+/*   padding: 10px; */
+/*   text-align: center; */
+/*   	border-bottom:3px solid #ACD6FF; */
+/*   	border-top:3px solid #ACD6FF; */
+/*   	border-left:3px solid #ACD6FF; */
+/*   	border-right:3px solid #ACD6FF; */
 }
 
-.container-fluid .row .content table tbody tr:nth-child(odd){
-  background: 	#ECF5FF
-  
-}
-.container-fluid .row .content table tbody tr:nth-child(even){
-  background: 	#FFFFFF
-  
-}
 
-.container-fluid .row .content table tbody tr:hover{
 
-background-color: #bddeff;
-
-color: #000000;
-  
-}
 
 .modal .modal-dialog .modal-content {
   background-color:#EFF4FF;
@@ -125,12 +111,12 @@ color: #000000;
   color: black;
 }
 .updateUser .modal-dialog .modal-content .modal-header h4 {
-  font-size: 30px;
+  font-size: 23px;
   color: black;
 }
 .updateUser .modal-dialog .modal-content .modal-body td {
   font-size: 18px;
-  padding-top: 7px;
+/*   padding-top: 7px; */
   padding-bottom: 7px;
   color: black;
 }
@@ -211,12 +197,8 @@ background-color: rgb(255, 249, 247);
 .detail{
 	text-align: center;
 	font-size: 40px;
-	 margin-left: 17%;
+/* 	 margin-left: 13%; */
 	margin-top: 2%;
-}
-.homebutton{
-	text-align: center;
-	margin-right: 3%;
 }
 .category a {
     text-decoration:none;
@@ -229,7 +211,6 @@ text-decoration:none;
 background-color:gray;
 color:#fafafa;
 }
-
 .password {
 overflow:hidden;
 white-space: nowrap;
@@ -248,5 +229,20 @@ text-overflow: ellipsis;
 	margin-bottom: 15px; 
 	padding-left: 30px; 
 	
+}
+.t1{
+	color:#295454;
+	font-weight:550;
+	text-align:right;
+	font-size:24px;
+	padding-left: 25%; 
+	padding-right:10px;
+}
+.t2{
+	padding-right:10px;
+}
+.button{
+	text-align:center;
+	margin-right: 50px;
 }
 /*# sourceMappingURL=homepageEmployee.css.map */

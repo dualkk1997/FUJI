@@ -90,4 +90,15 @@ public class UsersService {
 			
 			uRep.save(user);
 		}
+		
+		//4/13
+		public boolean updatePassword(String username,String password) {
+			
+			Users user = findByusername(username);
+			user.setPassword(password);
+			uRep.save(user);
+			return true;
+			
+		}
+		
 }

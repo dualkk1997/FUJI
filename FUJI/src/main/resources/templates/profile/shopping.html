@@ -163,7 +163,7 @@ a {
 			<!--購物車車-->
 			<div class="modal fade" id="cartModal">
 				<div class="modal-dialog">
-					<div class="modal-content">
+					<div class="modal-content" style="background: #FDFDFD;">
 						<!-- Header -->
 						<div class="modal-header">
 							<h3 style="top: 12%;">購物車</h3>
@@ -180,14 +180,14 @@ a {
                                     <div @click="reduceOrder(food)">-</div>
                                 </div>
                                 -->
-									<div class="name" th:text="${product.Products.Productname}">
+									<div class="name"style="color: #FF5A91;" th:text="${product.Products.Productname}">
 										{{food.name}}</div>
-									<div class="price" th:text="${product.Products.Productprice}">
+									<div class="price"style="color:gray;" th:text="'$ '+${product.Products.Productprice}">
 										{{food.price}}</div>
-									<div class="amount" th:text="'x'+${product.quantity}"></div>
-									<a th:href="@{'/profile/remove/'+${product.products.pid}}">移除產品</a>
+									<div class="amount" style="color:gray;"th:text="'x'+${product.quantity}"></div>
+									<a th:href="@{'/profile/remove/'+${product.products.pid}}">移除</a>
 								</div>
-								<div class="total" th:text="'總計:'+${total}+'元'">總計
+								<div class="total" style="color:gray;"th:text="'總計:'+${total}+'元'">總計	
 									{{total}} 元</div>
 								<form method="post" action="/ecpay/checkout">
 									<input type="hidden" name="TotalAmount" th:value="${total}">
