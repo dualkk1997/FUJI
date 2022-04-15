@@ -62,7 +62,6 @@
 					<thead>
 						<!--建立表頭 -->
 						<tr>
-							<th>訂單明細編號</th>
 							<th>訂單編號</th>
 							<th>產品</th>
 							<th>數量</th>
@@ -72,7 +71,6 @@
 					<tbody>
 						<!-- 建立表格本體 -->
 						<tr th:each="od : ${ordersdetails}">
-							<td th:text="${od.odid}">編號</td>
 							<td th:each="orders:${od.orders}" th:text="${orders.oid}">編號</td>
 							<td th:each="products:${od.products}"
 								th:text="${products.productname}">編號</td>
