@@ -131,10 +131,8 @@ body .containerAll .scroll-top {
 						</a>
 					</div>
 				</div>
-				<div class="login" onclick="showLoginModal()">
-					<i class="fas fa-sign-in-alt"></i>
-				</div>
-				<div class="logout">
+					onclick="javascript:window.location.href='http://localhost:8081/logout'"
+					sec:authorize="isAuthenticated()" class="logout">
 					<i class="fas fa-sign-out-alt"></i>
 				</div>
 			</div>
@@ -154,9 +152,6 @@ body .containerAll .scroll-top {
 			</div>
 			<div class="payment-text">
 				<div class="title">
-					<h1>
-						付款成功
-						</h3>
 				</div>
 				<div class="content">
 					<div class="price" th:text="${total}+元"></div>

@@ -115,10 +115,13 @@ a {
 						</a>
 					</div>
 				</div>
-				<div class="login" onclick="showLoginModal()">
+				<div class="login" onclick="showLoginModal()"
+					sec:authorize="isAnonymous()">
 					<i class="fas fa-sign-in-alt"></i>
 				</div>
-				<div class="logout">
+				<div
+					onclick="javascript:window.location.href='http://localhost:8081/logout'"
+					sec:authorize="isAuthenticated()" class="logout">
 					<i class="fas fa-sign-out-alt"></i>
 				</div>
 			</div>
