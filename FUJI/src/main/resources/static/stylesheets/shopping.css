@@ -22,6 +22,7 @@ body .containerAll .header .logo {
 
 body .containerAll .header .logo img {
   width: 20%;
+  height:150px;
   margin-top: 5px;
   margin-left: 10px;
   float: left;

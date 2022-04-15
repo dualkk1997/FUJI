@@ -6,7 +6,7 @@ body {
 
 body .containerAll .header {
   width: 100%;
-  height: 200px;
+  height: 180px;
   background-image: url("../images/homeBackground.jpg");
   position: -webkit-sticky;
   position: sticky;
@@ -24,6 +24,7 @@ body .containerAll .header .logo {
 
 body .containerAll .header .logo img {
   width: 20%;
+  height:150px;
   margin-top: 5px;
   margin-left: 10px;
   float: left;
@@ -205,7 +206,7 @@ body .containerAll .homePicNews {
   font-family: "DFKai-sb", serif;
   font-size: 20px;
   margin-left: 15px;
-  margin-top: 250px;
+  margin-top: 300px;
   line-height: 40px;
 }
 
@@ -368,6 +369,7 @@ body .containerAll .footer .logo {
 
 body .containerAll .footer .logo img {
   width: 20%;
+  height:150px;
   margin-top: 20px;
   margin-left: 15px;
   float: left;
