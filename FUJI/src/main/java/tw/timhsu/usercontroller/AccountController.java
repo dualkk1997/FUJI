@@ -68,18 +68,19 @@ public class AccountController {
  
     @RequestMapping("/login")
     public String login(@ModelAttribute Users user, Model model){
-    	 model.addAttribute("user",user);
+    	
         return "home";
    }
  
     @PostMapping("/login")
     public String postlogin(@ModelAttribute Users user, Model model){
-    	 model.addAttribute("user",user);
+ 
     	return "home";
     }
     
     @GetMapping("/")
-    public String home(){
+    public String home(RedirectAttributes ra,Principal p){
+    	if(p != null) {ra.addFlashAttribute("g","恭喜GOOGLE用戶登入成功");}
     	return "redirect:/home";
     }
    
@@ -131,7 +132,7 @@ public class AccountController {
             return "home";
         }
 
-        ra.addFlashAttribute("message","Success!your registration is compelete");
+        ra.addFlashAttribute("p","恭喜您!註冊成功富鮨會員!手刀登入使用我們的服務吧");
 
         String encode = new BCryptPasswordEncoder().encode(user.getPassword());
         user.setPassword(encode);
