@@ -18,7 +18,7 @@ public interface OrdersRepository extends JpaRepository<Orders, Integer> {
 	
 
 	
-	@Query(value="select o from Orders o where o.oid Like ?1 and o.status Like ?2 or o.oid Like ?1 and o.status Like ?3 ")			
+	@Query(value="select * from Orders o where o.oid Like %?1% and o.status Like ?2 or o.oid Like %?1% and o.status Like ?3 or o.uid Like %?1% and o.status Like ?2 or o.uid Like %?1% and o.status Like ?3",nativeQuery = true)			
 	public Page<Orders> findByOid(Integer id,Pageable pageable,String status,String status2);
 	
 	

@@ -54,8 +54,16 @@ public class ProductsController {
     public String saveProduct(@RequestParam("productimage") MultipartFile file,
     		@RequestParam("productname") String name,
     		@RequestParam("productprice") int price,
-    		@RequestParam("category") Category category,Model m) {
+    		@RequestParam("category") Category category,Model m,String keyword) {
     	
+    	Map<String, String> errors = new HashMap<String, String>();
+    	m.addAttribute("errors", errors);
+    	    	
+    	
+    	if(price < 40) {
+    		errors.put("price", "*產品價格不可低於40元");
+    		return viewPage(m, 1, keyword);
+    	}
     		
     	pService.saveProductToDB(file, name, price,category);
     	return "redirect:/backend/listProducts/page/1";

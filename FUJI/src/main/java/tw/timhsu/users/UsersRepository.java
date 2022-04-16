@@ -13,7 +13,7 @@ import org.springframework.data.jpa.repository.Query;
 public interface UsersRepository extends JpaRepository<Users, Integer> {
 	
 	@Query(value="select u from Users u where u.username Like %?1% and u.role Like ?2 or u.name Like %?1% and u.role Like ?2 "
-			+ "or u.username Like %?1% and u.role Like ?3 or u.name Like %?1% and u.role Like ?3")			
+			+ "or u.username Like %?1% and u.role Like ?3 or u.name Like %?1% and u.role Like ?3 or u.uid Like %?1% and u.role Like ?2 or u.uid Like %?1% and u.role Like ?3")			
 	public Page<Users> findByKeyword(String Keyword,Pageable pageable,String role1,String role2);
 	
 	@Query(value="select u from Users u where u.role Like ?1 or u.role Like ?2 ")

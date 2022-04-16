@@ -108,7 +108,7 @@ a {
 							</div>
 			
 			
-				<div class="nav" sec:authorize="hasAuthority('ADMIN')">
+				<div class="nav" sec:authorize="hasAnyAuthority('EMPLOYEE','ADMIN')">
 					<div class="Contact">
 						<a href="/backend/viewSumPage">後台專區</a>
 

@@ -43,7 +43,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 				.permitAll().antMatchers("/profile/**").authenticated()
 				// .antMatchers("/home").hasAnyAuthority("USER","ADMIN")
 				.antMatchers("/admin").hasAuthority("ADMIN")
-				.antMatchers("/backend/**").hasAnyAuthority("ADMIN")
+				.antMatchers("/backend/**").hasAnyAuthority("ADMIN","EMPLOYEE")
 				.anyRequest()
 				.authenticated()
 				.and()
