@@ -88,8 +88,8 @@ a {
 
 	<div class="containerAll">
 		<div class="header">
-			<div class="logo">
-				<a href="/home"><img src="../images/logo.png"></a>
+			<div class="logo" style="width: 31%">
+				<a href="/home"><img src="../images/logo.png" style="width: 35%"></a>
 				<div class="logoWord">
 					<div class="logoWordChinese">日本料理 | 壽司</div>
 					<br />
@@ -101,7 +101,7 @@ a {
 			
 			
 			
-			<div class="item">
+			<div class="item" style="width: 69%">
 			<div th:if="${yes}" class="alert alert-primary" role="alert" th:text="${yes}"></div>
 							<div  class="alert alert-primary" role="alert"  sec:authorize="isAuthenticated()" >
 								<h7>目前狀態登錄中</h7>
@@ -161,12 +161,12 @@ a {
 			</div>
 		</div>
 		<div class="homePic">
-			<div class="homePicNumber">
+<!-- 			<div class="homePicNumber"> -->
 				<img src="images/home_pic1.jpg"> <img
 					src="images/home_pic2.jpg"> <img src="images/home_pic3.jpg">
 				<img src="images/home_pic4.jpg"> <img
 					src="images/home_pic5.jpg">
-			</div>
+<!-- 			</div> -->
 
 		</div>
 		<div class="homePicNews">
