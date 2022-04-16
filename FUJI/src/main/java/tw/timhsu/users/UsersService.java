@@ -75,7 +75,7 @@ public class UsersService {
 		public void createNewCustomerAfterOAuthLoginSuccess(String email ,String name) {
 			Users user = new Users();
 			user.setEmail(email);
-			user.setName(name);
+			user.setName(email);
 			user.setPassword("GOOGLE");
 			user.setUsername(email);
 			user.setPhone("0987654321");
