@@ -127,8 +127,27 @@ public class UsersController {
 	@PostMapping(path = "/updatepassword1")
 	public ModelAndView update(@RequestParam("username") String username, @RequestParam("password") String password,
 			@RequestParam("newpassword") String newpwd, @RequestParam("newpassword2") String newpwd2, Model m,ModelAndView mav) {
-//		Map<String, String> errors = new HashMap<String, String>();
 		
+		if(username.isEmpty()) 
+		{
+			mav.addObject("error3","請輸入帳號");
+			mav.setViewName("homepageUpdatePassword");
+			return mav;
+		}
+		
+    	if(newpwd.isEmpty()||newpwd2.isEmpty()) 
+		{
+			mav.addObject("error4","請輸入新密碼");
+			mav.setViewName("homepageUpdatePassword");
+			return mav;
+		}
+    	if(password.isEmpty()) 
+		{
+			mav.addObject("error5","請輸入舊密碼");
+			mav.setViewName("homepageUpdatePassword");
+			return mav;
+		}
+	
 		Users u = uService.findByusername(username);
 		boolean result = new BCryptPasswordEncoder().matches(password, u.getPassword());
 		

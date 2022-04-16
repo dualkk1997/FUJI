@@ -120,39 +120,17 @@ body .containerAll .header .item .logout .fas {
 }
 
 body .containerAll .homePic {
-  /*每個圖片相隔4秒*/
 }
 
 body .containerAll .homePic div {
   display: inline-block;
 }
 
-/* body .containerAll .homePic .homePicNumber { */
-/*   height: 300px; */
-/*   margin-top: 436px; */
-/* } */
-
-/* body .containerAll .homePic .homePicNumber img { */
-/*   display: block; */
-/*   position: absolute; */
-/*   top: 22%; */
-/*   left: 0%; */
-/*   opacity: 0; */
-/*   filter: alpha(opacity=0); */
-/*   動畫全長時間設定 */
-/*   -webkit-animation: slider 20s linear infinite; */
-/*   animation: slider 20s linear infinite; */
-/*   width: 100%; */
-/*   height: 100%; */
-/*   margin-top: 1px; */
-/* } */
-
-body .containerAll .homePic  {
-  height: 600px;
+body .containerAll .homePic .homePicNumber {
+height:650px;
 }
 
-body .containerAll .homePic  img {
-  display: block;
+body .containerAll .homePic .homePicNumber img {
   position: absolute;
   top: 22%;
   left: 0%;
@@ -161,11 +139,12 @@ body .containerAll .homePic  img {
   /*動畫全長時間設定*/
   -webkit-animation: slider 20s linear infinite;
   animation: slider 20s linear infinite;
-  width: 100%;
-  height: 600px;
   margin-top: 1px;
+  width:100%;
+  height:600px;
 }
 
+.clear {clear:both}
 @-webkit-keyframes slider {
   2.5% {
     opacity: 1;

@@ -131,6 +131,7 @@ body .containerAll .scroll-top {
 						</a>
 					</div>
 				</div>
+				<div
 					onclick="javascript:window.location.href='http://localhost:8081/logout'"
 					sec:authorize="isAuthenticated()" class="logout">
 					<i class="fas fa-sign-out-alt"></i>
@@ -152,6 +153,7 @@ body .containerAll .scroll-top {
 			</div>
 			<div class="payment-text">
 				<div class="title">
+				<h1>您已成功付款</h1>
 				</div>
 				<div class="content">
 					<div class="price" th:text="${total}+元"></div>
