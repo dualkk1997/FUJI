@@ -62,7 +62,6 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 				.userInfoEndpoint().userService(oAuth2UserService)
 				.and()
 				.successHandler(oAuth2LoginSuccessHandler)
-				.defaultSuccessUrl("/home", true)
 				;
 				
 		http.logout().deleteCookies("JSESSIONID").logoutSuccessUrl("/login")
